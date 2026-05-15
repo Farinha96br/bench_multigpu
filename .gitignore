@@ -1,0 +1,28 @@
+# Cloned repo
+devito/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and output
+*.log
+*.out
+*.err
+
+# Job scheduler artifacts
+*.sh.o*
+*.sh.e*
+slurm-*.out
+
+# OS
+.DS_Store
+Thumbs.db
