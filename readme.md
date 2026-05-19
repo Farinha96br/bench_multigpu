@@ -10,7 +10,16 @@ The goal of this routine is:
 
 the file ´´´tuned_params.json´´´ has all the tunned paramers, per machine per run configuration (SO, domain size, and GPU number)
 
-## Job array:
+## Nomenclature
+
+The file and naming formatting for the tunning `.json` output will, always be:
+
+`<machine>\<GPUmodel>_so_<so>_d_<domain_size/shape>_gpu_<gpucount>.json`
+
+example:
+
+`dgx_h200/h200_so_2_d_256_gpu_1.json`
+
 
 
 
