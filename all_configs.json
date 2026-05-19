@@ -1,0 +1,26 @@
+[
+    {
+        "machine": "dgx",
+        "gpu_model": "h200",
+        "space_order": 2,
+        "domain_side": 256,
+        "gp_count": 1,
+        "best_opt": "{'gpu-opt': False, 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'cse-algo': 'smartsort', 'fact-schedule': 'basic'}"
+    },
+    {
+        "machine": "dgx",
+        "gpu_model": "h200",
+        "space_order": 2,
+        "domain_side": 256,
+        "gp_count": 2,
+        "best_opt": "{'gpu-opt': False, 'cse-algo': 'smartsort'}"
+    },
+    {
+        "machine": "dgx",
+        "gpu_model": "h200",
+        "space_order": 2,
+        "domain_side": 256,
+        "gp_count": 4,
+        "best_opt": "{'gpu-opt': False}"
+    }
+]
