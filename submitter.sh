@@ -1,10 +1,11 @@
 
 
 
+job_name="${1%.sh}"
 
 sbatch \
     --gpus=$2 \
     --ntasks=$2 \
-    --output=${1}_${2}.txt \
-    --error=${1}_${2}.txt \
+    --output=${job_name}_${2}.txt \
+    --error=${job_name}_${2}.txt \
     $1
