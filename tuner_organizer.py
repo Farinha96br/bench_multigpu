@@ -42,7 +42,7 @@ def organize_parameters(path):
         "space_order": space_order,
         "domain_side": domain_side,
         "gp_count": gp_count,
-        "best_opt": str(best_opt[1])
+        "best_opt": str(best_opt[0:2])
     }
     return dict
 
