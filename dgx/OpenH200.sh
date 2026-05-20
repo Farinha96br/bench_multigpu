@@ -20,6 +20,7 @@ mkdir -p $APPTAINER_TMPDIR $APPTAINER_CACHEDIR
 
 export BENCHMARK_SCRIPT=devito/benchmarks/user/benchmark.py
 
+bash clone_and_fix.sh
 
 devito_lang=openacc
 devito_arch=nvc
@@ -48,7 +49,7 @@ for space_order_idx in "${!space_orders[@]}"
         then
             DEVITO_MPI=0
         else
-            DEVITO_MPI=1
+            DEVITO_MPI=basic
         fi
         # now the repetitions
         for j in $(seq 1 $repeats)
@@ -64,9 +65,9 @@ for space_order_idx in "${!space_orders[@]}"
             echo "mpi: $DEVITO_MPI"
 
             apptainer exec --nv ${IMAGE_PATH} bash -c \
-            "export DEVITO_LANGUAGE=openacc && \
+            "export DEVITO_LANGUAGE=$devito_lang && \
             export DEVITO_PLATFORM=nvidiaX && \
-            export DEVITO_ARCH=nvc && \
+            export DEVITO_ARCH=$devito_arch && \
             source /venv/bin/activate && \
             export PYTHONPATH=devito/ && \
             export DEVITO_MPI=$DEVITO_MPI && \
@@ -80,7 +81,6 @@ for space_order_idx in "${!space_orders[@]}"
 
             echo "= END ="
                 
-            done
         done
     done
 done
