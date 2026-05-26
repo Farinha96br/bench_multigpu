@@ -7,8 +7,6 @@ import ast
 from devito import (Grid, TimeFunction, Function, Eq, Operator,
                     SparseTimeFunction, solve, configuration)
 
-from devitopro import *
-
 parser = argparse.ArgumentParser()
 parser.add_argument("-d",   "--dimension",  nargs=3, type=int, default=[128, 128, 128], metavar=("NX", "NY", "NZ"))
 parser.add_argument("-so",  "--spaceorder", type=int, default=8)
@@ -69,10 +67,10 @@ rec.coordinates.data[0, :] = np.array([
 
 # Acoustic wave 
 #   u_tt = vp^2 * laplacian(u)
-pde = Eq(u.dt2, vp**2 * u.laplace)
-print("PDE:", pde)
-stencil = Eq(u.forward, solve(pde, u.forward))
-print("Stencil:", stencil)
+#pde = Eq(u.dt2, vp**2 * u.laplace)
+#print("PDE:", pde)
+#stencil = Eq(u.forward, solve(pde, u.forward))
+#print("Stencil:", stencil)
 src_term = src.inject(field=u.forward, expr=src * dt**2 * vp**2)
 rec_term = rec.interpolate(expr=u)
 
