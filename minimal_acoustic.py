@@ -2,21 +2,31 @@ import os
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/matplotlib_cache")
 
 import numpy as np
+import argparse
+import ast
 from devito import (Grid, TimeFunction, Function, Eq, Operator,
                     SparseTimeFunction, solve)
 
 from devitopro import *
 
-# --- Model parameters ---
-origin = (0.0, 0.0, 0.0)        # origin
-shape = (512, 512, 512)      # grid points (x, y, z)
-extent = (4000.0, 4000.0, 4000.0)  # extent
+parser = argparse.ArgumentParser()
+parser.add_argument("-d",   "--dimension",  nargs=3, type=int, default=[512, 512, 512], metavar=("NX", "NY", "NZ"))
+parser.add_argument("-so",  "--spaceorder", type=int, default=8)
+parser.add_argument("-tn",  "--timesteps",  type=int, default=500)
+#parser.add_argument("-opt", "--options",    type=str, default="{'index-mode': 'int64'}")
+args = parser.parse_args()
 
-spacing = (extent[0] / (shape[0] - 1), extent[1] / (shape[1] - 1), extent[2] / (shape[2] - 1))  # spacing
-t0, tn = 0.0, 500.0             # ms
-dt = 1.0                        # ms  (for benchmark does not matter)
-nt = int((tn - t0) / dt) + 1    # number of time steps
-so = 8                          # space order
+
+# --- Model parameters ---
+origin = (0.0, 0.0, 0.0)
+shape = tuple(args.dimension)
+extent = (4000.0, 4000.0, 4000.0)
+
+spacing = (extent[0] / (shape[0] - 1), extent[1] / (shape[1] - 1), extent[2] / (shape[2] - 1))
+t0, tn = 0.0, float(args.timesteps)
+dt = 1.0
+nt = int((tn - t0) / dt) + 1
+so = args.spaceorder
 
 
 grid = Grid(
