@@ -9,9 +9,10 @@ from devitopro import *
 
 # --- Model parameters ---
 origin = (0.0, 0.0, 0.0)        # origin
-shape = (1024, 1024, 1024)      # grid points (x, y, z)
-spacing = (10.0, 10.0, 10.0)    # spacing
-extent = (shape[0] * spacing[0], shape[1] * spacing[1], shape[2] * spacing[2])  # extent
+shape = (512, 512, 512)      # grid points (x, y, z)
+extent = (4000.0, 4000.0, 4000.0)  # extent
+
+spacing = (extent[0] / (shape[0] - 1), extent[1] / (shape[1] - 1), extent[2] / (shape[2] - 1))  # spacing
 t0, tn = 0.0, 500.0             # ms
 dt = 1.0                        # ms  (for benchmark does not matter)
 nt = int((tn - t0) / dt) + 1    # number of time steps
