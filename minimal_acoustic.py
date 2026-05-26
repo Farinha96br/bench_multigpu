@@ -5,17 +5,18 @@ import numpy as np
 import argparse
 import ast
 from devito import (Grid, TimeFunction, Function, Eq, Operator,
-                    SparseTimeFunction, solve)
+                    SparseTimeFunction, solve, configuration)
 
 from devitopro import *
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-d",   "--dimension",  nargs=3, type=int, default=[512, 512, 512], metavar=("NX", "NY", "NZ"))
+parser.add_argument("-d",   "--dimension",  nargs=3, type=int, default=[128, 128, 128], metavar=("NX", "NY", "NZ"))
 parser.add_argument("-so",  "--spaceorder", type=int, default=8)
 parser.add_argument("-tn",  "--timesteps",  type=int, default=500)
-#parser.add_argument("-opt", "--options",    type=str, default="{'index-mode': 'int64'}")
+parser.add_argument("-opt", "--options",    type=str, default="('advanced')")
 args = parser.parse_args()
 
+opt_val = ast.literal_eval(args.options)
 
 # --- Model parameters ---
 origin = (0.0, 0.0, 0.0)
@@ -69,12 +70,13 @@ rec.coordinates.data[0, :] = np.array([
 # Acoustic wave 
 #   u_tt = vp^2 * laplacian(u)
 pde = Eq(u.dt2, vp**2 * u.laplace)
+print("PDE:", pde)
 stencil = Eq(u.forward, solve(pde, u.forward))
-
+print("Stencil:", stencil)
 src_term = src.inject(field=u.forward, expr=src * dt**2 * vp**2)
 rec_term = rec.interpolate(expr=u)
 
-op = Operator([stencil] + src_term + rec_term,name="Simple", opt=('advanced', {'index-mode':'int64'}))
+op = Operator([stencil] + src_term + rec_term, name="Simple", opt=opt_val)
 
 # Exec:
 op.apply(time=nt - 1, dt=dt)
