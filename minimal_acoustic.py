@@ -5,7 +5,7 @@ import numpy as np
 import argparse
 import ast
 from devito import (Grid, TimeFunction, Function, Eq, Operator,
-                    SparseTimeFunction, solve, configuration)
+                    SparseTimeFunction, solve, print_state)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d",   "--dimension",  nargs=3, type=int, default=[128, 128, 128], metavar=("NX", "NY", "NZ"))
@@ -14,7 +14,9 @@ parser.add_argument("-tn",  "--timesteps",  type=int, default=500)
 parser.add_argument("-opt", "--options",    type=str, default="('advanced')")
 args = parser.parse_args()
 
+
 opt_val = ast.literal_eval(args.options)
+
 
 # --- Model parameters ---
 origin = (0.0, 0.0, 0.0)
@@ -33,6 +35,13 @@ grid = Grid(
     shape=shape,
     extent=extent,
 )
+
+import mpi4py.MPI as MPI
+comm = MPI.COMM_WORLD
+rank = comm.Get_rank()
+
+if rank == 0:
+    print(print_state())
 
 # Velocity model
 vp = Function(name='Vp', grid=grid, space_order=so)
@@ -67,13 +76,15 @@ rec.coordinates.data[0, :] = np.array([
 
 # Acoustic wave 
 #   u_tt = vp^2 * laplacian(u)
-#pde = Eq(u.dt2, vp**2 * u.laplace)
+pde = Eq(u.dt2, vp**2 * u.laplace)
 #print("PDE:", pde)
-#stencil = Eq(u.forward, solve(pde, u.forward))
+stencil = Eq(u.forward, solve(pde, u.forward))
 #print("Stencil:", stencil)
 src_term = src.inject(field=u.forward, expr=src * dt**2 * vp**2)
 rec_term = rec.interpolate(expr=u)
 
+if rank == 0:
+    print("arguments:", opt_val)
 op = Operator([stencil] + src_term + rec_term, name="Simple", opt=opt_val)
 
 # Exec:
