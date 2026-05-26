@@ -1,3 +1,10 @@
+# using openACC:
+# This command works:
+# python3 minimal_acoustic.py -d 1024 1024 1024 -so 4 -tn 100 -op "('advanced', {'linearize':False,'index-mode':'int64'})"
+
+# using CUDA:
+# python3 -m devitopro minimal_acoustic.py -d 1024 1024 1024 -so 4 -tn 100 -op "('advanced', {'linearize':False,'index-mode':'int64'})"
+
 import os
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/matplotlib_cache")
 
@@ -13,6 +20,7 @@ parser.add_argument("-so",  "--spaceorder", type=int, default=8)
 parser.add_argument("-tn",  "--timesteps",  type=int, default=500)
 parser.add_argument("-opt", "--options",    type=str, default="('advanced')")
 args = parser.parse_args()
+
 
 
 opt_val = ast.literal_eval(args.options)
