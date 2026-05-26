@@ -18,24 +18,18 @@ export APPTAINER_TMPDIR=/home/afarinha_local/apptainertmpdir
 export APPTAINER_CACHEDIR=/home/afarinha_local/apptainercachedir
 mkdir -p $APPTAINER_TMPDIR $APPTAINER_CACHEDIR
 
-export BENCHMARK_SCRIPT=devito/benchmarks/user/benchmark.py
-
-bash clone_and_fix.sh
+export BENCHMARK_SCRIPT=minimal_acoustic.py
 
 devito_lang=openacc
 devito_arch=nvc
 devito_platform=nvidiaX
 
 
-domain_sizes=(256 512 1024)
-space_orders=(2 4 8 2 4 8)
-#            4k   4k    4k    400 400  400
-final_times=(11425 10349 9680 1138 1032 965) 
+domain_sizes=(1024)
+space_orders=(2 4 8)
+final_times=(400 400 400) 
 repeats=5
 
-#SO=8:   9680   965
-#SO=4:  10349   1032
-#SO=2:  11425   1138
 
 
 for space_order_idx in "${!space_orders[@]}"
@@ -58,8 +52,7 @@ for space_order_idx in "${!space_orders[@]}"
             echo "run-number: $j"
             echo "domain-size: $DOMAIN_SIZE"
             echo "space-order: $SPACE_ORDER"
-            echo "final-time: $FINAL_TIME" 
-            echo "operator: $OPERATOR"
+            echo "time-steps: $FINAL_TIME" 
             echo "devito-version: open"
             echo "gpu-num: $SLURM_GPUS_ON_NODE"
             echo "mpi: $DEVITO_MPI"
@@ -70,17 +63,17 @@ for space_order_idx in "${!space_orders[@]}"
             export DEVITO_ARCH=$devito_arch && \
             source /venv/bin/activate && \
             export PYTHONPATH=devito/ && \
+            export DEVITO_LOGGING=DEBUG && \
             export DEVITO_MPI=$DEVITO_MPI && \
-            mpirun -np $SLURM_GPUS_ON_NODE python3 $BENCHMARK_SCRIPT run \
-            -P acoustic \
+            mpirun -np $SLURM_GPUS_ON_NODE python3 $BENCHMARK_SCRIPT \
             -d $DOMAIN_SIZE $DOMAIN_SIZE $DOMAIN_SIZE \
             -so $SPACE_ORDER \
-            -s 20.0 20.0 20.0  \
-            --nbl 0 \
-            --tn $FINAL_TIME"
+            -tn $FINAL_TIME"
 
             echo "= END ="
                 
         done
     done
 done
+
+echo "All runs completed."

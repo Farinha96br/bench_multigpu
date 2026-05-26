@@ -1,0 +1,2063 @@
+= START =
+run-number: 1
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.9 %)
+     * specializing.IET: 0.37 s (40.7 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.9 %)
+     * specializing.IET: 0.38 s (41.7 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.59 s
+Global performance: [OI=2.20, 307.11 GFlops/s, 11.38 GPts/s]
+Global performance <w/o setup>: [0.21 s, 32.78 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.20 s [OI=2.20, 462.26 GFlops/s, 17.13 GPts/s]
+  * section0[rank1] ran in 0.09 s [OI=2.20, 1092.02 GFlops/s, 40.45 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.91 s
+  * lowering.IET: 0.50 s (55.0 %)
+     * specializing.IET: 0.38 s (41.8 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.9 %)
+     * specializing.IET: 0.38 s (41.8 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.15 s
+Global performance: [OI=2.20, 157.57 GFlops/s, 5.84 GPts/s]
+Global performance <w/o setup>: [0.80 s, 8.45 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.79 s [OI=2.20, 115.30 GFlops/s, 4.28 GPts/s]
+  * section0[rank1] ran in 0.10 s [OI=2.20, 973.86 GFlops/s, 36.07 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.7 %)
+     * specializing.IET: 0.38 s (41.6 %)
+  * lowering.Clusters: 0.31 s (33.9 %)
+     * specializing.Clusters: 0.19 s (20.8 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.7 %)
+     * specializing.IET: 0.38 s (41.6 %)
+  * lowering.Clusters: 0.31 s (33.9 %)
+     * specializing.Clusters: 0.19 s (20.8 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.13 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.04 s
+Global performance: [OI=2.20, 174.23 GFlops/s, 6.46 GPts/s]
+Global performance <w/o setup>: [0.20 s, 34.83 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.19 s [OI=2.20, 492.55 GFlops/s, 18.25 GPts/s]
+  * section0[rank1] ran in 0.08 s [OI=2.20, 1155.83 GFlops/s, 42.81 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.91 s
+  * lowering.IET: 0.49 s (54.0 %)
+     * specializing.IET: 0.37 s (40.8 %)
+  * lowering.Clusters: 0.31 s (34.2 %)
+     * specializing.Clusters: 0.19 s (21.0 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.6 %)
+     * specializing.IET: 0.37 s (40.4 %)
+  * lowering.Clusters: 0.31 s (33.8 %)
+     * specializing.Clusters: 0.19 s (20.8 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.15 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.54 s
+Global performance: [OI=2.20, 335.55 GFlops/s, 12.43 GPts/s]
+Global performance <w/o setup>: [0.19 s, 36.59 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.18 s [OI=2.20, 518.48 GFlops/s, 19.21 GPts/s]
+  * section0[rank1] ran in 0.08 s [OI=2.20, 1174.41 GFlops/s, 43.50 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for Vp(132, 260, 260) [34 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.91 s
+  * lowering.IET: 0.49 s (54.1 %)
+     * specializing.IET: 0.37 s (40.9 %)
+  * lowering.Clusters: 0.31 s (34.2 %)
+     * specializing.Clusters: 0.19 s (21.0 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.91 s
+  * lowering.IET: 0.50 s (55.0 %)
+     * specializing.IET: 0.38 s (41.8 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.13 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Allocating host memory for u(3, 132, 260, 260) [102 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.59 s
+Global performance: [OI=2.20, 307.11 GFlops/s, 11.38 GPts/s]
+Global performance <w/o setup>: [0.22 s, 31.21 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.21 s [OI=2.20, 441.44 GFlops/s, 16.35 GPts/s]
+  * section0[rank1] ran in 0.08 s [OI=2.20, 1158.46 GFlops/s, 42.91 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.91 s
+  * lowering.IET: 0.50 s (55.1 %)
+     * specializing.IET: 0.37 s (40.8 %)
+  * lowering.Clusters: 0.31 s (34.2 %)
+     * specializing.Clusters: 0.19 s (21.0 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.91 s
+  * lowering.IET: 0.50 s (55.1 %)
+     * specializing.IET: 0.38 s (41.9 %)
+  * lowering.Clusters: 0.31 s (34.2 %)
+     * specializing.Clusters: 0.19 s (21.0 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Operator `Simple` arguments preprocess: 0.49 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.04 s
+Global performance: [OI=2.22, 1393.81 GFlops/s, 51.63 GPts/s]
+Global performance <w/o setup>: [0.44 s, 122.63 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.43 s [OI=2.22, 1689.22 GFlops/s, 62.57 GPts/s]
+  * section0[rank1] ran in 0.33 s [OI=2.22, 2220.53 GFlops/s, 82.25 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+arguments: advanced
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.9 %)
+     * specializing.IET: 0.38 s (41.8 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.9 %)
+     * specializing.IET: 0.38 s (41.7 %)
+        * make_halo_exchanges: 0.19 s (20.9 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Operator `Simple` arguments preprocess: 0.49 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.16 s
+Global performance: [OI=2.22, 1249.62 GFlops/s, 46.29 GPts/s]
+Global performance <w/o setup>: [0.60 s, 89.90 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.59 s [OI=2.22, 1231.71 GFlops/s, 45.62 GPts/s]
+  * section0[rank1] ran in 0.34 s [OI=2.22, 2156.61 GFlops/s, 79.88 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+arguments: advanced
+Operator `Simple` generated in 0.91 s
+  * lowering.IET: 0.50 s (55.0 %)
+     * specializing.IET: 0.38 s (41.8 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (55.0 %)
+     * specializing.IET: 0.38 s (41.8 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.13 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Operator `Simple` arguments preprocess: 0.49 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.17 s
+Global performance: [OI=2.22, 1238.94 GFlops/s, 45.89 GPts/s]
+Global performance <w/o setup>: [0.64 s, 84.37 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.63 s [OI=2.22, 1154.90 GFlops/s, 42.78 GPts/s]
+  * section0[rank1] ran in 0.32 s [OI=2.22, 2288.35 GFlops/s, 84.76 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+arguments: advanced
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.9 %)
+     * specializing.IET: 0.38 s (41.7 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.92 s
+  * lowering.IET: 0.50 s (54.7 %)
+     * specializing.IET: 0.38 s (41.6 %)
+  * lowering.Clusters: 0.31 s (33.9 %)
+     * specializing.Clusters: 0.19 s (20.8 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Operator `Simple` arguments preprocess: 0.49 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.63 s
+Global performance: [OI=2.22, 889.30 GFlops/s, 32.94 GPts/s]
+Global performance <w/o setup>: [0.62 s, 86.95 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.61 s [OI=2.22, 1190.52 GFlops/s, 44.10 GPts/s]
+  * section0[rank1] ran in 0.34 s [OI=2.22, 2169.12 GFlops/s, 80.34 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for Vp(260, 516, 516) [264 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.91 s
+  * lowering.IET: 0.49 s (54.0 %)
+     * specializing.IET: 0.38 s (41.9 %)
+  * lowering.Clusters: 0.31 s (34.2 %)
+     * specializing.Clusters: 0.19 s (21.0 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` generated in 0.91 s
+  * lowering.IET: 0.49 s (53.9 %)
+     * specializing.IET: 0.37 s (40.7 %)
+  * lowering.Clusters: 0.31 s (34.1 %)
+     * specializing.Clusters: 0.19 s (20.9 %)
+Flops reduction after symbolic optimization: [112 --> 46]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/913ac9940ef74fc50ca88b760ce2042d308e964f.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Allocating host memory for u(3, 260, 516, 516) [792 MB]
+Operator `Simple` arguments preprocess: 0.49 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.97 s
+Global performance: [OI=2.22, 1494.39 GFlops/s, 55.35 GPts/s]
+Global performance <w/o setup>: [0.50 s, 109.47 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.49 s [OI=2.22, 1504.83 GFlops/s, 55.74 GPts/s]
+  * section0[rank1] ran in 0.32 s [OI=2.22, 2286.35 GFlops/s, 84.68 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.9 %)
+     * specializing.IET: 0.39 s (39.7 %)
+  * lowering.Clusters: 0.34 s (34.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.52 s (52.9 %)
+     * specializing.IET: 0.39 s (39.7 %)
+  * lowering.Clusters: 0.34 s (34.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.08 s
+Global performance: [OI=2.63, 205.06 GFlops/s, 6.22 GPts/s]
+Global performance <w/o setup>: [0.42 s, 16.00 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.42 s [OI=2.63, 269.56 GFlops/s, 8.17 GPts/s]
+  * section0[rank1] ran in 0.09 s [OI=2.63, 1252.33 GFlops/s, 37.95 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (52.0 %)
+     * specializing.IET: 0.39 s (39.8 %)
+  * lowering.Clusters: 0.35 s (35.7 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.52 s (52.9 %)
+     * specializing.IET: 0.39 s (39.7 %)
+  * lowering.Clusters: 0.34 s (34.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.56 s
+Global performance: [OI=2.63, 395.47 GFlops/s, 11.99 GPts/s]
+Global performance <w/o setup>: [0.19 s, 35.93 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.18 s [OI=2.63, 621.83 GFlops/s, 18.85 GPts/s]
+  * section0[rank1] ran in 0.09 s [OI=2.63, 1264.92 GFlops/s, 38.34 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+arguments: advanced
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (52.0 %)
+     * specializing.IET: 0.39 s (39.8 %)
+  * lowering.Clusters: 0.35 s (35.7 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.9 %)
+     * specializing.IET: 0.39 s (39.7 %)
+  * lowering.Clusters: 0.34 s (34.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.89 s
+Global performance: [OI=2.63, 248.84 GFlops/s, 7.55 GPts/s]
+Global performance <w/o setup>: [0.55 s, 12.33 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.54 s [OI=2.63, 206.74 GFlops/s, 6.27 GPts/s]
+  * section0[rank1] ran in 0.09 s [OI=2.63, 1260.49 GFlops/s, 38.20 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (52.1 %)
+     * specializing.IET: 0.39 s (39.8 %)
+  * lowering.Clusters: 0.34 s (34.7 %)
+     * specializing.Clusters: 0.21 s (21.5 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.9 %)
+     * specializing.IET: 0.39 s (39.7 %)
+  * lowering.Clusters: 0.34 s (34.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.55 s
+Global performance: [OI=2.63, 402.66 GFlops/s, 12.21 GPts/s]
+Global performance <w/o setup>: [0.21 s, 32.42 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.20 s [OI=2.63, 558.51 GFlops/s, 16.93 GPts/s]
+  * section0[rank1] ran in 0.09 s [OI=2.63, 1267.83 GFlops/s, 38.42 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for Vp(136, 264, 264) [36 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.8 %)
+     * specializing.IET: 0.39 s (39.6 %)
+  * lowering.Clusters: 0.35 s (35.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.8 %)
+     * specializing.IET: 0.39 s (39.6 %)
+  * lowering.Clusters: 0.35 s (35.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Allocating host memory for u(3, 136, 264, 264) [108 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.60 s
+Global performance: [OI=2.63, 369.10 GFlops/s, 11.19 GPts/s]
+Global performance <w/o setup>: [0.27 s, 25.03 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.26 s [OI=2.63, 426.81 GFlops/s, 12.94 GPts/s]
+  * section0[rank1] ran in 0.09 s [OI=2.63, 1270.01 GFlops/s, 38.49 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (52.0 %)
+     * specializing.IET: 0.39 s (39.7 %)
+  * lowering.Clusters: 0.35 s (35.7 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.9 %)
+     * specializing.IET: 0.39 s (39.7 %)
+  * lowering.Clusters: 0.34 s (34.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Operator `Simple` arguments preprocess: 0.52 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.37 s
+Global performance: [OI=2.69, 1293.20 GFlops/s, 39.19 GPts/s]
+Global performance <w/o setup>: [0.72 s, 75.49 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.71 s [OI=2.69, 1261.02 GFlops/s, 38.22 GPts/s]
+  * section0[rank1] ran in 0.55 s [OI=2.69, 1632.78 GFlops/s, 49.48 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (52.0 %)
+     * specializing.IET: 0.39 s (39.7 %)
+  * lowering.Clusters: 0.35 s (35.7 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.52 s (52.8 %)
+     * specializing.IET: 0.40 s (40.6 %)
+  * lowering.Clusters: 0.34 s (34.5 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Operator `Simple` arguments preprocess: 0.53 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.00 s
+Global performance: [OI=2.69, 1771.68 GFlops/s, 53.69 GPts/s]
+Global performance <w/o setup>: [0.50 s, 109.07 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.49 s [OI=2.69, 1832.50 GFlops/s, 55.54 GPts/s]
+  * section0[rank1] ran in 0.39 s [OI=2.69, 2313.69 GFlops/s, 70.12 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+arguments: advanced
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.8 %)
+     * specializing.IET: 0.39 s (39.6 %)
+  * lowering.Clusters: 0.34 s (34.5 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.7 %)
+     * specializing.IET: 0.39 s (39.5 %)
+  * lowering.Clusters: 0.35 s (35.5 %)
+     * specializing.Clusters: 0.21 s (21.3 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Operator `Simple` arguments preprocess: 0.53 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.01 s
+Global performance: [OI=2.69, 1754.14 GFlops/s, 53.16 GPts/s]
+Global performance <w/o setup>: [0.53 s, 101.53 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.52 s [OI=2.69, 1703.56 GFlops/s, 51.63 GPts/s]
+  * section0[rank1] ran in 0.41 s [OI=2.69, 2211.42 GFlops/s, 67.02 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+arguments: advanced
+Operator `Simple` generated in 0.98 s
+  * lowering.IET: 0.51 s (52.2 %)
+     * specializing.IET: 0.39 s (39.9 %)
+  * lowering.Clusters: 0.34 s (34.8 %)
+     * specializing.Clusters: 0.21 s (21.5 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.8 %)
+     * specializing.IET: 0.39 s (39.6 %)
+  * lowering.Clusters: 0.35 s (35.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Operator `Simple` arguments preprocess: 0.52 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.05 s
+Global performance: [OI=2.69, 1687.31 GFlops/s, 51.14 GPts/s]
+Global performance <w/o setup>: [0.58 s, 93.80 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.57 s [OI=2.69, 1571.68 GFlops/s, 47.63 GPts/s]
+  * section0[rank1] ran in 0.39 s [OI=2.69, 2314.25 GFlops/s, 70.13 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for Vp(264, 520, 520) [272 MB]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+arguments: advanced
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.51 s (51.8 %)
+     * specializing.IET: 0.39 s (39.7 %)
+  * lowering.Clusters: 0.35 s (35.6 %)
+     * specializing.Clusters: 0.21 s (21.4 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` generated in 0.99 s
+  * lowering.IET: 0.52 s (52.8 %)
+     * specializing.IET: 0.39 s (39.6 %)
+  * lowering.Clusters: 0.34 s (34.5 %)
+     * specializing.Clusters: 0.21 s (21.3 %)
+Flops reduction after symbolic optimization: [142 --> 52]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c1e5a6a3e0cb27def37a86c613b77157ed86ec78.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Allocating host memory for u(3, 264, 520, 520) [817 MB]
+Operator `Simple` arguments preprocess: 0.53 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.09 s
+Global performance: [OI=2.69, 1625.39 GFlops/s, 49.26 GPts/s]
+Global performance <w/o setup>: [0.56 s, 97.08 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.55 s [OI=2.69, 1627.77 GFlops/s, 49.33 GPts/s]
+  * section0[rank1] ran in 0.39 s [OI=2.69, 2314.40 GFlops/s, 70.14 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (48.8 %)
+     * specializing.IET: 0.41 s (35.1 %)
+  * lowering.Clusters: 0.41 s (35.1 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.18 s
+  * lowering.IET: 0.57 s (48.7 %)
+     * specializing.IET: 0.45 s (38.5 %)
+  * lowering.Clusters: 0.41 s (35.0 %)
+     * specializing.Clusters: 0.25 s (21.4 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.83 s
+Global performance: [OI=3.90, 412.36 GFlops/s, 8.09 GPts/s]
+Global performance <w/o setup>: [0.42 s, 16.34 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.41 s [OI=3.90, 425.81 GFlops/s, 8.35 GPts/s]
+  * section0[rank1] ran in 0.10 s [OI=3.90, 1795.19 GFlops/s, 35.20 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 1.18 s
+  * lowering.IET: 0.57 s (48.7 %)
+     * specializing.IET: 0.45 s (38.5 %)
+  * lowering.Clusters: 0.41 s (35.0 %)
+     * specializing.Clusters: 0.25 s (21.4 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.18 s
+  * lowering.IET: 0.58 s (49.6 %)
+     * specializing.IET: 0.45 s (38.5 %)
+  * lowering.Clusters: 0.41 s (35.0 %)
+     * specializing.Clusters: 0.25 s (21.4 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.58 s
+Global performance: [OI=3.90, 590.10 GFlops/s, 11.58 GPts/s]
+Global performance <w/o setup>: [0.28 s, 24.33 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.27 s [OI=3.90, 640.58 GFlops/s, 12.57 GPts/s]
+  * section0[rank1] ran in 0.10 s [OI=3.90, 1799.68 GFlops/s, 35.29 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (48.9 %)
+     * specializing.IET: 0.41 s (35.2 %)
+  * lowering.Clusters: 0.41 s (35.2 %)
+     * specializing.Clusters: 0.25 s (21.5 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (48.8 %)
+     * specializing.IET: 0.44 s (37.7 %)
+  * lowering.Clusters: 0.41 s (35.1 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.63 s
+Global performance: [OI=3.90, 543.27 GFlops/s, 10.66 GPts/s]
+Global performance <w/o setup>: [0.21 s, 33.51 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.20 s [OI=3.90, 893.89 GFlops/s, 17.53 GPts/s]
+  * section0[rank1] ran in 0.10 s [OI=3.90, 1799.02 GFlops/s, 35.28 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.0 %)
+     * specializing.IET: 0.44 s (37.9 %)
+  * lowering.Clusters: 0.41 s (35.3 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.0 %)
+     * specializing.IET: 0.41 s (35.3 %)
+  * lowering.Clusters: 0.41 s (35.3 %)
+     * specializing.Clusters: 0.25 s (21.5 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.64 s
+Global performance: [OI=3.90, 534.78 GFlops/s, 10.49 GPts/s]
+Global performance <w/o setup>: [0.29 s, 23.65 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.28 s [OI=3.90, 623.31 GFlops/s, 12.23 GPts/s]
+  * section0[rank1] ran in 0.10 s [OI=3.90, 1799.83 GFlops/s, 35.30 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for Vp(144, 272, 272) [41 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.1 %)
+     * specializing.IET: 0.41 s (35.3 %)
+  * lowering.Clusters: 0.41 s (35.3 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (48.8 %)
+     * specializing.IET: 0.44 s (37.7 %)
+  * lowering.Clusters: 0.42 s (36.0 %)
+     * specializing.Clusters: 0.25 s (21.4 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Allocating host memory for u(3, 144, 272, 272) [122 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.60 s
+Global performance: [OI=3.90, 570.43 GFlops/s, 11.19 GPts/s]
+Global performance <w/o setup>: [0.27 s, 25.13 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.26 s [OI=3.90, 662.57 GFlops/s, 13.00 GPts/s]
+  * section0[rank1] ran in 0.10 s [OI=3.90, 1801.31 GFlops/s, 35.32 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.2 %)
+     * specializing.IET: 0.44 s (38.0 %)
+  * lowering.Clusters: 0.41 s (35.4 %)
+     * specializing.Clusters: 0.25 s (21.6 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.0 %)
+     * specializing.IET: 0.41 s (35.3 %)
+  * lowering.Clusters: 0.41 s (35.3 %)
+     * specializing.Clusters: 0.25 s (21.5 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Operator `Simple` arguments preprocess: 0.60 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.08 s
+Global performance: [OI=4.07, 2535.23 GFlops/s, 49.72 GPts/s]
+Global performance <w/o setup>: [0.58 s, 93.65 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.57 s [OI=4.07, 2425.16 GFlops/s, 47.56 GPts/s]
+  * section0[rank1] ran in 0.42 s [OI=4.07, 3297.58 GFlops/s, 64.66 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.0 %)
+     * specializing.IET: 0.44 s (37.8 %)
+  * lowering.Clusters: 0.41 s (35.2 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (48.9 %)
+     * specializing.IET: 0.45 s (38.6 %)
+  * lowering.Clusters: 0.41 s (35.2 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Operator `Simple` arguments preprocess: 0.59 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.06 s
+Global performance: [OI=4.07, 2583.06 GFlops/s, 50.65 GPts/s]
+Global performance <w/o setup>: [0.58 s, 93.14 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.57 s [OI=4.07, 2411.92 GFlops/s, 47.30 GPts/s]
+  * section0[rank1] ran in 0.42 s [OI=4.07, 3262.72 GFlops/s, 63.98 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.0 %)
+     * specializing.IET: 0.41 s (35.2 %)
+  * lowering.Clusters: 0.41 s (35.2 %)
+     * specializing.Clusters: 0.25 s (21.5 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (48.9 %)
+     * specializing.IET: 0.44 s (37.8 %)
+  * lowering.Clusters: 0.41 s (35.2 %)
+     * specializing.Clusters: 0.25 s (21.5 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.14 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Operator `Simple` arguments preprocess: 0.60 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.09 s
+Global performance: [OI=4.07, 2511.97 GFlops/s, 49.26 GPts/s]
+Global performance <w/o setup>: [0.57 s, 94.28 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.57 s [OI=4.07, 2441.97 GFlops/s, 47.89 GPts/s]
+  * section0[rank1] ran in 0.42 s [OI=4.07, 3294.66 GFlops/s, 64.61 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+arguments: advanced
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.2 %)
+     * specializing.IET: 0.41 s (35.4 %)
+  * lowering.Clusters: 0.41 s (35.4 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.0 %)
+     * specializing.IET: 0.41 s (35.2 %)
+  * lowering.Clusters: 0.41 s (35.2 %)
+     * specializing.Clusters: 0.25 s (21.5 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.14 s from jit-cache
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Operator `Simple` arguments preprocess: 0.59 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.03 s
+Global performance: [OI=4.07, 2658.30 GFlops/s, 52.13 GPts/s]
+Global performance <w/o setup>: [0.57 s, 94.51 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.56 s [OI=4.07, 2448.32 GFlops/s, 48.01 GPts/s]
+  * section0[rank1] ran in 0.43 s [OI=4.07, 3244.85 GFlops/s, 63.63 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 0)
+Receiver trace shape: (401, 1)
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 2
+mpi: basic
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+None
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for Vp(272, 528, 528) [289 MB]
+Allocating host memory for RickerSrc_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc(401, 1) [2 KB]
+Allocating host memory for rec_coords(1, 3) [12 B]
+Allocating host memory for RickerSrc_coords(0, 3) [0 B]
+Allocating host memory for RickerSrc(401, 0) [0 B]
+Allocating host memory for rec_coords(0, 3) [0 B]
+arguments: advanced
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.56 s (48.2 %)
+     * specializing.IET: 0.44 s (37.9 %)
+  * lowering.Clusters: 0.41 s (35.3 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` generated in 1.17 s
+  * lowering.IET: 0.57 s (49.0 %)
+     * specializing.IET: 0.41 s (35.3 %)
+  * lowering.Clusters: 0.41 s (35.3 %)
+Flops reduction after symbolic optimization: [190 --> 70]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid1012/c849311adbb691ae2a160c6cfe6f81b61d95eb30.cpp` in 0.15 s from jit-cache
+Allocating host memory for rec(401, 1) [2 KB]
+Allocating host memory for rec(401, 0) [0 B]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Allocating host memory for u(3, 272, 528, 528) [868 MB]
+Operator `Simple` arguments preprocess: 0.61 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.23 s
+Global performance: [OI=4.07, 2226.06 GFlops/s, 43.65 GPts/s]
+Global performance <w/o setup>: [0.69 s, 78.22 GPts/s]
+Local performance:
+  * section0[rank0] ran in 0.68 s [OI=4.07, 2020.47 GFlops/s, 39.62 GPts/s]
+  * section0[rank1] ran in 0.47 s [OI=4.07, 2930.43 GFlops/s, 57.46 GPts/s]
+  * section1[rank0] ran in 0.01 s
+  * section1[rank1] ran in 0.01 s
+  * section2[rank0] ran in 0.01 s
+  * section2[rank1] ran in 0.01 s
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+Receiver trace shape: (401, 1)
+Receiver trace shape: (401, 0)
+= END =
+All runs completed.
