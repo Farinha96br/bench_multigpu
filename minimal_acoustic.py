@@ -1,9 +1,9 @@
 # using openACC:
 # This command works:
-# python3 minimal_acoustic.py -d 1024 1024 1024 -so 4 -tn 100 -op "('advanced', {'linearize':False,'index-mode':'int64'})"
+# python3 minimal_acoustic.py -d 1024 1024 1024 -so 4 -tn 100 -opt "('advanced', {'linearize':False,'index-mode':'int64'})"
 
 # using CUDA:
-# python3 -m devitopro minimal_acoustic.py -d 1024 1024 1024 -so 4 -tn 100 -op "('advanced', {'linearize':False,'index-mode':'int64'})"
+# python3 -m devitopro minimal_acoustic.py -d 1024 1024 1024 -so 4 -tn 100 -opt "('advanced', {'linearize':False,'index-mode':'int64'})"
 
 import os
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/matplotlib_cache")
@@ -59,28 +59,28 @@ vp.data[:] = 1.5
 u = TimeFunction(name='u', grid=grid, space_order=so, time_order=2)
 
 # Create Ricker Source
-src = SparseTimeFunction(name='RickerSrc', grid=grid, npoint=1, nt=nt)
-src.coordinates.data[0, :] = np.array(
-    [spacing[0] * shape[0] // 2,           
-     spacing[1] * shape[1] // 2,  
-     spacing[2] * shape[2] // 2]            
-)
-
-f0 = 0.025  # dominant frequency in kHz (~25 Hz)
-t = np.linspace(t0, tn, nt)
-tau = t - 1.0 / f0
-src.data[:, 0] = (
-    (1.0 - 2.0 * (np.pi * f0 * tau) ** 2)
-    * np.exp(-(np.pi * f0 * tau) ** 2)
-)
-
-# Single receiver
-rec = SparseTimeFunction(name='rec', grid=grid, npoint=1, nt=nt)
-rec.coordinates.data[0, :] = np.array([
-    spacing[0] * shape[0] // 2,           
-    spacing[1] * shape[1] // 8, 
-    spacing[2] * shape[2] // 2]            
-)
+## src = SparseTimeFunction(name='RickerSrc', grid=grid, npoint=1, nt=nt)
+## src.coordinates.data[0, :] = np.array(
+##     [spacing[0] * shape[0] // 2,           
+##      spacing[1] * shape[1] // 2,  
+##      spacing[2] * shape[2] // 2]            
+## )
+## 
+## f0 = 0.025  # dominant frequency in kHz (~25 Hz)
+## t = np.linspace(t0, tn, nt)
+## tau = t - 1.0 / f0
+## src.data[:, 0] = (
+##     (1.0 - 2.0 * (np.pi * f0 * tau) ** 2)
+##     * np.exp(-(np.pi * f0 * tau) ** 2)
+## )
+## 
+## # Single receiver
+## rec = SparseTimeFunction(name='rec', grid=grid, npoint=1, nt=nt)
+## rec.coordinates.data[0, :] = np.array([
+##     spacing[0] * shape[0] // 2,           
+##     spacing[1] * shape[1] // 8, 
+##     spacing[2] * shape[2] // 2]            
+## )
 
 # Acoustic wave 
 #   u_tt = vp^2 * laplacian(u)
@@ -88,14 +88,13 @@ pde = Eq(u.dt2, vp**2 * u.laplace)
 #print("PDE:", pde)
 stencil = Eq(u.forward, solve(pde, u.forward))
 #print("Stencil:", stencil)
-src_term = src.inject(field=u.forward, expr=src * dt**2 * vp**2)
-rec_term = rec.interpolate(expr=u)
+## src_term = src.inject(field=u.forward, expr=src * dt**2 * vp**2)
+## rec_term = rec.interpolate(expr=u)
 
 if rank == 0:
     print("arguments:", opt_val)
-op = Operator([stencil] + src_term + rec_term, name="Simple", opt=opt_val)
+op = Operator([stencil], name="Simple", opt=opt_val)
 
 # Exec:
 op.apply(time=nt - 1, dt=dt)
 
-print("Receiver trace shape:", rec.data.shape)
