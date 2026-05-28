@@ -39,7 +39,7 @@ def print_tables(df_avg):
             .sort_values(['so', 'domain_size', 'iterations'])
             .reset_index(drop=True)
         )
-        table['avg_runtime_s'] = table['avg_runtime_s'].map('{:.4f}'.format)
+        table['avg_runtime_s'] = table['avg_runtime_s'].map(lambda v: f'{v:.4f}'.replace('.', ','))
         print(table.to_string(index=False))
         all_runtimes.extend(table['avg_runtime_s'].tolist())
 
