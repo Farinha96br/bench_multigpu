@@ -48,8 +48,10 @@ for space_order_idx in "${!space_orders[@]}"
         if [ $GPUCOUNT -eq 1 ]
         then
             DEVITO_MPI=0
+            EXEC_CMD="python3 "
         else
             DEVITO_MPI=basic
+            EXEC_CMD="mpirun -np $GPUCOUNT python3 "
         fi
         # now the repetitions
         for j in $(seq 1 $repeats)
@@ -71,7 +73,7 @@ for space_order_idx in "${!space_orders[@]}"
             export PYTHONPATH=devito/ && \
             export DEVITO_LOGGING=DEBUG && \
             export DEVITO_MPI=$DEVITO_MPI && \
-            mpirun -np $GPUCOUNT python3 $BENCHMARK_SCRIPT \
+            $EXEC_CMD $BENCHMARK_SCRIPT \
             -d $DOMAIN_SIZE $DOMAIN_SIZE $DOMAIN_SIZE \
             -so $SPACE_ORDER \
             -tn $FINAL_TIME"
