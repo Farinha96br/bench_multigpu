@@ -5,6 +5,7 @@
 #SBATCH --job-name=open
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=50G
+#SBATCH -A=usp-2024.1
 
 
 
