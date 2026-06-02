@@ -1,0 +1,4026 @@
+= START =
+run-number: 1
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.3 %)
+     * specializing.IET: 0.06 s (24.7 %)
+  * lowering.Clusters: 0.10 s (41.2 %)
+     * specializing.Clusters: 0.05 s (20.6 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 4.56 s with `NvidiaCompiler`
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.05 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.50 s
+Global performance: [OI=2.21, 362.39 GFlops/s, 13.43 GPts/s]
+Global performance <w/o setup>: [0.20 s, 34.20 GPts/s]
+Local performance:
+  * section0 ran in 0.20 s [OI=2.21, 923.22 GFlops/s, 34.20 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+nvc++ -g -fPIC -std=c++14 -gpu=mem:separate:pinnedalloc -mp -acc:gpu -fast -shared /tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp -lm -o /tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.so
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (44.1 %)
+     * specializing.IET: 0.06 s (24.1 %)
+  * lowering.Clusters: 0.10 s (40.1 %)
+     * specializing.Clusters: 0.05 s (20.1 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.05 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.49 s
+Global performance: [OI=2.21, 369.79 GFlops/s, 13.70 GPts/s]
+Global performance <w/o setup>: [0.20 s, 34.48 GPts/s]
+Local performance:
+  * section0 ran in 0.20 s [OI=2.21, 930.80 GFlops/s, 34.48 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.4 %)
+     * specializing.IET: 0.06 s (24.8 %)
+  * lowering.Clusters: 0.10 s (41.3 %)
+     * specializing.Clusters: 0.05 s (20.7 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.05 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.47 s
+Global performance: [OI=2.21, 385.52 GFlops/s, 14.28 GPts/s]
+Global performance <w/o setup>: [0.19 s, 35.43 GPts/s]
+Local performance:
+  * section0 ran in 0.19 s [OI=2.21, 956.55 GFlops/s, 35.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (44.6 %)
+     * specializing.IET: 0.06 s (24.3 %)
+  * lowering.Clusters: 0.10 s (40.5 %)
+     * specializing.Clusters: 0.05 s (20.3 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.05 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.47 s
+Global performance: [OI=2.21, 385.52 GFlops/s, 14.28 GPts/s]
+Global performance <w/o setup>: [0.19 s, 35.44 GPts/s]
+Local performance:
+  * section0 ran in 0.19 s [OI=2.21, 956.85 GFlops/s, 35.44 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.0 %)
+     * specializing.IET: 0.06 s (24.6 %)
+  * lowering.Clusters: 0.10 s (40.9 %)
+     * specializing.Clusters: 0.05 s (20.5 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.05 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.47 s
+Global performance: [OI=2.21, 385.52 GFlops/s, 14.28 GPts/s]
+Global performance <w/o setup>: [0.19 s, 35.44 GPts/s]
+Local performance:
+  * section0 ran in 0.19 s [OI=2.21, 956.85 GFlops/s, 35.44 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.3 %)
+     * specializing.IET: 0.06 s (24.7 %)
+  * lowering.Clusters: 0.10 s (41.2 %)
+     * specializing.Clusters: 0.05 s (20.6 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.75 s
+Global performance: [OI=2.23, 527.11 GFlops/s, 19.53 GPts/s]
+Global performance <w/o setup>: [1.78 s, 30.25 GPts/s]
+Local performance:
+  * section0 ran in 1.78 s [OI=2.23, 816.65 GFlops/s, 30.25 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.3 %)
+     * specializing.IET: 0.06 s (24.7 %)
+  * lowering.Clusters: 0.10 s (41.2 %)
+     * specializing.Clusters: 0.05 s (20.6 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.73 s
+Global performance: [OI=2.23, 530.98 GFlops/s, 19.67 GPts/s]
+Global performance <w/o setup>: [1.78 s, 30.25 GPts/s]
+Local performance:
+  * section0 ran in 1.78 s [OI=2.23, 816.69 GFlops/s, 30.25 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.4 %)
+     * specializing.IET: 0.06 s (24.8 %)
+  * lowering.Clusters: 0.10 s (41.2 %)
+     * specializing.Clusters: 0.05 s (20.6 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.73 s
+Global performance: [OI=2.23, 530.98 GFlops/s, 19.67 GPts/s]
+Global performance <w/o setup>: [1.78 s, 30.25 GPts/s]
+Local performance:
+  * section0 ran in 1.78 s [OI=2.23, 816.63 GFlops/s, 30.25 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (44.9 %)
+     * specializing.IET: 0.06 s (24.5 %)
+  * lowering.Clusters: 0.10 s (40.9 %)
+     * specializing.Clusters: 0.05 s (20.5 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.74 s
+Global performance: [OI=2.23, 529.04 GFlops/s, 19.60 GPts/s]
+Global performance <w/o setup>: [1.78 s, 30.25 GPts/s]
+Local performance:
+  * section0 ran in 1.78 s [OI=2.23, 816.55 GFlops/s, 30.25 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.1 %)
+     * specializing.IET: 0.06 s (24.6 %)
+  * lowering.Clusters: 0.10 s (41.0 %)
+     * specializing.Clusters: 0.05 s (20.5 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.71 s
+Global performance: [OI=2.23, 534.89 GFlops/s, 19.82 GPts/s]
+Global performance <w/o setup>: [1.78 s, 30.25 GPts/s]
+Local performance:
+  * section0 ran in 1.78 s [OI=2.23, 816.74 GFlops/s, 30.25 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.4 %)
+     * specializing.IET: 0.06 s (24.8 %)
+  * lowering.Clusters: 0.10 s (41.3 %)
+     * specializing.Clusters: 0.05 s (20.7 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.83 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 21.73 s
+Global performance: [OI=2.24, 533.66 GFlops/s, 19.77 GPts/s]
+Global performance <w/o setup>: [15.68 s, 27.40 GPts/s]
+Local performance:
+  * section0 ran in 15.68 s [OI=2.24, 739.77 GFlops/s, 27.40 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.7 %)
+     * specializing.IET: 0.06 s (25.0 %)
+  * lowering.Clusters: 0.10 s (41.6 %)
+     * specializing.Clusters: 0.05 s (20.8 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.79 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 21.93 s
+Global performance: [OI=2.24, 528.80 GFlops/s, 19.59 GPts/s]
+Global performance <w/o setup>: [15.68 s, 27.40 GPts/s]
+Local performance:
+  * section0 ran in 15.68 s [OI=2.24, 739.77 GFlops/s, 27.40 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (44.7 %)
+     * specializing.IET: 0.06 s (24.4 %)
+  * lowering.Clusters: 0.10 s (40.6 %)
+     * specializing.Clusters: 0.05 s (20.3 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.88 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 22.03 s
+Global performance: [OI=2.24, 526.40 GFlops/s, 19.50 GPts/s]
+Global performance <w/o setup>: [15.68 s, 27.40 GPts/s]
+Local performance:
+  * section0 ran in 15.68 s [OI=2.24, 739.74 GFlops/s, 27.40 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.2 %)
+     * specializing.IET: 0.06 s (24.7 %)
+  * lowering.Clusters: 0.10 s (41.1 %)
+     * specializing.Clusters: 0.05 s (20.6 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.82 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 21.71 s
+Global performance: [OI=2.24, 534.16 GFlops/s, 19.79 GPts/s]
+Global performance <w/o setup>: [15.68 s, 27.41 GPts/s]
+Local performance:
+  * section0 ran in 15.68 s [OI=2.24, 739.81 GFlops/s, 27.41 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.5 %)
+     * specializing.IET: 0.06 s (24.8 %)
+  * lowering.Clusters: 0.10 s (41.4 %)
+     * specializing.Clusters: 0.05 s (20.7 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.76 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 21.91 s
+Global performance: [OI=2.24, 529.28 GFlops/s, 19.61 GPts/s]
+Global performance <w/o setup>: [15.68 s, 27.40 GPts/s]
+Local performance:
+  * section0 ran in 15.68 s [OI=2.24, 739.77 GFlops/s, 27.40 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (39.5 %)
+  * lowering.IET: 0.12 s (36.5 %)
+     * specializing.IET: 0.07 s (21.3 %)
+  * lowering.Expressions: 0.08 s (24.3 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 2.70 s with `NvidiaCompiler`
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.50 s
+Global performance: [OI=2.66, 442.92 GFlops/s, 13.43 GPts/s]
+Global performance <w/o setup>: [0.21 s, 32.10 GPts/s]
+Local performance:
+  * section0 ran in 0.21 s [OI=2.66, 1059.06 GFlops/s, 32.10 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+nvc++ -g -fPIC -std=c++14 -gpu=mem:separate:pinnedalloc -mp -acc:gpu -fast -shared /tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp -lm -o /tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.so
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.3 %)
+  * lowering.IET: 0.12 s (37.2 %)
+     * specializing.IET: 0.07 s (21.7 %)
+  * lowering.Expressions: 0.07 s (21.7 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.50 s
+Global performance: [OI=2.66, 442.92 GFlops/s, 13.43 GPts/s]
+Global performance <w/o setup>: [0.21 s, 32.10 GPts/s]
+Local performance:
+  * section0 ran in 0.21 s [OI=2.66, 1059.06 GFlops/s, 32.10 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (39.5 %)
+  * lowering.IET: 0.12 s (36.5 %)
+     * specializing.IET: 0.07 s (21.3 %)
+  * lowering.Expressions: 0.08 s (24.3 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.50 s
+Global performance: [OI=2.66, 442.92 GFlops/s, 13.43 GPts/s]
+Global performance <w/o setup>: [0.21 s, 32.09 GPts/s]
+Local performance:
+  * section0 ran in 0.21 s [OI=2.66, 1058.79 GFlops/s, 32.09 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (39.9 %)
+  * lowering.IET: 0.12 s (36.8 %)
+     * specializing.IET: 0.07 s (21.5 %)
+  * lowering.Expressions: 0.08 s (24.6 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.50 s
+Global performance: [OI=2.66, 442.92 GFlops/s, 13.43 GPts/s]
+Global performance <w/o setup>: [0.21 s, 32.10 GPts/s]
+Local performance:
+  * section0 ran in 0.21 s [OI=2.66, 1059.13 GFlops/s, 32.10 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.32 s
+  * lowering.Clusters: 0.13 s (40.8 %)
+  * lowering.IET: 0.12 s (37.6 %)
+     * specializing.IET: 0.07 s (22.0 %)
+  * lowering.Expressions: 0.07 s (22.0 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.50 s
+Global performance: [OI=2.66, 442.92 GFlops/s, 13.43 GPts/s]
+Global performance <w/o setup>: [0.21 s, 32.09 GPts/s]
+Local performance:
+  * section0 ran in 0.21 s [OI=2.66, 1058.95 GFlops/s, 32.09 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.32 s
+  * lowering.Clusters: 0.13 s (41.1 %)
+  * lowering.IET: 0.12 s (37.9 %)
+     * specializing.IET: 0.07 s (22.1 %)
+  * lowering.Expressions: 0.07 s (22.1 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 3.60 s
+Global performance: [OI=2.70, 492.14 GFlops/s, 14.92 GPts/s]
+Global performance <w/o setup>: [2.64 s, 20.38 GPts/s]
+Local performance:
+  * section0 ran in 2.64 s [OI=2.70, 672.49 GFlops/s, 20.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.32 s
+  * lowering.Clusters: 0.13 s (40.9 %)
+  * lowering.IET: 0.12 s (37.8 %)
+     * specializing.IET: 0.07 s (22.1 %)
+  * lowering.Expressions: 0.07 s (22.1 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.38 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 3.58 s
+Global performance: [OI=2.70, 494.89 GFlops/s, 15.00 GPts/s]
+Global performance <w/o setup>: [2.64 s, 20.39 GPts/s]
+Local performance:
+  * section0 ran in 2.64 s [OI=2.70, 672.60 GFlops/s, 20.39 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.4 %)
+  * lowering.IET: 0.12 s (37.3 %)
+     * specializing.IET: 0.07 s (21.8 %)
+  * lowering.Expressions: 0.07 s (21.8 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 3.60 s
+Global performance: [OI=2.70, 492.14 GFlops/s, 14.92 GPts/s]
+Global performance <w/o setup>: [2.64 s, 20.38 GPts/s]
+Local performance:
+  * section0 ran in 2.64 s [OI=2.70, 672.47 GFlops/s, 20.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.32 s
+  * lowering.Clusters: 0.13 s (40.8 %)
+  * lowering.IET: 0.12 s (37.7 %)
+     * specializing.IET: 0.07 s (22.0 %)
+  * lowering.Expressions: 0.07 s (22.0 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 3.60 s
+Global performance: [OI=2.70, 492.14 GFlops/s, 14.92 GPts/s]
+Global performance <w/o setup>: [2.64 s, 20.38 GPts/s]
+Local performance:
+  * section0 ran in 2.64 s [OI=2.70, 672.45 GFlops/s, 20.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.7 %)
+  * lowering.IET: 0.12 s (37.5 %)
+     * specializing.IET: 0.07 s (21.9 %)
+  * lowering.Expressions: 0.07 s (21.9 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 3.60 s
+Global performance: [OI=2.70, 492.14 GFlops/s, 14.92 GPts/s]
+Global performance <w/o setup>: [2.64 s, 20.38 GPts/s]
+Local performance:
+  * section0 ran in 2.64 s [OI=2.70, 672.45 GFlops/s, 20.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.32 s
+  * lowering.Clusters: 0.13 s (40.9 %)
+  * lowering.IET: 0.12 s (37.7 %)
+     * specializing.IET: 0.07 s (22.0 %)
+  * lowering.Expressions: 0.07 s (22.0 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.81 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.42 s
+Global performance: [OI=2.72, 516.90 GFlops/s, 15.67 GPts/s]
+Global performance <w/o setup>: [21.03 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 21.03 s [OI=2.72, 674.09 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.5 %)
+  * lowering.IET: 0.12 s (37.4 %)
+     * specializing.IET: 0.07 s (21.9 %)
+  * lowering.Expressions: 0.07 s (21.9 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.83 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.44 s
+Global performance: [OI=2.72, 516.53 GFlops/s, 15.66 GPts/s]
+Global performance <w/o setup>: [21.03 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 21.03 s [OI=2.72, 674.09 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.6 %)
+  * lowering.IET: 0.12 s (37.4 %)
+     * specializing.IET: 0.07 s (21.9 %)
+  * lowering.Expressions: 0.07 s (21.9 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.83 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.39 s
+Global performance: [OI=2.72, 517.47 GFlops/s, 15.69 GPts/s]
+Global performance <w/o setup>: [21.03 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 21.03 s [OI=2.72, 674.10 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.5 %)
+  * lowering.IET: 0.12 s (37.4 %)
+     * specializing.IET: 0.07 s (21.8 %)
+  * lowering.Expressions: 0.07 s (21.8 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.81 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.36 s
+Global performance: [OI=2.72, 518.04 GFlops/s, 15.70 GPts/s]
+Global performance <w/o setup>: [21.03 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 21.03 s [OI=2.72, 674.10 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.4 %)
+  * lowering.IET: 0.12 s (37.3 %)
+     * specializing.IET: 0.07 s (21.8 %)
+  * lowering.Expressions: 0.07 s (21.8 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.82 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.13 s
+Global performance: [OI=2.72, 522.43 GFlops/s, 15.84 GPts/s]
+Global performance <w/o setup>: [21.03 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 21.03 s [OI=2.72, 674.09 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (39.8 %)
+  * lowering.Expressions: 0.15 s (31.4 %)
+  * lowering.IET: 0.13 s (27.3 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 2.83 s with `NvidiaCompiler`
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.55 s
+Global performance: [OI=3.98, 622.29 GFlops/s, 12.21 GPts/s]
+Global performance <w/o setup>: [0.25 s, 27.89 GPts/s]
+Local performance:
+  * section0 ran in 0.25 s [OI=3.98, 1421.90 GFlops/s, 27.89 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+nvc++ -g -fPIC -std=c++14 -gpu=mem:separate:pinnedalloc -mp -acc:gpu -fast -shared /tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp -lm -o /tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.so
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.1 %)
+  * lowering.Expressions: 0.15 s (31.7 %)
+  * lowering.IET: 0.13 s (27.5 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.52 s
+Global performance: [OI=3.98, 658.19 GFlops/s, 12.91 GPts/s]
+Global performance <w/o setup>: [0.23 s, 29.66 GPts/s]
+Local performance:
+  * section0 ran in 0.23 s [OI=3.98, 1512.58 GFlops/s, 29.66 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.49 s
+  * lowering.Clusters: 0.19 s (39.6 %)
+  * lowering.Expressions: 0.16 s (33.4 %)
+  * lowering.IET: 0.13 s (27.1 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.53 s
+Global performance: [OI=3.98, 645.77 GFlops/s, 12.67 GPts/s]
+Global performance <w/o setup>: [0.23 s, 29.66 GPts/s]
+Local performance:
+  * section0 ran in 0.23 s [OI=3.98, 1512.49 GFlops/s, 29.66 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.2 %)
+  * lowering.Expressions: 0.15 s (31.8 %)
+  * lowering.IET: 0.13 s (27.5 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.52 s
+Global performance: [OI=3.98, 658.19 GFlops/s, 12.91 GPts/s]
+Global performance <w/o setup>: [0.23 s, 29.66 GPts/s]
+Local performance:
+  * section0 ran in 0.23 s [OI=3.98, 1512.37 GFlops/s, 29.66 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.49 s
+  * lowering.Clusters: 0.19 s (39.2 %)
+  * lowering.Expressions: 0.16 s (33.0 %)
+  * lowering.IET: 0.14 s (28.9 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.52 s
+Global performance: [OI=3.98, 658.19 GFlops/s, 12.91 GPts/s]
+Global performance <w/o setup>: [0.23 s, 29.65 GPts/s]
+Local performance:
+  * section0 ran in 0.23 s [OI=3.98, 1511.98 GFlops/s, 29.65 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.4 %)
+  * lowering.Expressions: 0.15 s (31.9 %)
+  * lowering.IET: 0.13 s (27.6 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.38 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 4.71 s
+Global performance: [OI=4.11, 581.33 GFlops/s, 11.40 GPts/s]
+Global performance <w/o setup>: [3.71 s, 14.49 GPts/s]
+Local performance:
+  * section0 ran in 3.71 s [OI=4.11, 738.99 GFlops/s, 14.49 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.3 %)
+  * lowering.Expressions: 0.15 s (31.8 %)
+  * lowering.IET: 0.13 s (27.6 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.38 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 4.71 s
+Global performance: [OI=4.11, 581.33 GFlops/s, 11.40 GPts/s]
+Global performance <w/o setup>: [3.71 s, 14.49 GPts/s]
+Local performance:
+  * section0 ran in 3.71 s [OI=4.11, 738.99 GFlops/s, 14.49 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.4 %)
+  * lowering.Expressions: 0.15 s (31.9 %)
+  * lowering.IET: 0.13 s (27.6 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.38 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 4.71 s
+Global performance: [OI=4.11, 581.33 GFlops/s, 11.40 GPts/s]
+Global performance <w/o setup>: [3.71 s, 14.49 GPts/s]
+Local performance:
+  * section0 ran in 3.71 s [OI=4.11, 738.95 GFlops/s, 14.49 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.2 %)
+  * lowering.Expressions: 0.15 s (31.8 %)
+  * lowering.IET: 0.13 s (27.6 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.39 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 4.73 s
+Global performance: [OI=4.11, 578.87 GFlops/s, 11.36 GPts/s]
+Global performance <w/o setup>: [3.71 s, 14.50 GPts/s]
+Local performance:
+  * section0 ran in 3.71 s [OI=4.11, 739.04 GFlops/s, 14.50 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.3 %)
+  * lowering.Expressions: 0.15 s (31.8 %)
+  * lowering.IET: 0.13 s (27.6 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.38 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 4.72 s
+Global performance: [OI=4.11, 580.10 GFlops/s, 11.38 GPts/s]
+Global performance <w/o setup>: [3.71 s, 14.49 GPts/s]
+Local performance:
+  * section0 ran in 3.71 s [OI=4.11, 738.99 GFlops/s, 14.49 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.1 %)
+  * lowering.Expressions: 0.15 s (31.7 %)
+  * lowering.IET: 0.13 s (27.5 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.93 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 36.48 s
+Global performance: [OI=4.18, 600.45 GFlops/s, 11.78 GPts/s]
+Global performance <w/o setup>: [29.99 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 29.99 s [OI=4.18, 730.55 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (39.9 %)
+  * lowering.Expressions: 0.15 s (31.5 %)
+  * lowering.IET: 0.13 s (27.3 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.91 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 36.25 s
+Global performance: [OI=4.18, 604.26 GFlops/s, 11.85 GPts/s]
+Global performance <w/o setup>: [29.99 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 29.99 s [OI=4.18, 730.56 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.1 %)
+  * lowering.Expressions: 0.15 s (31.7 %)
+  * lowering.IET: 0.13 s (27.5 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.93 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 36.49 s
+Global performance: [OI=4.18, 600.29 GFlops/s, 11.78 GPts/s]
+Global performance <w/o setup>: [29.99 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 29.99 s [OI=4.18, 730.55 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (39.9 %)
+  * lowering.Expressions: 0.15 s (31.5 %)
+  * lowering.IET: 0.13 s (27.3 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.93 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 36.25 s
+Global performance: [OI=4.18, 604.26 GFlops/s, 11.85 GPts/s]
+Global performance <w/o setup>: [29.99 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 29.99 s [OI=4.18, 730.56 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.47 s
+  * lowering.Clusters: 0.19 s (40.5 %)
+  * lowering.Expressions: 0.15 s (32.0 %)
+  * lowering.IET: 0.13 s (27.7 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.87 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 36.51 s
+Global performance: [OI=4.18, 599.96 GFlops/s, 11.77 GPts/s]
+Global performance <w/o setup>: [29.99 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 29.99 s [OI=4.18, 730.57 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.26 s
+  * lowering.IET: 0.11 s (42.8 %)
+     * specializing.IET: 0.07 s (27.3 %)
+  * lowering.Clusters: 0.10 s (38.9 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.18 s
+Global performance: [OI=2.22, 831.17 GFlops/s, 30.79 GPts/s]
+Global performance <w/o setup>: [1.90 s, 35.46 GPts/s]
+Local performance:
+  * section0 ran in 1.90 s [OI=2.22, 957.38 GFlops/s, 35.46 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (44.4 %)
+     * specializing.IET: 0.06 s (24.3 %)
+  * lowering.Clusters: 0.10 s (40.4 %)
+     * specializing.Clusters: 0.05 s (20.2 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.05 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.20 s
+Global performance: [OI=2.22, 823.61 GFlops/s, 30.51 GPts/s]
+Global performance <w/o setup>: [1.91 s, 35.23 GPts/s]
+Local performance:
+  * section0 ran in 1.91 s [OI=2.22, 951.06 GFlops/s, 35.23 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.26 s
+  * lowering.IET: 0.11 s (44.0 %)
+     * specializing.IET: 0.07 s (28.0 %)
+  * lowering.Clusters: 0.10 s (40.0 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.05 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.18 s
+Global performance: [OI=2.22, 831.17 GFlops/s, 30.79 GPts/s]
+Global performance <w/o setup>: [1.90 s, 35.45 GPts/s]
+Local performance:
+  * section0 ran in 1.90 s [OI=2.22, 957.04 GFlops/s, 35.45 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (44.1 %)
+     * specializing.IET: 0.06 s (24.1 %)
+  * lowering.Clusters: 0.10 s (40.1 %)
+     * specializing.Clusters: 0.05 s (20.1 %)
+  * lowering.Expressions: 0.05 s (20.1 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.05 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.18 s
+Global performance: [OI=2.22, 831.17 GFlops/s, 30.79 GPts/s]
+Global performance <w/o setup>: [1.90 s, 35.43 GPts/s]
+Local performance:
+  * section0 ran in 1.90 s [OI=2.22, 956.49 GFlops/s, 35.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(260, 260, 260) [67 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (44.1 %)
+     * specializing.IET: 0.06 s (24.1 %)
+  * lowering.Clusters: 0.10 s (40.1 %)
+     * specializing.Clusters: 0.05 s (20.1 %)
+  * lowering.Expressions: 0.05 s (20.1 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 260, 260, 260) [201 MB]
+Operator `Simple` arguments preprocess: 0.05 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.18 s
+Global performance: [OI=2.22, 831.17 GFlops/s, 30.79 GPts/s]
+Global performance <w/o setup>: [1.90 s, 35.42 GPts/s]
+Local performance:
+  * section0 ran in 1.90 s [OI=2.22, 956.14 GFlops/s, 35.42 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (44.5 %)
+     * specializing.IET: 0.06 s (24.3 %)
+  * lowering.Clusters: 0.10 s (40.5 %)
+     * specializing.Clusters: 0.05 s (20.3 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 18.68 s
+Global performance: [OI=2.24, 776.00 GFlops/s, 28.75 GPts/s]
+Global performance <w/o setup>: [17.75 s, 30.26 GPts/s]
+Local performance:
+  * section0 ran in 17.75 s [OI=2.24, 816.76 GFlops/s, 30.26 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (44.8 %)
+     * specializing.IET: 0.07 s (28.5 %)
+  * lowering.Clusters: 0.10 s (40.7 %)
+     * specializing.Clusters: 0.05 s (20.4 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 18.68 s
+Global performance: [OI=2.24, 776.00 GFlops/s, 28.75 GPts/s]
+Global performance <w/o setup>: [17.75 s, 30.25 GPts/s]
+Local performance:
+  * section0 ran in 17.75 s [OI=2.24, 816.75 GFlops/s, 30.25 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.5 %)
+     * specializing.IET: 0.06 s (24.9 %)
+  * lowering.Clusters: 0.10 s (41.4 %)
+     * specializing.Clusters: 0.05 s (20.7 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 18.70 s
+Global performance: [OI=2.24, 775.17 GFlops/s, 28.71 GPts/s]
+Global performance <w/o setup>: [17.75 s, 30.25 GPts/s]
+Local performance:
+  * section0 ran in 17.75 s [OI=2.24, 816.68 GFlops/s, 30.25 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.5 %)
+     * specializing.IET: 0.06 s (24.8 %)
+  * lowering.Clusters: 0.10 s (41.4 %)
+     * specializing.Clusters: 0.05 s (20.7 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 18.69 s
+Global performance: [OI=2.24, 775.58 GFlops/s, 28.73 GPts/s]
+Global performance <w/o setup>: [17.75 s, 30.26 GPts/s]
+Local performance:
+  * section0 ran in 17.75 s [OI=2.24, 816.82 GFlops/s, 30.26 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(516, 516, 516) [524 MB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.7 %)
+     * specializing.IET: 0.06 s (24.9 %)
+  * lowering.Clusters: 0.10 s (41.5 %)
+     * specializing.Clusters: 0.05 s (20.8 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 516, 516, 516) [1.5 GB]
+Operator `Simple` arguments preprocess: 0.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 18.72 s
+Global performance: [OI=2.24, 774.34 GFlops/s, 28.68 GPts/s]
+Global performance <w/o setup>: [17.75 s, 30.25 GPts/s]
+Local performance:
+  * section0 ran in 17.75 s [OI=2.24, 816.65 GFlops/s, 30.25 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.24 s
+  * lowering.IET: 0.11 s (46.2 %)
+     * specializing.IET: 0.06 s (25.2 %)
+  * lowering.Clusters: 0.10 s (42.0 %)
+     * specializing.Clusters: 0.05 s (21.0 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.77 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 163.03 s
+Global performance: [OI=2.25, 711.31 GFlops/s, 26.35 GPts/s]
+Global performance <w/o setup>: [156.77 s, 27.40 GPts/s]
+Local performance:
+  * section0 ran in 156.77 s [OI=2.25, 739.76 GFlops/s, 27.40 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.5 %)
+     * specializing.IET: 0.06 s (24.8 %)
+  * lowering.Clusters: 0.10 s (41.3 %)
+     * specializing.Clusters: 0.05 s (20.7 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.79 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 163.07 s
+Global performance: [OI=2.25, 711.14 GFlops/s, 26.34 GPts/s]
+Global performance <w/o setup>: [156.76 s, 27.40 GPts/s]
+Local performance:
+  * section0 ran in 156.76 s [OI=2.25, 739.77 GFlops/s, 27.40 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.5 %)
+     * specializing.IET: 0.06 s (24.8 %)
+  * lowering.Clusters: 0.10 s (41.3 %)
+     * specializing.Clusters: 0.05 s (20.7 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.82 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 162.80 s
+Global performance: [OI=2.25, 712.32 GFlops/s, 26.39 GPts/s]
+Global performance <w/o setup>: [156.76 s, 27.40 GPts/s]
+Local performance:
+  * section0 ran in 156.76 s [OI=2.25, 739.77 GFlops/s, 27.40 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.3 %)
+     * specializing.IET: 0.06 s (24.7 %)
+  * lowering.Clusters: 0.10 s (41.2 %)
+     * specializing.Clusters: 0.05 s (20.6 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.80 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 163.10 s
+Global performance: [OI=2.25, 711.01 GFlops/s, 26.34 GPts/s]
+Global performance <w/o setup>: [156.76 s, 27.40 GPts/s]
+Local performance:
+  * section0 ran in 156.76 s [OI=2.25, 739.77 GFlops/s, 27.40 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1028, 1028, 1028) [4.0 GB]
+Operator `Simple` generated in 0.25 s
+  * lowering.IET: 0.11 s (45.0 %)
+     * specializing.IET: 0.06 s (24.6 %)
+  * lowering.Clusters: 0.10 s (40.9 %)
+     * specializing.Clusters: 0.05 s (20.5 %)
+Flops reduction after symbolic optimization: [40 --> 31]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/18fcc662d55b36d1305acbc68e8543713a0ef5ed.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1028) [12.1 GB]
+Operator `Simple` arguments preprocess: 2.83 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 162.81 s
+Global performance: [OI=2.25, 712.27 GFlops/s, 26.39 GPts/s]
+Global performance <w/o setup>: [156.77 s, 27.40 GPts/s]
+Local performance:
+  * section0 ran in 156.77 s [OI=2.25, 739.76 GFlops/s, 27.40 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (39.7 %)
+  * lowering.IET: 0.12 s (36.6 %)
+     * specializing.IET: 0.07 s (21.4 %)
+  * lowering.Expressions: 0.08 s (24.4 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.38 s
+Global performance: [OI=2.67, 930.51 GFlops/s, 28.20 GPts/s]
+Global performance <w/o setup>: [2.10 s, 32.10 GPts/s]
+Local performance:
+  * section0 ran in 2.10 s [OI=2.67, 1059.15 GFlops/s, 32.10 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.4 %)
+  * lowering.IET: 0.12 s (37.3 %)
+     * specializing.IET: 0.07 s (21.8 %)
+  * lowering.Expressions: 0.07 s (21.8 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.39 s
+Global performance: [OI=2.67, 926.61 GFlops/s, 28.08 GPts/s]
+Global performance <w/o setup>: [2.10 s, 31.97 GPts/s]
+Local performance:
+  * section0 ran in 2.10 s [OI=2.67, 1054.72 GFlops/s, 31.97 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (39.7 %)
+  * lowering.IET: 0.12 s (36.6 %)
+     * specializing.IET: 0.07 s (21.4 %)
+  * lowering.Expressions: 0.08 s (24.4 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.38 s
+Global performance: [OI=2.67, 930.51 GFlops/s, 28.20 GPts/s]
+Global performance <w/o setup>: [2.10 s, 32.10 GPts/s]
+Local performance:
+  * section0 ran in 2.10 s [OI=2.67, 1059.14 GFlops/s, 32.10 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.1 %)
+     * specializing.Clusters: 0.07 s (21.6 %)
+  * lowering.IET: 0.12 s (37.0 %)
+     * specializing.IET: 0.07 s (21.6 %)
+  * lowering.Expressions: 0.07 s (21.6 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.38 s
+Global performance: [OI=2.67, 930.51 GFlops/s, 28.20 GPts/s]
+Global performance <w/o setup>: [2.09 s, 32.13 GPts/s]
+Local performance:
+  * section0 ran in 2.09 s [OI=2.67, 1060.05 GFlops/s, 32.13 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(264, 264, 264) [70 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.5 %)
+  * lowering.IET: 0.12 s (37.4 %)
+     * specializing.IET: 0.07 s (21.8 %)
+  * lowering.Expressions: 0.07 s (21.8 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 264, 264, 264) [211 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.38 s
+Global performance: [OI=2.67, 930.51 GFlops/s, 28.20 GPts/s]
+Global performance <w/o setup>: [2.09 s, 32.14 GPts/s]
+Local performance:
+  * section0 ran in 2.09 s [OI=2.67, 1060.39 GFlops/s, 32.14 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.5 %)
+  * lowering.IET: 0.12 s (37.4 %)
+     * specializing.IET: 0.07 s (21.8 %)
+  * lowering.Expressions: 0.07 s (21.8 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.33 s
+Global performance: [OI=2.71, 648.26 GFlops/s, 19.65 GPts/s]
+Global performance <w/o setup>: [26.35 s, 20.38 GPts/s]
+Local performance:
+  * section0 ran in 26.35 s [OI=2.71, 672.53 GFlops/s, 20.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.6 %)
+  * lowering.IET: 0.12 s (37.4 %)
+     * specializing.IET: 0.07 s (21.9 %)
+  * lowering.Expressions: 0.07 s (21.9 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.33 s
+Global performance: [OI=2.71, 648.26 GFlops/s, 19.65 GPts/s]
+Global performance <w/o setup>: [26.35 s, 20.38 GPts/s]
+Local performance:
+  * section0 ran in 26.35 s [OI=2.71, 672.54 GFlops/s, 20.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.6 %)
+  * lowering.IET: 0.12 s (37.5 %)
+     * specializing.IET: 0.07 s (21.9 %)
+  * lowering.Expressions: 0.07 s (21.9 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.38 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.33 s
+Global performance: [OI=2.71, 648.26 GFlops/s, 19.65 GPts/s]
+Global performance <w/o setup>: [26.35 s, 20.38 GPts/s]
+Local performance:
+  * section0 ran in 26.35 s [OI=2.71, 672.53 GFlops/s, 20.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.5 %)
+  * lowering.IET: 0.12 s (37.4 %)
+     * specializing.IET: 0.07 s (21.9 %)
+  * lowering.Expressions: 0.07 s (21.9 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.33 s
+Global performance: [OI=2.71, 648.26 GFlops/s, 19.65 GPts/s]
+Global performance <w/o setup>: [26.35 s, 20.38 GPts/s]
+Local performance:
+  * section0 ran in 26.35 s [OI=2.71, 672.53 GFlops/s, 20.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(520, 520, 520) [536 MB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.4 %)
+  * lowering.IET: 0.12 s (37.3 %)
+     * specializing.IET: 0.07 s (21.8 %)
+  * lowering.Expressions: 0.07 s (21.8 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 520) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 27.32 s
+Global performance: [OI=2.71, 648.49 GFlops/s, 19.66 GPts/s]
+Global performance <w/o setup>: [26.35 s, 20.38 GPts/s]
+Local performance:
+  * section0 ran in 26.35 s [OI=2.71, 672.52 GFlops/s, 20.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.4 %)
+  * lowering.IET: 0.12 s (37.3 %)
+     * specializing.IET: 0.07 s (21.8 %)
+  * lowering.Expressions: 0.07 s (21.8 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.82 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 216.70 s
+Global performance: [OI=2.73, 654.06 GFlops/s, 19.82 GPts/s]
+Global performance <w/o setup>: [210.27 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 210.27 s [OI=2.73, 674.09 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.7 %)
+  * lowering.IET: 0.12 s (37.5 %)
+     * specializing.IET: 0.07 s (21.9 %)
+  * lowering.Expressions: 0.07 s (21.9 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.82 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 216.69 s
+Global performance: [OI=2.73, 654.09 GFlops/s, 19.83 GPts/s]
+Global performance <w/o setup>: [210.26 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 210.26 s [OI=2.73, 674.10 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.2 %)
+     * specializing.Clusters: 0.07 s (21.7 %)
+  * lowering.IET: 0.12 s (37.1 %)
+     * specializing.IET: 0.07 s (21.7 %)
+  * lowering.Expressions: 0.07 s (21.7 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.88 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 216.40 s
+Global performance: [OI=2.73, 654.97 GFlops/s, 19.85 GPts/s]
+Global performance <w/o setup>: [210.26 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 210.26 s [OI=2.73, 674.10 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.33 s
+  * lowering.Clusters: 0.13 s (40.6 %)
+  * lowering.IET: 0.12 s (37.4 %)
+     * specializing.IET: 0.07 s (21.9 %)
+  * lowering.Expressions: 0.07 s (21.9 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.84 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 216.39 s
+Global performance: [OI=2.73, 655.00 GFlops/s, 19.85 GPts/s]
+Global performance <w/o setup>: [210.26 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 210.26 s [OI=2.73, 674.10 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1032, 1032, 1032) [4.1 GB]
+Operator `Simple` generated in 0.32 s
+  * lowering.Clusters: 0.13 s (41.1 %)
+  * lowering.IET: 0.12 s (37.9 %)
+     * specializing.IET: 0.07 s (22.1 %)
+  * lowering.Expressions: 0.07 s (22.1 %)
+Flops reduction after symbolic optimization: [70 --> 37]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/b6d3d6be0433b3e30a1fdc3d217f8d3b565ad7b7.cpp` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1032) [12.3 GB]
+Operator `Simple` arguments preprocess: 2.81 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 216.59 s
+Global performance: [OI=2.73, 654.39 GFlops/s, 19.83 GPts/s]
+Global performance <w/o setup>: [210.27 s, 20.43 GPts/s]
+Local performance:
+  * section0 ran in 210.27 s [OI=2.73, 674.09 GFlops/s, 20.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.49 s
+  * lowering.Clusters: 0.20 s (41.0 %)
+  * lowering.Expressions: 0.16 s (32.8 %)
+  * lowering.IET: 0.13 s (26.7 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.56 s
+Global performance: [OI=4.00, 1336.94 GFlops/s, 26.22 GPts/s]
+Global performance <w/o setup>: [2.27 s, 29.69 GPts/s]
+Local performance:
+  * section0 ran in 2.27 s [OI=4.00, 1513.96 GFlops/s, 29.69 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.49 s
+  * lowering.Clusters: 0.19 s (39.0 %)
+  * lowering.Expressions: 0.16 s (32.9 %)
+  * lowering.IET: 0.14 s (28.8 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.59 s
+Global performance: [OI=4.00, 1321.45 GFlops/s, 25.92 GPts/s]
+Global performance <w/o setup>: [2.29 s, 29.37 GPts/s]
+Local performance:
+  * section0 ran in 2.29 s [OI=4.00, 1497.50 GFlops/s, 29.37 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.49 s
+  * lowering.Clusters: 0.19 s (39.6 %)
+  * lowering.Expressions: 0.15 s (31.3 %)
+  * lowering.IET: 0.14 s (29.2 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.56 s
+Global performance: [OI=4.00, 1336.94 GFlops/s, 26.22 GPts/s]
+Global performance <w/o setup>: [2.27 s, 29.64 GPts/s]
+Local performance:
+  * section0 ran in 2.27 s [OI=4.00, 1511.30 GFlops/s, 29.64 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (39.8 %)
+  * lowering.Expressions: 0.15 s (31.4 %)
+  * lowering.IET: 0.13 s (27.3 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.56 s
+Global performance: [OI=4.00, 1336.94 GFlops/s, 26.22 GPts/s]
+Global performance <w/o setup>: [2.27 s, 29.62 GPts/s]
+Local performance:
+  * section0 ran in 2.27 s [OI=4.00, 1510.37 GFlops/s, 29.62 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(272, 272, 272) [77 MB]
+Operator `Simple` generated in 0.47 s
+  * lowering.Clusters: 0.19 s (40.5 %)
+  * lowering.Expressions: 0.15 s (32.0 %)
+  * lowering.IET: 0.13 s (27.7 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 272) [230 MB]
+Operator `Simple` arguments preprocess: 0.06 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.57 s
+Global performance: [OI=4.00, 1331.74 GFlops/s, 26.12 GPts/s]
+Global performance <w/o setup>: [2.27 s, 29.60 GPts/s]
+Local performance:
+  * section0 ran in 2.27 s [OI=4.00, 1509.19 GFlops/s, 29.60 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.1 %)
+  * lowering.Expressions: 0.15 s (31.6 %)
+  * lowering.IET: 0.13 s (27.4 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.40 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 38.04 s
+Global performance: [OI=4.12, 719.78 GFlops/s, 14.12 GPts/s]
+Global performance <w/o setup>: [37.05 s, 14.50 GPts/s]
+Local performance:
+  * section0 ran in 37.05 s [OI=4.12, 739.05 GFlops/s, 14.50 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (39.7 %)
+  * lowering.Expressions: 0.15 s (31.4 %)
+  * lowering.IET: 0.14 s (29.3 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.40 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 38.04 s
+Global performance: [OI=4.12, 719.78 GFlops/s, 14.12 GPts/s]
+Global performance <w/o setup>: [37.05 s, 14.50 GPts/s]
+Local performance:
+  * section0 ran in 37.05 s [OI=4.12, 739.04 GFlops/s, 14.50 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.1 %)
+  * lowering.Expressions: 0.15 s (31.7 %)
+  * lowering.IET: 0.13 s (27.4 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.39 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 38.06 s
+Global performance: [OI=4.12, 719.41 GFlops/s, 14.11 GPts/s]
+Global performance <w/o setup>: [37.06 s, 14.50 GPts/s]
+Local performance:
+  * section0 ran in 37.06 s [OI=4.12, 739.00 GFlops/s, 14.50 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.3 %)
+  * lowering.Expressions: 0.15 s (31.8 %)
+  * lowering.IET: 0.13 s (27.6 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.39 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 38.07 s
+Global performance: [OI=4.12, 719.22 GFlops/s, 14.11 GPts/s]
+Global performance <w/o setup>: [37.06 s, 14.49 GPts/s]
+Local performance:
+  * section0 ran in 37.06 s [OI=4.12, 738.99 GFlops/s, 14.49 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(528, 528, 528) [562 MB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.4 %)
+  * lowering.Expressions: 0.15 s (31.9 %)
+  * lowering.IET: 0.13 s (27.6 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 528, 528, 528) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.39 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 38.07 s
+Global performance: [OI=4.12, 719.22 GFlops/s, 14.11 GPts/s]
+Global performance <w/o setup>: [37.06 s, 14.49 GPts/s]
+Local performance:
+  * section0 ran in 37.06 s [OI=4.12, 738.99 GFlops/s, 14.49 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.0 %)
+  * lowering.Expressions: 0.15 s (31.6 %)
+  * lowering.IET: 0.13 s (27.4 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.92 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 306.09 s
+Global performance: [OI=4.19, 715.62 GFlops/s, 14.04 GPts/s]
+Global performance <w/o setup>: [299.84 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 299.84 s [OI=4.19, 730.55 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.3 %)
+  * lowering.Expressions: 0.15 s (31.8 %)
+  * lowering.IET: 0.13 s (27.6 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.96 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 306.38 s
+Global performance: [OI=4.19, 714.95 GFlops/s, 14.02 GPts/s]
+Global performance <w/o setup>: [299.84 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 299.84 s [OI=4.19, 730.55 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.1 %)
+  * lowering.Expressions: 0.15 s (31.7 %)
+  * lowering.IET: 0.13 s (27.5 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.91 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 306.12 s
+Global performance: [OI=4.19, 715.55 GFlops/s, 14.04 GPts/s]
+Global performance <w/o setup>: [299.84 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 299.84 s [OI=4.19, 730.55 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.1 %)
+  * lowering.Expressions: 0.15 s (31.6 %)
+  * lowering.IET: 0.13 s (27.4 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.91 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 306.11 s
+Global performance: [OI=4.19, 715.58 GFlops/s, 14.04 GPts/s]
+Global performance <w/o setup>: [299.84 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 299.84 s [OI=4.19, 730.56 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+Allocating host memory for Vp(1040, 1040, 1040) [4.2 GB]
+Operator `Simple` generated in 0.48 s
+  * lowering.Clusters: 0.19 s (40.4 %)
+  * lowering.Expressions: 0.15 s (31.9 %)
+  * lowering.IET: 0.13 s (27.6 %)
+Flops reduction after symbolic optimization: [118 --> 55]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/5fc475075c9156717ee3595102656d31112cccac.cpp` in 0.10 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1040) [12.6 GB]
+Operator `Simple` arguments preprocess: 2.87 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 306.33 s
+Global performance: [OI=4.19, 715.06 GFlops/s, 14.03 GPts/s]
+Global performance <w/o setup>: [299.84 s, 14.33 GPts/s]
+Local performance:
+  * section0 ran in 299.84 s [OI=4.19, 730.55 GFlops/s, 14.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+None
+arguments: advanced
+= END =
+All runs completed.
