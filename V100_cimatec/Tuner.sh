@@ -5,7 +5,6 @@
 #SBATCH --job-name=tunerV200
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=50G
-#SBATCH -A usp-2024.1
 
 if [ -n "$SLURM_GPUS_ON_NODE" ]; then
     GPUCOUNT=$SLURM_GPUS_ON_NODE
