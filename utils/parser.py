@@ -61,8 +61,7 @@ def parser_runtime_wo(block):
 def parse_run(block):
     """Return a dict with config fields and runtime for a single run block."""
     result = parse_config(block)
-    result['runtime_s'] = parse_runtime(block)
-    result['global_perf_s'] = parser_runtime_wo(block)
+    result['runtime_s'] = parser_runtime_wo(block)
     return result
 
 
