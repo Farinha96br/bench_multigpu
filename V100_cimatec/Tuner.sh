@@ -28,7 +28,7 @@ devito_lang=cuda
 devito_arch=cuda
 devito_platform=nvidiaX
 
-domain_sizes=(256 512 1024)
+domain_sizes=(256 512)
 space_orders=(2 4 8)
 final_times=(500) 
 
@@ -44,7 +44,7 @@ for space_order_idx in "${!space_orders[@]}"
             EXEC_CMD="python3 -m devitotuner "
         else
             DEVITO_MPI="diag2"
-            EXEC_CMD="mpirun -np $SLURM_GPUS_ON_NODE python3 -m devitotuner "
+            EXEC_CMD="mpirun -np $GPUCOUNT python3 -m devitotuner "
         fi
     # now the repetitions
         echo "= START ="
@@ -61,10 +61,10 @@ for space_order_idx in "${!space_orders[@]}"
         export DEVITO_PLATFORM=nvidiaX && \
         export DEVITO_ARCH=$devito_arch && \
         export DEVITO_MPI=$DEVITO_MPI && \
-        $EXEC_CMD Simple V100_cimatec/V100_so_"$SPACE_ORDER"_d_"$DOMAIN_SIZE"_gpu_"$GPUCOUNT"_index.json '("fixed", {"index-mode": "int64"})' $BENCHMARK_SCRIPT \
+        $EXEC_CMD Simple V100_cimatec/V100_so_"$SPACE_ORDER"_d_"$DOMAIN_SIZE"_gpu_"$GPUCOUNT".json $BENCHMARK_SCRIPT \
         -d $DOMAIN_SIZE $DOMAIN_SIZE $DOMAIN_SIZE \
         -so $SPACE_ORDER \
-        -tn 100"
+        -tn 100" \
         echo "= END ="
     done
 done

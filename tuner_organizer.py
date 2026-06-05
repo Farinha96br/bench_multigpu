@@ -36,13 +36,14 @@ def organize_parameters(path):
     machine, gpu_model, space_order, domain_side, gp_count = exctract_info_from_path(path)
     # gather the options from the path
     best_opt = retrieve_best(path)
+
     dict = {
         "machine": machine,
         "gpu_model": gpu_model,
         "space_order": space_order,
         "domain_side": domain_side,
         "gp_count": gp_count,
-        "best_opt": str(best_opt[0:2])
+        "best_opt": tuple(best_opt[0:2])
     }
     return dict
 
@@ -83,3 +84,33 @@ if path.endswith("/"):
             entry = organize_parameters(full_path)
             print(entry)
             save_to_main_file(entry)
+
+
+def get_config(all_configs_path, machine, gpu_model, space_order, domain_side, gp_count):
+    """Retrieve best_opt tuple from given all_configs JSON file path.
+
+    all_configs_path: path to the JSON file containing configurations.
+    """
+    if os.path.exists(all_configs_path) and os.path.getsize(all_configs_path) > 0:
+        with open(all_configs_path, "r") as f:
+            configs = json.load(f)
+    else:
+        print("No configurations found.")
+        return None
+
+    for config in configs:
+        if (config.get("machine") == machine and
+            config.get("gpu_model") == gpu_model and
+            config.get("space_order") == space_order and
+            config.get("domain_side") == domain_side and
+            config.get("gp_count") == gp_count):
+            return tuple(config.get("best_opt", ()))
+
+    print("Configuration not found.")
+    return None
+
+
+#config = get_config(MAIN_FILE, "V100_cimatec", "V100", 4, 256, 2)
+#
+#print("====================")
+#print(config)
