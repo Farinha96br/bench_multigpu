@@ -1,0 +1,5168 @@
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.4 %)
+     * specializing.IET: 1.17 s (68.8 %)
+        * make_halo_exchanges: 0.46 s (27.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.4 %)
+     * specializing.IET: 1.18 s (68.8 %)
+        * make_halo_exchanges: 0.46 s (26.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.2 %)
+     * specializing.IET: 1.18 s (68.7 %)
+        * make_halo_exchanges: 0.46 s (26.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.48 s (86.8 %)
+     * specializing.IET: 1.23 s (72.2 %)
+        * make_halo_exchanges: 0.46 s (27.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi/opal/mca/hwloc/hwloc201/hwloc/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi/opal/mca/event/libevent2022/libevent -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi/opal/mca/event/libevent2022/libevent/include -arch=sm_70 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared -Xcompiler -pthread -L/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/lib -Xcompiler "-Wl,-rpath" -Xcompiler "-Wl,/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/lib" -Xcompiler "-Wl,--enable-new-dtags" -lmpi /tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu -lm -o /tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.so
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 3.90 s with `CudaCompiler`
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 3.92 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 4.04 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 4.11 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Operator `Simple` arguments preprocess: 4.94 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 5.72 s
+Global performance: [OI=0.56, 2327.70 GFlops/s, 75.09 GPts/s]
+Global performance <w/o setup>: [3.96 s, 108.64 GPts/s]
+Local performance:
+  * section0[rank0] ran in 3.92 s [OI=0.56, 849.71 GFlops/s, 27.41 GPts/s]
+  * section0[rank1] ran in 3.87 s [OI=0.56, 860.99 GFlops/s, 27.78 GPts/s]
+  * section0[rank2] ran in 3.96 s [OI=0.56, 841.90 GFlops/s, 27.16 GPts/s]
+  * section0[rank3] ran in 3.95 s [OI=0.56, 843.83 GFlops/s, 27.23 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+platform: nvidiaX
+mpi: diag2
+compiler: CudaCompiler
+topology: None
+language: cuda
+first-touch: False
+mpi: diag2
+ignore-unknowns: False
+topology: None
+log-level: DEBUG
+jit-backdoor: False
+first-touch: False
+ignore-unknowns: False
+safe-math: False
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+deviceid: -1
+safe-math: False
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+deviceid: -1
+opt: advanced
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt-options: {}
+profiling: basic
+opt: advanced
+opt-options: {}
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: diag2
+topology: None
+platform: nvidiaX
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+compiler: CudaCompiler
+jit-backdoor: False
+language: cuda
+safe-math: False
+mpi: diag2
+autopadding: <class 'numpy.float32'>
+topology: None
+deviceid: -1
+first-touch: False
+autotuning: (False, 'preemptive')
+ignore-unknowns: False
+develop-mode: False
+log-level: DEBUG
+opt: advanced
+jit-backdoor: False
+opt-options: {}
+safe-math: False
+profiling: basic
+autopadding: <class 'numpy.float32'>
+lazy-host-mem-perc: 0.7
+deviceid: -1
+lazy-device-mem-perc: 0.7
+autotuning: (False, 'preemptive')
+lazy-disk-mem-perc: 0.7
+develop-mode: False
+beta: 0
+opt: advanced
+decoupler: False
+opt-options: {}
+bypass-version-check: False
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.70 s
+  * lowering.IET: 1.41 s (83.2 %)
+     * specializing.IET: 1.17 s (69.0 %)
+        * make_halo_exchanges: 0.45 s (26.6 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.6 %)
+     * specializing.IET: 1.18 s (69.0 %)
+        * make_halo_exchanges: 0.46 s (26.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.73 s
+  * lowering.IET: 1.44 s (83.6 %)
+     * specializing.IET: 1.19 s (69.1 %)
+        * make_halo_exchanges: 0.46 s (26.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.74 s
+  * lowering.IET: 1.45 s (83.7 %)
+     * specializing.IET: 1.20 s (69.2 %)
+        * make_halo_exchanges: 0.46 s (26.6 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Operator `Simple` arguments preprocess: 3.35 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 5.66 s
+Global performance: [OI=0.56, 2352.37 GFlops/s, 75.89 GPts/s]
+Global performance <w/o setup>: [3.89 s, 110.66 GPts/s]
+Local performance:
+  * section0[rank0] ran in 3.87 s [OI=0.56, 860.20 GFlops/s, 27.75 GPts/s]
+  * section0[rank1] ran in 3.88 s [OI=0.56, 859.43 GFlops/s, 27.73 GPts/s]
+  * section0[rank2] ran in 3.89 s [OI=0.56, 857.61 GFlops/s, 27.67 GPts/s]
+  * section0[rank3] ran in 3.88 s [OI=0.56, 858.76 GFlops/s, 27.71 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+platform: nvidiaX
+platform: nvidiaX
+language: cuda
+platform: nvidiaX
+mpi: diag2
+compiler: CudaCompiler
+compiler: CudaCompiler
+topology: None
+language: cuda
+compiler: CudaCompiler
+language: cuda
+first-touch: False
+mpi: diag2
+language: cuda
+mpi: diag2
+ignore-unknowns: False
+mpi: diag2
+topology: None
+topology: None
+log-level: DEBUG
+topology: None
+jit-backdoor: False
+first-touch: False
+first-touch: False
+safe-math: False
+ignore-unknowns: False
+ignore-unknowns: False
+first-touch: False
+log-level: DEBUG
+log-level: DEBUG
+ignore-unknowns: False
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+jit-backdoor: False
+log-level: DEBUG
+deviceid: -1
+safe-math: False
+safe-math: False
+jit-backdoor: False
+autotuning: (False, 'preemptive')
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+deviceid: -1
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+opt: advanced
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+opt-options: {}
+develop-mode: False
+develop-mode: False
+autotuning: (False, 'preemptive')
+profiling: basic
+opt: advanced
+opt: advanced
+develop-mode: False
+lazy-host-mem-perc: 0.7
+opt-options: {}
+opt-options: {}
+opt: advanced
+lazy-device-mem-perc: 0.7
+profiling: basic
+profiling: basic
+opt-options: {}
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+decoupler: False
+lazy-device-mem-perc: 0.7
+beta: 0
+beta: 0
+bypass-version-check: False
+lazy-disk-mem-perc: 0.7
+decoupler: False
+decoupler: False
+beta: 0
+bypass-version-check: False
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+Configuration not found.
+nt: 401
+nt: 401
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.5 %)
+     * specializing.IET: 1.17 s (68.8 %)
+        * make_halo_exchanges: 0.46 s (27.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.3 %)
+     * specializing.IET: 1.17 s (68.6 %)
+        * make_halo_exchanges: 0.46 s (27.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.4 %)
+     * specializing.IET: 1.18 s (68.9 %)
+        * make_halo_exchanges: 0.46 s (26.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.4 %)
+     * specializing.IET: 1.18 s (68.8 %)
+        * make_halo_exchanges: 0.46 s (26.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Operator `Simple` arguments preprocess: 3.34 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 5.69 s
+Global performance: [OI=0.56, 2339.97 GFlops/s, 75.49 GPts/s]
+Global performance <w/o setup>: [3.89 s, 110.56 GPts/s]
+Local performance:
+  * section0[rank0] ran in 3.88 s [OI=0.56, 859.69 GFlops/s, 27.74 GPts/s]
+  * section0[rank1] ran in 3.87 s [OI=0.56, 861.10 GFlops/s, 27.78 GPts/s]
+  * section0[rank2] ran in 3.89 s [OI=0.56, 857.89 GFlops/s, 27.68 GPts/s]
+  * section0[rank3] ran in 3.89 s [OI=0.56, 856.77 GFlops/s, 27.64 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+platform: nvidiaX
+language: cuda
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+mpi: diag2
+language: cuda
+topology: None
+topology: None
+compiler: CudaCompiler
+mpi: diag2
+first-touch: False
+language: cuda
+first-touch: False
+topology: None
+ignore-unknowns: False
+mpi: diag2
+ignore-unknowns: False
+log-level: DEBUG
+first-touch: False
+log-level: DEBUG
+topology: None
+jit-backdoor: False
+ignore-unknowns: False
+jit-backdoor: False
+first-touch: False
+safe-math: False
+log-level: DEBUG
+safe-math: False
+ignore-unknowns: False
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+safe-math: False
+jit-backdoor: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+safe-math: False
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+develop-mode: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+opt: advanced
+opt: advanced
+deviceid: -1
+autotuning: (False, 'preemptive')
+opt-options: {}
+opt-options: {}
+autotuning: (False, 'preemptive')
+develop-mode: False
+profiling: basic
+profiling: basic
+develop-mode: False
+opt: advanced
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+opt: advanced
+opt-options: {}
+lazy-device-mem-perc: 0.7
+opt-options: {}
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+profiling: basic
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+beta: 0
+lazy-host-mem-perc: 0.7
+beta: 0
+lazy-device-mem-perc: 0.7
+decoupler: False
+lazy-device-mem-perc: 0.7
+decoupler: False
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+bypass-version-check: False
+lazy-disk-mem-perc: 0.7
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.70 s
+  * lowering.IET: 1.42 s (83.7 %)
+     * specializing.IET: 1.17 s (68.9 %)
+        * make_halo_exchanges: 0.45 s (26.5 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.4 %)
+     * specializing.IET: 1.17 s (68.7 %)
+        * make_halo_exchanges: 0.46 s (27.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.5 %)
+     * specializing.IET: 1.18 s (68.9 %)
+        * make_halo_exchanges: 0.46 s (26.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.4 %)
+     * specializing.IET: 1.18 s (68.8 %)
+        * make_halo_exchanges: 0.46 s (26.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Operator `Simple` arguments preprocess: 3.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 5.68 s
+platform: nvidiaX
+Global performance: [OI=0.56, 2344.09 GFlops/s, 75.62 GPts/s]
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+topology: None
+mpi: diag2
+Global performance <w/o setup>: [3.89 s, 110.60 GPts/s]
+first-touch: False
+topology: None
+ignore-unknowns: False
+first-touch: False
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+log-level: DEBUG
+Local performance:
+safe-math: False
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+deviceid: -1
+develop-mode: False
+autotuning: (False, 'preemptive')
+  * section0[rank0] ran in 3.89 s [OI=0.56, 857.10 GFlops/s, 27.65 GPts/s]
+opt: advanced
+develop-mode: False
+opt-options: {}
+opt: advanced
+profiling: basic
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+  * section0[rank1] ran in 3.88 s [OI=0.56, 858.36 GFlops/s, 27.69 GPts/s]
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+  * section0[rank2] ran in 3.88 s [OI=0.56, 858.97 GFlops/s, 27.71 GPts/s]
+beta: 0
+lazy-disk-mem-perc: 0.7
+  * section0[rank3] ran in 3.87 s [OI=0.56, 860.92 GFlops/s, 27.78 GPts/s]
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+topology: None
+mpi: diag2
+topology: None
+first-touch: False
+ignore-unknowns: False
+first-touch: False
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+develop-mode: False
+opt: advanced
+opt: advanced
+opt-options: {}
+opt-options: {}
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.70 s
+  * lowering.IET: 1.42 s (83.6 %)
+     * specializing.IET: 1.17 s (68.9 %)
+        * make_halo_exchanges: 0.46 s (27.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.2 %)
+     * specializing.IET: 1.18 s (69.2 %)
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+        * make_halo_exchanges: 0.46 s (27.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.3 %)
+     * specializing.IET: 1.18 s (68.8 %)
+        * make_halo_exchanges: 0.46 s (26.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.44 s (83.8 %)
+     * specializing.IET: 1.19 s (69.3 %)
+        * make_halo_exchanges: 0.46 s (26.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Operator `Simple` arguments preprocess: 3.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 5.67 s
+Global performance: [OI=0.56, 2348.22 GFlops/s, 75.75 GPts/s]
+Global performance <w/o setup>: [3.88 s, 110.88 GPts/s]
+Local performance:
+  * section0[rank0] ran in 3.88 s [OI=0.56, 859.29 GFlops/s, 27.72 GPts/s]
+  * section0[rank1] ran in 3.87 s [OI=0.56, 860.27 GFlops/s, 27.76 GPts/s]
+  * section0[rank2] ran in 3.88 s [OI=0.56, 859.39 GFlops/s, 27.73 GPts/s]
+  * section0[rank3] ran in 3.88 s [OI=0.56, 859.94 GFlops/s, 27.74 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+language: cuda
+mpi: diag2
+mpi: diag2
+language: cuda
+topology: None
+platform: nvidiaX
+topology: None
+mpi: diag2
+first-touch: False
+first-touch: False
+ignore-unknowns: False
+topology: None
+compiler: CudaCompiler
+ignore-unknowns: False
+log-level: DEBUG
+first-touch: False
+language: cuda
+log-level: DEBUG
+jit-backdoor: False
+ignore-unknowns: False
+mpi: diag2
+jit-backdoor: False
+safe-math: False
+log-level: DEBUG
+topology: None
+safe-math: False
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+first-touch: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+deviceid: -1
+ignore-unknowns: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+log-level: DEBUG
+autotuning: (False, 'preemptive')
+develop-mode: False
+deviceid: -1
+jit-backdoor: False
+develop-mode: False
+opt: advanced
+autotuning: (False, 'preemptive')
+safe-math: False
+opt: advanced
+opt-options: {}
+develop-mode: False
+opt-options: {}
+profiling: basic
+autopadding: <class 'numpy.float32'>
+opt: advanced
+profiling: basic
+deviceid: -1
+lazy-host-mem-perc: 0.7
+opt-options: {}
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+autotuning: (False, 'preemptive')
+profiling: basic
+lazy-device-mem-perc: 0.7
+develop-mode: False
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+opt: advanced
+beta: 0
+lazy-device-mem-perc: 0.7
+beta: 0
+opt-options: {}
+decoupler: False
+lazy-disk-mem-perc: 0.7
+decoupler: False
+bypass-version-check: False
+profiling: basic
+beta: 0
+bypass-version-check: False
+lazy-host-mem-perc: 0.7
+decoupler: False
+lazy-device-mem-perc: 0.7
+bypass-version-check: False
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.57 s (83.5 %)
+     * specializing.IET: 1.32 s (70.2 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.6 %)
+     * specializing.IET: 1.32 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (25.1 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (84.0 %)
+     * specializing.IET: 1.33 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (24.9 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (84.0 %)
+     * specializing.IET: 1.33 s (70.2 %)
+        * make_halo_exchanges: 0.47 s (24.9 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi/opal/mca/hwloc/hwloc201/hwloc/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi/opal/mca/event/libevent2022/libevent -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi/opal/mca/event/libevent2022/libevent/include -arch=sm_70 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared -Xcompiler -pthread -L/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/lib -Xcompiler "-Wl,-rpath" -Xcompiler "-Wl,/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/lib" -Xcompiler "-Wl,--enable-new-dtags" -lmpi /tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu -lm -o /tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.so
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 2.84 s with `CudaCompiler`
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 2.91 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 2.98 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 3.06 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.48 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.18 s
+Global performance: [OI=0.49, 2572.20 GFlops/s, 59.82 GPts/s]
+Global performance <w/o setup>: [5.26 s, 81.71 GPts/s]
+Local performance:
+  * section0[rank0] ran in 5.26 s [OI=0.49, 878.31 GFlops/s, 20.43 GPts/s]
+  * section0[rank1] ran in 5.25 s [OI=0.49, 880.44 GFlops/s, 20.48 GPts/s]
+  * section0[rank2] ran in 5.25 s [OI=0.49, 880.05 GFlops/s, 20.47 GPts/s]
+  * section0[rank3] ran in 5.15 s [OI=0.49, 897.12 GFlops/s, 20.87 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+platform: nvidiaX
+mpi: diag2
+platform: nvidiaX
+topology: None
+compiler: CudaCompiler
+first-touch: False
+language: cuda
+compiler: CudaCompiler
+ignore-unknowns: False
+mpi: diag2
+log-level: DEBUG
+language: cuda
+topology: None
+jit-backdoor: False
+mpi: diag2
+first-touch: False
+safe-math: False
+topology: None
+ignore-unknowns: False
+autopadding: <class 'numpy.float32'>
+first-touch: False
+log-level: DEBUG
+deviceid: -1
+ignore-unknowns: False
+jit-backdoor: False
+autotuning: (False, 'preemptive')
+log-level: DEBUG
+safe-math: False
+develop-mode: False
+jit-backdoor: False
+platform: nvidiaX
+autopadding: <class 'numpy.float32'>
+opt: advanced
+safe-math: False
+deviceid: -1
+opt-options: {}
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+profiling: basic
+compiler: CudaCompiler
+deviceid: -1
+develop-mode: False
+opt: advanced
+lazy-host-mem-perc: 0.7
+autotuning: (False, 'preemptive')
+language: cuda
+opt-options: {}
+develop-mode: False
+lazy-device-mem-perc: 0.7
+mpi: diag2
+profiling: basic
+opt: advanced
+lazy-disk-mem-perc: 0.7
+topology: None
+lazy-host-mem-perc: 0.7
+opt-options: {}
+beta: 0
+first-touch: False
+lazy-device-mem-perc: 0.7
+profiling: basic
+decoupler: False
+ignore-unknowns: False
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+lazy-host-mem-perc: 0.7
+log-level: DEBUG
+beta: 0
+lazy-device-mem-perc: 0.7
+jit-backdoor: False
+decoupler: False
+lazy-disk-mem-perc: 0.7
+safe-math: False
+bypass-version-check: False
+beta: 0
+autopadding: <class 'numpy.float32'>
+decoupler: False
+deviceid: -1
+bypass-version-check: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.6 %)
+     * specializing.IET: 1.32 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (25.1 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.57 s (83.5 %)
+     * specializing.IET: 1.32 s (70.2 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.58 s (84.0 %)
+     * specializing.IET: 1.33 s (70.7 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.58 s (83.5 %)
+     * specializing.IET: 1.33 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (24.9 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.38 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.13 s
+Global performance: [OI=0.49, 2590.24 GFlops/s, 60.24 GPts/s]
+Global performance <w/o setup>: [5.19 s, 82.87 GPts/s]
+Local performance:
+  * section0[rank0] ran in 5.19 s [OI=0.49, 890.80 GFlops/s, 20.72 GPts/s]
+  * section0[rank1] ran in 5.16 s [OI=0.49, 896.20 GFlops/s, 20.85 GPts/s]
+  * section0[rank2] ran in 5.15 s [OI=0.49, 896.98 GFlops/s, 20.86 GPts/s]
+  * section0[rank3] ran in 5.15 s [OI=0.49, 897.04 GFlops/s, 20.87 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+platform: nvidiaX
+language: cuda
+mpi: diag2
+compiler: CudaCompiler
+topology: None
+language: cuda
+first-touch: False
+mpi: diag2
+ignore-unknowns: False
+topology: None
+log-level: DEBUG
+first-touch: False
+jit-backdoor: False
+ignore-unknowns: False
+safe-math: False
+platform: nvidiaX
+platform: nvidiaX
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+deviceid: -1
+safe-math: False
+compiler: CudaCompiler
+compiler: CudaCompiler
+autotuning: (False, 'preemptive')
+language: cuda
+autopadding: <class 'numpy.float32'>
+language: cuda
+develop-mode: False
+mpi: diag2
+deviceid: -1
+mpi: diag2
+opt: advanced
+topology: None
+autotuning: (False, 'preemptive')
+topology: None
+opt-options: {}
+develop-mode: False
+first-touch: False
+first-touch: False
+opt: advanced
+profiling: basic
+ignore-unknowns: False
+ignore-unknowns: False
+opt-options: {}
+log-level: DEBUG
+lazy-host-mem-perc: 0.7
+log-level: DEBUG
+profiling: basic
+jit-backdoor: False
+lazy-device-mem-perc: 0.7
+jit-backdoor: False
+safe-math: False
+lazy-host-mem-perc: 0.7
+safe-math: False
+lazy-disk-mem-perc: 0.7
+autopadding: <class 'numpy.float32'>
+lazy-device-mem-perc: 0.7
+beta: 0
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+lazy-disk-mem-perc: 0.7
+deviceid: -1
+decoupler: False
+autotuning: (False, 'preemptive')
+beta: 0
+autotuning: (False, 'preemptive')
+bypass-version-check: False
+develop-mode: False
+decoupler: False
+develop-mode: False
+opt: advanced
+bypass-version-check: False
+opt: advanced
+opt-options: {}
+opt-options: {}
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.87 s
+  * lowering.IET: 1.56 s (83.5 %)
+     * specializing.IET: 1.32 s (70.7 %)
+        * make_halo_exchanges: 0.46 s (24.7 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.6 %)
+     * specializing.IET: 1.32 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (25.1 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (83.8 %)
+     * specializing.IET: 1.33 s (70.1 %)
+        * make_halo_exchanges: 0.47 s (24.8 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (83.8 %)
+     * specializing.IET: 1.34 s (70.6 %)
+        * make_halo_exchanges: 0.47 s (24.8 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.43 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.14 s
+Global performance: [OI=0.49, 2586.61 GFlops/s, 60.16 GPts/s]
+Global performance <w/o setup>: [5.16 s, 83.30 GPts/s]
+Local performance:
+  * section0[rank0] ran in 5.16 s [OI=0.49, 896.26 GFlops/s, 20.85 GPts/s]
+  * section0[rank1] ran in 5.16 s [OI=0.49, 896.31 GFlops/s, 20.85 GPts/s]
+  * section0[rank2] ran in 5.16 s [OI=0.49, 895.45 GFlops/s, 20.83 GPts/s]
+  * section0[rank3] ran in 5.15 s [OI=0.49, 897.02 GFlops/s, 20.87 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+language: cuda
+mpi: diag2
+compiler: CudaCompiler
+language: cuda
+mpi: diag2
+topology: None
+language: cuda
+mpi: diag2
+topology: None
+mpi: diag2
+first-touch: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+develop-mode: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+opt-options: {}
+opt: advanced
+develop-mode: False
+opt-options: {}
+profiling: basic
+opt-options: {}
+opt: advanced
+profiling: basic
+profiling: basic
+opt-options: {}
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+decoupler: False
+beta: 0
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+decoupler: False
+decoupler: False
+beta: 0
+bypass-version-check: False
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.9 %)
+     * specializing.IET: 1.32 s (70.6 %)
+        * make_halo_exchanges: 0.47 s (25.2 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (84.0 %)
+     * specializing.IET: 1.32 s (70.6 %)
+        * make_halo_exchanges: 0.46 s (24.6 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (83.9 %)
+     * specializing.IET: 1.33 s (70.2 %)
+        * make_halo_exchanges: 0.47 s (24.8 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (83.8 %)
+     * specializing.IET: 1.34 s (70.6 %)
+        * make_halo_exchanges: 0.47 s (24.8 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.37 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.13 s
+Global performance: [OI=0.49, 2590.24 GFlops/s, 60.24 GPts/s]
+Global performance <w/o setup>: [5.18 s, 82.94 GPts/s]
+Local performance:
+  * section0[rank0] ran in 5.18 s [OI=0.49, 891.58 GFlops/s, 20.74 GPts/s]
+  * section0[rank1] ran in 5.16 s [OI=0.49, 895.85 GFlops/s, 20.84 GPts/s]
+  * section0[rank2] ran in 5.18 s [OI=0.49, 892.10 GFlops/s, 20.75 GPts/s]
+  * section0[rank3] ran in 5.15 s [OI=0.49, 897.30 GFlops/s, 20.87 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+language: cuda
+mpi: diag2
+mpi: diag2
+topology: None
+topology: None
+first-touch: False
+first-touch: False
+ignore-unknowns: False
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+jit-backdoor: False
+jit-backdoor: False
+safe-math: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+develop-mode: False
+platform: nvidiaX
+opt: advanced
+opt: advanced
+opt-options: {}
+platform: nvidiaX
+opt-options: {}
+profiling: basic
+profiling: basic
+compiler: CudaCompiler
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+compiler: CudaCompiler
+language: cuda
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+language: cuda
+mpi: diag2
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+mpi: diag2
+topology: None
+beta: 0
+beta: 0
+topology: None
+decoupler: False
+first-touch: False
+decoupler: False
+bypass-version-check: False
+first-touch: False
+ignore-unknowns: False
+bypass-version-check: False
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+jit-backdoor: False
+jit-backdoor: False
+safe-math: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+develop-mode: False
+opt-options: {}
+opt: advanced
+profiling: basic
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.57 s (83.5 %)
+     * specializing.IET: 1.32 s (70.2 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.58 s (83.8 %)
+     * specializing.IET: 1.33 s (70.6 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.91 s
+  * lowering.IET: 1.59 s (83.5 %)
+     * specializing.IET: 1.34 s (70.4 %)
+        * make_halo_exchanges: 0.47 s (24.7 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.91 s
+  * lowering.IET: 1.60 s (84.0 %)
+     * specializing.IET: 1.34 s (70.4 %)
+        * make_halo_exchanges: 0.47 s (24.7 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.40 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.15 s
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+platform: nvidiaX
+compiler: CudaCompiler
+Global performance: [OI=0.49, 2582.99 GFlops/s, 60.07 GPts/s]
+mpi: diag2
+language: cuda
+topology: None
+mpi: diag2
+topology: None
+first-touch: False
+ignore-unknowns: False
+first-touch: False
+Global performance <w/o setup>: [5.16 s, 83.36 GPts/s]
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+Local performance:
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+deviceid: -1
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+develop-mode: False
+opt-options: {}
+opt: advanced
+profiling: basic
+opt-options: {}
+  * section0[rank0] ran in 5.16 s [OI=0.49, 896.51 GFlops/s, 20.85 GPts/s]
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+beta: 0
+lazy-device-mem-perc: 0.7
+decoupler: False
+lazy-disk-mem-perc: 0.7
+  * section0[rank1] ran in 5.15 s [OI=0.49, 897.16 GFlops/s, 20.87 GPts/s]
+bypass-version-check: False
+beta: 0
+decoupler: False
+bypass-version-check: False
+  * section0[rank2] ran in 5.16 s [OI=0.49, 896.07 GFlops/s, 20.84 GPts/s]
+  * section0[rank3] ran in 5.16 s [OI=0.49, 896.10 GFlops/s, 20.84 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+language: cuda
+mpi: diag2
+mpi: diag2
+topology: None
+topology: None
+first-touch: False
+first-touch: False
+ignore-unknowns: False
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+jit-backdoor: False
+jit-backdoor: False
+safe-math: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+develop-mode: False
+opt: advanced
+opt: advanced
+opt-options: {}
+opt-options: {}
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.31 s
+  * lowering.IET: 1.93 s (83.8 %)
+     * specializing.IET: 1.59 s (69.0 %)
+        * make_halo_exchanges: 0.51 s (22.2 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.31 s
+  * lowering.IET: 1.94 s (84.1 %)
+     * specializing.IET: 1.59 s (68.9 %)
+        * make_halo_exchanges: 0.51 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.30 s
+  * lowering.IET: 1.92 s (83.7 %)
+     * specializing.IET: 1.58 s (68.9 %)
+        * make_halo_exchanges: 0.51 s (22.3 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.30 s
+  * lowering.IET: 1.92 s (83.5 %)
+     * specializing.IET: 1.58 s (68.7 %)
+        * make_halo_exchanges: 0.51 s (22.2 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi/opal/mca/hwloc/hwloc201/hwloc/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi/opal/mca/event/libevent2022/libevent -I/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/include/openmpi/opal/mca/event/libevent2022/libevent/include -arch=sm_70 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared -Xcompiler -pthread -L/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/lib -Xcompiler "-Wl,-rpath" -Xcompiler "-Wl,/opt/nvidia/hpc_sdk/Linux_x86_64/25.7/comm_libs/12.9/hpcx/hpcx-2.22.1/ompi/lib" -Xcompiler "-Wl,--enable-new-dtags" -lmpi /tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu -lm -o /tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.so
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 2.84 s with `CudaCompiler`
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 2.92 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 2.99 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 3.08 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.80 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 9.63 s
+Global performance: [OI=0.45, 2988.20 GFlops/s, 44.60 GPts/s]
+Global performance <w/o setup>: [7.64 s, 56.26 GPts/s]
+Local performance:
+  * section0[rank0] ran in 7.64 s [OI=0.45, 942.51 GFlops/s, 14.07 GPts/s]
+  * section0[rank1] ran in 7.64 s [OI=0.45, 942.21 GFlops/s, 14.07 GPts/s]
+  * section0[rank2] ran in 7.55 s [OI=0.45, 952.98 GFlops/s, 14.23 GPts/s]
+  * section0[rank3] ran in 7.64 s [OI=0.45, 942.86 GFlops/s, 14.08 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+topology: None
+mpi: diag2
+first-touch: False
+topology: None
+ignore-unknowns: False
+first-touch: False
+log-level: DEBUG
+jit-backdoor: False
+ignore-unknowns: False
+safe-math: False
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+safe-math: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+deviceid: -1
+opt: advanced
+opt-options: {}
+autotuning: (False, 'preemptive')
+develop-mode: False
+profiling: basic
+opt: advanced
+lazy-host-mem-perc: 0.7
+opt-options: {}
+lazy-device-mem-perc: 0.7
+profiling: basic
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-host-mem-perc: 0.7
+decoupler: False
+lazy-device-mem-perc: 0.7
+bypass-version-check: False
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+platform: nvidiaX
+bypass-version-check: False
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+topology: None
+mpi: diag2
+topology: None
+first-touch: False
+ignore-unknowns: False
+first-touch: False
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+develop-mode: False
+opt: advanced
+opt-options: {}
+opt-options: {}
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.27 s
+  * lowering.IET: 1.90 s (84.0 %)
+     * specializing.IET: 1.55 s (68.6 %)
+        * make_halo_exchanges: 0.49 s (21.7 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (83.9 %)
+     * specializing.IET: 1.57 s (68.9 %)
+        * make_halo_exchanges: 0.50 s (22.0 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.27 s
+  * lowering.IET: 1.90 s (83.9 %)
+     * specializing.IET: 1.56 s (68.9 %)
+        * make_halo_exchanges: 0.50 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.31 s
+  * lowering.IET: 1.93 s (83.8 %)
+     * specializing.IET: 1.58 s (68.6 %)
+        * make_halo_exchanges: 0.50 s (21.7 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.71 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 9.55 s
+Global performance: [OI=0.45, 3013.23 GFlops/s, 44.98 GPts/s]
+Global performance <w/o setup>: [7.56 s, 56.83 GPts/s]
+Local performance:
+  * section0[rank0] ran in 7.55 s [OI=0.45, 953.12 GFlops/s, 14.23 GPts/s]
+  * section0[rank1] ran in 7.56 s [OI=0.45, 951.83 GFlops/s, 14.21 GPts/s]
+  * section0[rank2] ran in 7.56 s [OI=0.45, 952.31 GFlops/s, 14.22 GPts/s]
+  * section0[rank3] ran in 7.56 s [OI=0.45, 952.79 GFlops/s, 14.23 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+mpi: diag2
+compiler: CudaCompiler
+language: cuda
+topology: None
+topology: None
+mpi: diag2
+language: cuda
+first-touch: False
+topology: None
+first-touch: False
+mpi: diag2
+ignore-unknowns: False
+ignore-unknowns: False
+first-touch: False
+topology: None
+log-level: DEBUG
+log-level: DEBUG
+ignore-unknowns: False
+first-touch: False
+jit-backdoor: False
+jit-backdoor: False
+log-level: DEBUG
+ignore-unknowns: False
+safe-math: False
+safe-math: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+safe-math: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+deviceid: -1
+opt: advanced
+develop-mode: False
+opt: advanced
+autotuning: (False, 'preemptive')
+opt: advanced
+opt-options: {}
+opt-options: {}
+develop-mode: False
+opt-options: {}
+profiling: basic
+profiling: basic
+opt: advanced
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+opt-options: {}
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+beta: 0
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+lazy-device-mem-perc: 0.7
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (84.1 %)
+     * specializing.IET: 1.56 s (68.7 %)
+        * make_halo_exchanges: 0.50 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.30 s
+  * lowering.IET: 1.93 s (84.2 %)
+     * specializing.IET: 1.58 s (68.9 %)
+        * make_halo_exchanges: 0.51 s (22.3 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.30 s
+  * lowering.IET: 1.93 s (84.0 %)
+     * specializing.IET: 1.58 s (68.8 %)
+        * make_halo_exchanges: 0.51 s (22.2 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.29 s
+  * lowering.IET: 1.92 s (84.0 %)
+     * specializing.IET: 1.57 s (68.7 %)
+        * make_halo_exchanges: 0.50 s (21.9 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.70 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 9.56 s
+Global performance: [OI=0.45, 3010.08 GFlops/s, 44.93 GPts/s]
+Global performance <w/o setup>: [7.58 s, 56.74 GPts/s]
+Local performance:
+  * section0[rank0] ran in 7.58 s [OI=0.45, 950.29 GFlops/s, 14.19 GPts/s]
+  * section0[rank1] ran in 7.56 s [OI=0.45, 952.27 GFlops/s, 14.22 GPts/s]
+  * section0[rank2] ran in 7.57 s [OI=0.45, 950.72 GFlops/s, 14.19 GPts/s]
+  * section0[rank3] ran in 7.56 s [OI=0.45, 952.65 GFlops/s, 14.22 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+platform: nvidiaX
+mpi: diag2
+topology: None
+first-touch: False
+compiler: CudaCompiler
+ignore-unknowns: False
+language: cuda
+log-level: DEBUG
+mpi: diag2
+jit-backdoor: False
+topology: None
+safe-math: False
+first-touch: False
+ignore-unknowns: False
+autopadding: <class 'numpy.float32'>
+log-level: DEBUG
+deviceid: -1
+jit-backdoor: False
+autotuning: (False, 'preemptive')
+safe-math: False
+develop-mode: False
+autopadding: <class 'numpy.float32'>
+opt: advanced
+deviceid: -1
+opt-options: {}
+autotuning: (False, 'preemptive')
+profiling: basic
+develop-mode: False
+lazy-host-mem-perc: 0.7
+opt: advanced
+lazy-device-mem-perc: 0.7
+opt-options: {}
+lazy-disk-mem-perc: 0.7
+profiling: basic
+beta: 0
+lazy-host-mem-perc: 0.7
+decoupler: False
+lazy-device-mem-perc: 0.7
+bypass-version-check: False
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+language: cuda
+mpi: diag2
+mpi: diag2
+topology: None
+topology: None
+first-touch: False
+first-touch: False
+ignore-unknowns: False
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+jit-backdoor: False
+jit-backdoor: False
+safe-math: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+develop-mode: False
+opt: advanced
+opt: advanced
+opt-options: {}
+opt-options: {}
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.27 s
+  * lowering.IET: 1.90 s (83.9 %)
+     * specializing.IET: 1.56 s (68.9 %)
+        * make_halo_exchanges: 0.50 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.30 s
+  * lowering.IET: 1.92 s (83.8 %)
+     * specializing.IET: 1.58 s (69.0 %)
+        * make_halo_exchanges: 0.50 s (21.9 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (83.8 %)
+     * specializing.IET: 1.57 s (68.9 %)
+        * make_halo_exchanges: 0.50 s (22.0 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.30 s
+  * lowering.IET: 1.93 s (84.1 %)
+     * specializing.IET: 1.58 s (68.9 %)
+        * make_halo_exchanges: 0.50 s (21.8 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.69 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 9.56 s
+Global performance: [OI=0.45, 3010.08 GFlops/s, 44.93 GPts/s]
+Global performance <w/o setup>: [7.57 s, 56.76 GPts/s]
+Local performance:
+  * section0[rank0] ran in 7.57 s [OI=0.45, 951.06 GFlops/s, 14.20 GPts/s]
+  * section0[rank1] ran in 7.55 s [OI=0.45, 952.99 GFlops/s, 14.23 GPts/s]
+  * section0[rank2] ran in 7.57 s [OI=0.45, 950.66 GFlops/s, 14.19 GPts/s]
+  * section0[rank3] ran in 7.56 s [OI=0.45, 952.29 GFlops/s, 14.22 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+compiler: CudaCompiler
+language: cuda
+topology: None
+mpi: diag2
+language: cuda
+mpi: diag2
+first-touch: False
+topology: None
+mpi: diag2
+topology: None
+ignore-unknowns: False
+first-touch: False
+topology: None
+log-level: DEBUG
+first-touch: False
+ignore-unknowns: False
+first-touch: False
+jit-backdoor: False
+log-level: DEBUG
+ignore-unknowns: False
+ignore-unknowns: False
+safe-math: False
+jit-backdoor: False
+log-level: DEBUG
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+safe-math: False
+jit-backdoor: False
+jit-backdoor: False
+deviceid: -1
+safe-math: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+deviceid: -1
+opt: advanced
+develop-mode: False
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+opt-options: {}
+opt: advanced
+develop-mode: False
+develop-mode: False
+profiling: basic
+opt: advanced
+opt-options: {}
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+opt-options: {}
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+beta: 0
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+decoupler: False
+decoupler: False
+beta: 0
+bypass-version-check: False
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Configuration not found.
+nt: 401
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Operator `Simple` generated in 2.29 s
+  * lowering.IET: 1.92 s (84.1 %)
+     * specializing.IET: 1.57 s (68.8 %)
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+        * make_halo_exchanges: 0.50 s (21.9 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (84.2 %)
+     * specializing.IET: 1.56 s (68.8 %)
+        * make_halo_exchanges: 0.50 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (84.0 %)
+     * specializing.IET: 1.56 s (68.6 %)
+        * make_halo_exchanges: 0.50 s (22.0 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.30 s
+  * lowering.IET: 1.93 s (84.1 %)
+     * specializing.IET: 1.58 s (68.9 %)
+        * make_halo_exchanges: 0.50 s (21.8 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.70 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 9.57 s
+Global performance: [OI=0.45, 3006.93 GFlops/s, 44.88 GPts/s]
+Global performance <w/o setup>: [7.58 s, 56.68 GPts/s]
+Local performance:
+  * section0[rank0] ran in 7.58 s [OI=0.45, 949.77 GFlops/s, 14.18 GPts/s]
+  * section0[rank1] ran in 7.57 s [OI=0.45, 950.54 GFlops/s, 14.19 GPts/s]
+  * section0[rank2] ran in 7.58 s [OI=0.45, 949.26 GFlops/s, 14.17 GPts/s]
+  * section0[rank3] ran in 7.56 s [OI=0.45, 952.69 GFlops/s, 14.22 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+platform: nvidiaX
+platform: nvidiaX
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+topology: None
+language: cuda
+mpi: diag2
+language: cuda
+mpi: diag2
+first-touch: False
+topology: None
+mpi: diag2
+topology: None
+ignore-unknowns: False
+first-touch: False
+topology: None
+log-level: DEBUG
+first-touch: False
+ignore-unknowns: False
+first-touch: False
+jit-backdoor: False
+ignore-unknowns: False
+log-level: DEBUG
+ignore-unknowns: False
+log-level: DEBUG
+safe-math: False
+jit-backdoor: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+opt-options: {}
+opt: advanced
+develop-mode: False
+opt-options: {}
+profiling: basic
+opt-options: {}
+opt: advanced
+profiling: basic
+profiling: basic
+opt-options: {}
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+beta: 0
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+decoupler: False
+decoupler: False
+beta: 0
+bypass-version-check: False
+bypass-version-check: False
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.1 %)
+     * specializing.IET: 1.18 s (69.1 %)
+        * make_halo_exchanges: 0.46 s (27.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.6 %)
+     * specializing.IET: 1.18 s (69.0 %)
+        * make_halo_exchanges: 0.46 s (26.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.5 %)
+     * specializing.IET: 1.18 s (68.9 %)
+        * make_halo_exchanges: 0.46 s (26.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.73 s
+  * lowering.IET: 1.43 s (83.2 %)
+     * specializing.IET: 1.18 s (68.6 %)
+        * make_halo_exchanges: 0.46 s (26.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Operator `Simple` arguments preprocess: 3.41 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 40.95 s
+Global performance: [OI=0.56, 3251.38 GFlops/s, 104.89 GPts/s]
+Global performance <w/o setup>: [38.66 s, 111.10 GPts/s]
+Local performance:
+  * section0[rank0] ran in 38.66 s [OI=0.56, 861.13 GFlops/s, 27.78 GPts/s]
+  * section0[rank1] ran in 38.65 s [OI=0.56, 861.39 GFlops/s, 27.79 GPts/s]
+  * section0[rank2] ran in 38.66 s [OI=0.56, 861.00 GFlops/s, 27.78 GPts/s]
+  * section0[rank3] ran in 38.65 s [OI=0.56, 861.35 GFlops/s, 27.79 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+mpi: diag2
+language: cuda
+compiler: CudaCompiler
+platform: nvidiaX
+mpi: diag2
+topology: None
+language: cuda
+topology: None
+first-touch: False
+compiler: CudaCompiler
+mpi: diag2
+first-touch: False
+ignore-unknowns: False
+language: cuda
+topology: None
+log-level: DEBUG
+ignore-unknowns: False
+mpi: diag2
+log-level: DEBUG
+jit-backdoor: False
+first-touch: False
+jit-backdoor: False
+safe-math: False
+topology: None
+ignore-unknowns: False
+safe-math: False
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+first-touch: False
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+deviceid: -1
+ignore-unknowns: False
+deviceid: -1
+safe-math: False
+log-level: DEBUG
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+jit-backdoor: False
+develop-mode: False
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+safe-math: False
+opt: advanced
+deviceid: -1
+opt: advanced
+opt-options: {}
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+opt-options: {}
+profiling: basic
+deviceid: -1
+develop-mode: False
+profiling: basic
+lazy-host-mem-perc: 0.7
+opt: advanced
+autotuning: (False, 'preemptive')
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+opt-options: {}
+develop-mode: False
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+opt: advanced
+profiling: basic
+lazy-disk-mem-perc: 0.7
+beta: 0
+opt-options: {}
+lazy-host-mem-perc: 0.7
+beta: 0
+decoupler: False
+profiling: basic
+lazy-device-mem-perc: 0.7
+decoupler: False
+bypass-version-check: False
+lazy-host-mem-perc: 0.7
+bypass-version-check: False
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+decoupler: False
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.73 s
+  * lowering.IET: 1.43 s (83.2 %)
+     * specializing.IET: 1.18 s (68.6 %)
+        * make_halo_exchanges: 0.46 s (26.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.42 s (83.0 %)
+     * specializing.IET: 1.18 s (68.9 %)
+        * make_halo_exchanges: 0.46 s (26.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.73 s
+  * lowering.IET: 1.43 s (83.0 %)
+     * specializing.IET: 1.18 s (68.5 %)
+        * make_halo_exchanges: 0.46 s (26.7 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.73 s
+  * lowering.IET: 1.44 s (83.4 %)
+     * specializing.IET: 1.19 s (68.9 %)
+        * make_halo_exchanges: 0.47 s (27.2 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Operator `Simple` arguments preprocess: 3.35 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 40.94 s
+Global performance: [OI=0.56, 3252.18 GFlops/s, 104.91 GPts/s]
+Global performance <w/o setup>: [38.67 s, 111.10 GPts/s]
+Local performance:
+  * section0[rank0] ran in 38.67 s [OI=0.56, 860.96 GFlops/s, 27.78 GPts/s]
+  * section0[rank1] ran in 38.65 s [OI=0.56, 861.30 GFlops/s, 27.79 GPts/s]
+  * section0[rank2] ran in 38.66 s [OI=0.56, 861.01 GFlops/s, 27.78 GPts/s]
+  * section0[rank3] ran in 38.65 s [OI=0.56, 861.30 GFlops/s, 27.79 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+platform: nvidiaX
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+compiler: CudaCompiler
+compiler: CudaCompiler
+topology: None
+mpi: diag2
+language: cuda
+language: cuda
+topology: None
+mpi: diag2
+first-touch: False
+mpi: diag2
+topology: None
+first-touch: False
+ignore-unknowns: False
+topology: None
+ignore-unknowns: False
+log-level: DEBUG
+first-touch: False
+first-touch: False
+log-level: DEBUG
+jit-backdoor: False
+ignore-unknowns: False
+ignore-unknowns: False
+jit-backdoor: False
+safe-math: False
+log-level: DEBUG
+log-level: DEBUG
+safe-math: False
+jit-backdoor: False
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+deviceid: -1
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+deviceid: -1
+deviceid: -1
+develop-mode: False
+develop-mode: False
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+opt: advanced
+opt: advanced
+develop-mode: False
+develop-mode: False
+opt-options: {}
+opt-options: {}
+opt: advanced
+opt: advanced
+profiling: basic
+profiling: basic
+opt-options: {}
+opt-options: {}
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+beta: 0
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+decoupler: False
+decoupler: False
+beta: 0
+beta: 0
+bypass-version-check: False
+bypass-version-check: False
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.70 s
+  * lowering.IET: 1.41 s (83.1 %)
+     * specializing.IET: 1.17 s (69.0 %)
+        * make_halo_exchanges: 0.45 s (26.6 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.4 %)
+     * specializing.IET: 1.17 s (68.7 %)
+        * make_halo_exchanges: 0.45 s (26.5 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.1 %)
+     * specializing.IET: 1.17 s (68.5 %)
+        * make_halo_exchanges: 0.46 s (27.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.73 s
+  * lowering.IET: 1.43 s (83.0 %)
+     * specializing.IET: 1.18 s (68.5 %)
+        * make_halo_exchanges: 0.46 s (26.7 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Operator `Simple` arguments preprocess: 3.39 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 40.95 s
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: diag2
+Global performance: [OI=0.56, 3251.38 GFlops/s, 104.89 GPts/s]
+mpi: diag2
+topology: None
+topology: None
+first-touch: False
+Global performance <w/o setup>: [38.67 s, 111.07 GPts/s]
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+Local performance:
+safe-math: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+develop-mode: False
+  * section0[rank0] ran in 38.67 s [OI=0.56, 860.78 GFlops/s, 27.77 GPts/s]
+opt: advanced
+opt-options: {}
+opt: advanced
+opt-options: {}
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+  * section0[rank1] ran in 38.65 s [OI=0.56, 861.39 GFlops/s, 27.79 GPts/s]
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+  * section0[rank2] ran in 38.66 s [OI=0.56, 861.03 GFlops/s, 27.78 GPts/s]
+  * section0[rank3] ran in 38.65 s [OI=0.56, 861.31 GFlops/s, 27.79 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+topology: None
+mpi: diag2
+first-touch: False
+topology: None
+ignore-unknowns: False
+first-touch: False
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+deviceid: -1
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+develop-mode: False
+opt-options: {}
+opt: advanced
+opt-options: {}
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.70 s
+  * lowering.IET: 1.42 s (83.6 %)
+     * specializing.IET: 1.17 s (68.9 %)
+        * make_halo_exchanges: 0.46 s (27.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.5 %)
+     * specializing.IET: 1.17 s (68.8 %)
+        * make_halo_exchanges: 0.46 s (27.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.3 %)
+     * specializing.IET: 1.18 s (68.8 %)
+        * make_halo_exchanges: 0.46 s (26.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.73 s
+  * lowering.IET: 1.43 s (83.0 %)
+     * specializing.IET: 1.18 s (68.5 %)
+        * make_halo_exchanges: 0.46 s (26.7 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Operator `Simple` arguments preprocess: 3.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 40.95 s
+Global performance: [OI=0.56, 3251.38 GFlops/s, 104.89 GPts/s]
+Global performance <w/o setup>: [38.66 s, 111.12 GPts/s]
+Local performance:
+  * section0[rank0] ran in 38.65 s [OI=0.56, 861.30 GFlops/s, 27.79 GPts/s]
+  * section0[rank1] ran in 38.66 s [OI=0.56, 861.20 GFlops/s, 27.79 GPts/s]
+  * section0[rank2] ran in 38.65 s [OI=0.56, 861.24 GFlops/s, 27.79 GPts/s]
+  * section0[rank3] ran in 38.66 s [OI=0.56, 861.13 GFlops/s, 27.78 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+language: cuda
+compiler: CudaCompiler
+compiler: CudaCompiler
+mpi: diag2
+mpi: diag2
+language: cuda
+language: cuda
+topology: None
+mpi: diag2
+topology: None
+mpi: diag2
+topology: None
+first-touch: False
+first-touch: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+ignore-unknowns: False
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+jit-backdoor: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+safe-math: False
+safe-math: False
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+deviceid: -1
+develop-mode: False
+develop-mode: False
+develop-mode: False
+opt: advanced
+autotuning: (False, 'preemptive')
+opt: advanced
+opt: advanced
+opt-options: {}
+develop-mode: False
+opt-options: {}
+opt-options: {}
+opt: advanced
+profiling: basic
+profiling: basic
+profiling: basic
+opt-options: {}
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+beta: 0
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+decoupler: False
+decoupler: False
+beta: 0
+bypass-version-check: False
+bypass-version-check: False
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Allocating host memory for Vp(516, 516, 1056) [1.0 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.70 s
+  * lowering.IET: 1.41 s (83.1 %)
+     * specializing.IET: 1.17 s (69.0 %)
+        * make_halo_exchanges: 0.45 s (26.6 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` generated in 1.71 s
+  * lowering.IET: 1.42 s (83.3 %)
+     * specializing.IET: 1.17 s (68.7 %)
+        * make_halo_exchanges: 0.46 s (27.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.72 s
+  * lowering.IET: 1.43 s (83.4 %)
+     * specializing.IET: 1.18 s (68.9 %)
+        * make_halo_exchanges: 0.45 s (26.3 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 1.74 s
+  * lowering.IET: 1.45 s (83.7 %)
+     * specializing.IET: 1.19 s (68.7 %)
+        * make_halo_exchanges: 0.46 s (26.6 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/9d5b98c8bbc17456080ba34a04793fc9602e4d7e.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Allocating host memory for u(3, 516, 516, 1056) [3.1 GB]
+Operator `Simple` arguments preprocess: 3.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 40.96 s
+Global performance: [OI=0.56, 3250.59 GFlops/s, 104.86 GPts/s]
+Global performance <w/o setup>: [38.69 s, 111.03 GPts/s]
+Local performance:
+  * section0[rank0] ran in 38.68 s [OI=0.56, 860.72 GFlops/s, 27.77 GPts/s]
+  * section0[rank1] ran in 38.67 s [OI=0.56, 860.84 GFlops/s, 27.77 GPts/s]
+  * section0[rank2] ran in 38.69 s [OI=0.56, 860.47 GFlops/s, 27.76 GPts/s]
+  * section0[rank3] ran in 38.68 s [OI=0.56, 860.77 GFlops/s, 27.77 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+platform: nvidiaX
+language: cuda
+mpi: diag2
+compiler: CudaCompiler
+topology: None
+language: cuda
+first-touch: False
+mpi: diag2
+ignore-unknowns: False
+topology: None
+log-level: DEBUG
+jit-backdoor: False
+first-touch: False
+ignore-unknowns: False
+safe-math: False
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+deviceid: -1
+safe-math: False
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+develop-mode: False
+opt: advanced
+autotuning: (False, 'preemptive')
+opt-options: {}
+develop-mode: False
+profiling: basic
+opt: advanced
+opt-options: {}
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+topology: None
+mpi: diag2
+topology: None
+first-touch: False
+ignore-unknowns: False
+first-touch: False
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+deviceid: -1
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+develop-mode: False
+opt-options: {}
+opt: advanced
+profiling: basic
+opt-options: {}
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.9 %)
+     * specializing.IET: 1.32 s (70.6 %)
+        * make_halo_exchanges: 0.46 s (24.6 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.6 %)
+     * specializing.IET: 1.32 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (25.1 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.58 s (83.5 %)
+     * specializing.IET: 1.33 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (24.9 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (84.0 %)
+     * specializing.IET: 1.34 s (70.8 %)
+        * make_halo_exchanges: 0.47 s (24.9 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.42 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 53.95 s
+Global performance: [OI=0.49, 3423.24 GFlops/s, 79.62 GPts/s]
+Global performance <w/o setup>: [51.46 s, 83.47 GPts/s]
+Local performance:
+  * section0[rank0] ran in 51.46 s [OI=0.49, 897.27 GFlops/s, 20.87 GPts/s]
+  * section0[rank1] ran in 51.45 s [OI=0.49, 897.53 GFlops/s, 20.88 GPts/s]
+  * section0[rank2] ran in 51.45 s [OI=0.49, 897.47 GFlops/s, 20.88 GPts/s]
+  * section0[rank3] ran in 51.45 s [OI=0.49, 897.47 GFlops/s, 20.88 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+language: cuda
+language: cuda
+mpi: diag2
+compiler: CudaCompiler
+mpi: diag2
+mpi: diag2
+language: cuda
+topology: None
+topology: None
+topology: None
+mpi: diag2
+first-touch: False
+first-touch: False
+first-touch: False
+topology: None
+ignore-unknowns: False
+ignore-unknowns: False
+ignore-unknowns: False
+log-level: DEBUG
+first-touch: False
+log-level: DEBUG
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+jit-backdoor: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+safe-math: False
+safe-math: False
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+safe-math: False
+deviceid: -1
+deviceid: -1
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+deviceid: -1
+develop-mode: False
+develop-mode: False
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+opt: advanced
+opt: advanced
+develop-mode: False
+opt-options: {}
+opt-options: {}
+opt-options: {}
+opt: advanced
+profiling: basic
+profiling: basic
+profiling: basic
+opt-options: {}
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+beta: 0
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+decoupler: False
+decoupler: False
+lazy-disk-mem-perc: 0.7
+beta: 0
+bypass-version-check: False
+bypass-version-check: False
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.8 %)
+     * specializing.IET: 1.32 s (70.5 %)
+        * make_halo_exchanges: 0.47 s (25.1 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.58 s (83.9 %)
+     * specializing.IET: 1.33 s (70.6 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.58 s (83.9 %)
+     * specializing.IET: 1.33 s (70.6 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.58 s (84.0 %)
+     * specializing.IET: 1.32 s (70.1 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.40 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 53.93 s
+Global performance: [OI=0.49, 3424.51 GFlops/s, 79.64 GPts/s]
+Global performance <w/o setup>: [51.47 s, 83.47 GPts/s]
+Local performance:
+  * section0[rank0] ran in 51.46 s [OI=0.49, 897.23 GFlops/s, 20.87 GPts/s]
+  * section0[rank1] ran in 51.47 s [OI=0.49, 897.22 GFlops/s, 20.87 GPts/s]
+  * section0[rank2] ran in 51.46 s [OI=0.49, 897.29 GFlops/s, 20.87 GPts/s]
+  * section0[rank3] ran in 51.45 s [OI=0.49, 897.51 GFlops/s, 20.88 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+platform: nvidiaX
+language: cuda
+mpi: diag2
+compiler: CudaCompiler
+topology: None
+language: cuda
+first-touch: False
+mpi: diag2
+ignore-unknowns: False
+topology: None
+log-level: DEBUG
+jit-backdoor: False
+first-touch: False
+safe-math: False
+ignore-unknowns: False
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+deviceid: -1
+safe-math: False
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+opt: advanced
+deviceid: -1
+autotuning: (False, 'preemptive')
+opt-options: {}
+develop-mode: False
+profiling: basic
+opt: advanced
+opt-options: {}
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+language: cuda
+mpi: diag2
+mpi: diag2
+topology: None
+topology: None
+first-touch: False
+first-touch: False
+ignore-unknowns: False
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+jit-backdoor: False
+jit-backdoor: False
+safe-math: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+develop-mode: False
+opt: advanced
+opt: advanced
+opt-options: {}
+opt-options: {}
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.7 %)
+     * specializing.IET: 1.32 s (70.4 %)
+        * make_halo_exchanges: 0.47 s (25.1 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.58 s (83.9 %)
+     * specializing.IET: 1.32 s (70.1 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.58 s (83.5 %)
+     * specializing.IET: 1.33 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (24.9 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (84.0 %)
+     * specializing.IET: 1.33 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (24.9 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.40 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 53.93 s
+Global performance: [OI=0.49, 3424.51 GFlops/s, 79.64 GPts/s]
+Global performance <w/o setup>: [51.49 s, 83.42 GPts/s]
+Local performance:
+  * section0[rank0] ran in 51.46 s [OI=0.49, 897.25 GFlops/s, 20.87 GPts/s]
+  * section0[rank1] ran in 51.46 s [OI=0.49, 897.28 GFlops/s, 20.87 GPts/s]
+  * section0[rank2] ran in 51.49 s [OI=0.49, 896.76 GFlops/s, 20.86 GPts/s]
+  * section0[rank3] ran in 51.45 s [OI=0.49, 897.51 GFlops/s, 20.88 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+language: cuda
+compiler: CudaCompiler
+compiler: CudaCompiler
+mpi: diag2
+mpi: diag2
+language: cuda
+language: cuda
+topology: None
+topology: None
+mpi: diag2
+mpi: diag2
+first-touch: False
+first-touch: False
+topology: None
+topology: None
+ignore-unknowns: False
+ignore-unknowns: False
+first-touch: False
+first-touch: False
+log-level: DEBUG
+log-level: DEBUG
+ignore-unknowns: False
+ignore-unknowns: False
+jit-backdoor: False
+jit-backdoor: False
+log-level: DEBUG
+log-level: DEBUG
+safe-math: False
+safe-math: False
+jit-backdoor: False
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+safe-math: False
+safe-math: False
+deviceid: -1
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+deviceid: -1
+deviceid: -1
+develop-mode: False
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+autotuning: (False, 'preemptive')
+opt: advanced
+opt-options: {}
+develop-mode: False
+develop-mode: False
+opt-options: {}
+profiling: basic
+opt: advanced
+opt: advanced
+profiling: basic
+opt-options: {}
+lazy-host-mem-perc: 0.7
+opt-options: {}
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+beta: 0
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+decoupler: False
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+beta: 0
+decoupler: False
+beta: 0
+decoupler: False
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.6 %)
+     * specializing.IET: 1.32 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (25.1 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.89 s
+  * lowering.IET: 1.58 s (84.0 %)
+     * specializing.IET: 1.32 s (70.2 %)
+        * make_halo_exchanges: 0.47 s (25.0 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.90 s
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (84.0 %)
+  * lowering.IET: 1.59 s (84.0 %)
+     * specializing.IET: 1.34 s (70.8 %)
+     * specializing.IET: 1.33 s (70.2 %)
+        * make_halo_exchanges: 0.47 s (24.9 %)
+        * make_halo_exchanges: 0.47 s (24.9 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.40 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 53.95 s
+Global performance: [OI=0.49, 3423.24 GFlops/s, 79.62 GPts/s]
+Global performance <w/o setup>: [51.50 s, 83.42 GPts/s]
+Local performance:
+  * section0[rank0] ran in 51.50 s [OI=0.49, 896.70 GFlops/s, 20.86 GPts/s]
+  * section0[rank1] ran in 51.45 s [OI=0.49, 897.51 GFlops/s, 20.88 GPts/s]
+  * section0[rank2] ran in 51.47 s [OI=0.49, 897.09 GFlops/s, 20.87 GPts/s]
+  * section0[rank3] ran in 51.46 s [OI=0.49, 897.24 GFlops/s, 20.87 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+language: cuda
+mpi: diag2
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+topology: None
+language: cuda
+mpi: diag2
+topology: None
+first-touch: False
+mpi: diag2
+topology: None
+first-touch: False
+ignore-unknowns: False
+topology: None
+ignore-unknowns: False
+first-touch: False
+log-level: DEBUG
+first-touch: False
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+ignore-unknowns: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+log-level: DEBUG
+safe-math: False
+jit-backdoor: False
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+deviceid: -1
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+deviceid: -1
+develop-mode: False
+deviceid: -1
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+opt: advanced
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt-options: {}
+develop-mode: False
+opt-options: {}
+opt: advanced
+profiling: basic
+opt: advanced
+profiling: basic
+opt-options: {}
+opt-options: {}
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+profiling: basic
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+decoupler: False
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Allocating host memory for Vp(520, 520, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.56 s (83.4 %)
+     * specializing.IET: 1.31 s (70.1 %)
+        * make_halo_exchanges: 0.47 s (25.2 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.88 s
+  * lowering.IET: 1.57 s (83.6 %)
+     * specializing.IET: 1.32 s (70.3 %)
+        * make_halo_exchanges: 0.47 s (25.1 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.90 s
+  * lowering.IET: 1.59 s (83.8 %)
+     * specializing.IET: 1.34 s (70.6 %)
+        * make_halo_exchanges: 0.47 s (24.8 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` generated in 1.91 s
+  * lowering.IET: 1.59 s (83.5 %)
+     * specializing.IET: 1.34 s (70.4 %)
+        * make_halo_exchanges: 0.47 s (24.7 %)
+Flops reduction after symbolic optimization: [43 --> 42]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/c9b3ae0be52ba4541431ba2a387053cbea7cd866.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Allocating host memory for u(3, 520, 520, 1056) [3.2 GB]
+Operator `Simple` arguments preprocess: 3.40 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 53.94 s
+Global performance: [OI=0.49, 3423.88 GFlops/s, 79.63 GPts/s]
+Global performance <w/o setup>: [51.47 s, 83.45 GPts/s]
+Local performance:
+  * section0[rank0] ran in 51.47 s [OI=0.49, 897.07 GFlops/s, 20.87 GPts/s]
+  * section0[rank1] ran in 51.45 s [OI=0.49, 897.53 GFlops/s, 20.88 GPts/s]
+  * section0[rank2] ran in 51.46 s [OI=0.49, 897.36 GFlops/s, 20.87 GPts/s]
+  * section0[rank3] ran in 51.46 s [OI=0.49, 897.37 GFlops/s, 20.87 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+topology: None
+mpi: diag2
+first-touch: False
+topology: None
+ignore-unknowns: False
+first-touch: False
+log-level: DEBUG
+ignore-unknowns: False
+jit-backdoor: False
+log-level: DEBUG
+safe-math: False
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+deviceid: -1
+platform: nvidiaX
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+platform: nvidiaX
+deviceid: -1
+develop-mode: False
+compiler: CudaCompiler
+autotuning: (False, 'preemptive')
+opt: advanced
+develop-mode: False
+language: cuda
+compiler: CudaCompiler
+opt-options: {}
+opt: advanced
+mpi: diag2
+language: cuda
+profiling: basic
+opt-options: {}
+topology: None
+mpi: diag2
+lazy-host-mem-perc: 0.7
+profiling: basic
+first-touch: False
+topology: None
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+ignore-unknowns: False
+first-touch: False
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+log-level: DEBUG
+ignore-unknowns: False
+beta: 0
+jit-backdoor: False
+lazy-disk-mem-perc: 0.7
+log-level: DEBUG
+decoupler: False
+safe-math: False
+beta: 0
+jit-backdoor: False
+bypass-version-check: False
+safe-math: False
+decoupler: False
+autopadding: <class 'numpy.float32'>
+bypass-version-check: False
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+develop-mode: False
+opt: advanced
+opt-options: {}
+opt-options: {}
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+Configuration not found.
+nt: 4001
+nt: 4001
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (84.2 %)
+     * specializing.IET: 1.56 s (68.7 %)
+        * make_halo_exchanges: 0.50 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (83.9 %)
+     * specializing.IET: 1.57 s (69.0 %)
+        * make_halo_exchanges: 0.50 s (22.0 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.32 s
+  * lowering.IET: 1.94 s (83.8 %)
+     * specializing.IET: 1.59 s (68.7 %)
+        * make_halo_exchanges: 0.51 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.32 s
+  * lowering.IET: 1.94 s (83.8 %)
+     * specializing.IET: 1.60 s (69.1 %)
+        * make_halo_exchanges: 0.51 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.72 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 77.89 s
+Global performance: [OI=0.45, 3694.48 GFlops/s, 55.15 GPts/s]
+Global performance <w/o setup>: [75.51 s, 56.89 GPts/s]
+Local performance:
+  * section0[rank0] ran in 75.51 s [OI=0.45, 952.82 GFlops/s, 14.23 GPts/s]
+  * section0[rank1] ran in 75.50 s [OI=0.45, 952.91 GFlops/s, 14.23 GPts/s]
+  * section0[rank2] ran in 75.50 s [OI=0.45, 952.94 GFlops/s, 14.23 GPts/s]
+  * section0[rank3] ran in 75.49 s [OI=0.45, 953.06 GFlops/s, 14.23 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+compiler: CudaCompiler
+compiler: CudaCompiler
+mpi: diag2
+language: cuda
+language: cuda
+language: cuda
+topology: None
+mpi: diag2
+mpi: diag2
+mpi: diag2
+first-touch: False
+topology: None
+topology: None
+topology: None
+ignore-unknowns: False
+first-touch: False
+first-touch: False
+log-level: DEBUG
+first-touch: False
+ignore-unknowns: False
+ignore-unknowns: False
+jit-backdoor: False
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+safe-math: False
+log-level: DEBUG
+jit-backdoor: False
+jit-backdoor: False
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+safe-math: False
+safe-math: False
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+develop-mode: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+opt: advanced
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt-options: {}
+develop-mode: False
+opt: advanced
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+opt: advanced
+profiling: basic
+opt-options: {}
+opt-options: {}
+lazy-host-mem-perc: 0.7
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-device-mem-perc: 0.7
+beta: 0
+decoupler: False
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+decoupler: False
+bypass-version-check: False
+beta: 0
+beta: 0
+bypass-version-check: False
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.27 s
+  * lowering.IET: 1.90 s (83.9 %)
+     * specializing.IET: 1.56 s (68.9 %)
+        * make_halo_exchanges: 0.50 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (83.9 %)
+     * specializing.IET: 1.56 s (68.5 %)
+        * make_halo_exchanges: 0.50 s (22.0 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.30 s
+  * lowering.IET: 1.93 s (84.0 %)
+     * specializing.IET: 1.58 s (68.8 %)
+        * make_halo_exchanges: 0.50 s (21.8 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.31 s
+  * lowering.IET: 1.93 s (83.9 %)
+     * specializing.IET: 1.58 s (68.7 %)
+        * make_halo_exchanges: 0.50 s (21.8 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.70 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 77.89 s
+Global performance: [OI=0.45, 3694.48 GFlops/s, 55.15 GPts/s]
+Global performance <w/o setup>: [75.50 s, 56.90 GPts/s]
+Local performance:
+  * section0[rank0] ran in 75.50 s [OI=0.45, 952.98 GFlops/s, 14.23 GPts/s]
+  * section0[rank1] ran in 75.48 s [OI=0.45, 953.16 GFlops/s, 14.23 GPts/s]
+  * section0[rank2] ran in 75.49 s [OI=0.45, 953.01 GFlops/s, 14.23 GPts/s]
+  * section0[rank3] ran in 75.49 s [OI=0.45, 953.03 GFlops/s, 14.23 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+platform: nvidiaX
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+mpi: diag2
+language: cuda
+topology: None
+topology: None
+mpi: diag2
+compiler: CudaCompiler
+first-touch: False
+first-touch: False
+topology: None
+language: cuda
+ignore-unknowns: False
+ignore-unknowns: False
+log-level: DEBUG
+mpi: diag2
+first-touch: False
+log-level: DEBUG
+jit-backdoor: False
+topology: None
+ignore-unknowns: False
+jit-backdoor: False
+safe-math: False
+log-level: DEBUG
+first-touch: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+ignore-unknowns: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+safe-math: False
+log-level: DEBUG
+deviceid: -1
+jit-backdoor: False
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+safe-math: False
+develop-mode: False
+deviceid: -1
+develop-mode: False
+opt: advanced
+autopadding: <class 'numpy.float32'>
+autotuning: (False, 'preemptive')
+opt: advanced
+opt-options: {}
+deviceid: -1
+develop-mode: False
+opt-options: {}
+profiling: basic
+profiling: basic
+autotuning: (False, 'preemptive')
+opt: advanced
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+develop-mode: False
+opt-options: {}
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+opt: advanced
+profiling: basic
+lazy-disk-mem-perc: 0.7
+opt-options: {}
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-host-mem-perc: 0.7
+profiling: basic
+beta: 0
+decoupler: False
+lazy-device-mem-perc: 0.7
+decoupler: False
+bypass-version-check: False
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+decoupler: False
+bypass-version-check: False
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.27 s
+  * lowering.IET: 1.90 s (83.9 %)
+     * specializing.IET: 1.56 s (68.9 %)
+        * make_halo_exchanges: 0.50 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (84.1 %)
+     * specializing.IET: 1.56 s (68.7 %)
+        * make_halo_exchanges: 0.50 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.31 s
+  * lowering.IET: 1.93 s (83.9 %)
+     * specializing.IET: 1.58 s (68.7 %)
+        * make_halo_exchanges: 0.50 s (21.8 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.31 s
+  * lowering.IET: 1.93 s (83.8 %)
+     * specializing.IET: 1.59 s (69.0 %)
+        * make_halo_exchanges: 0.50 s (21.7 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.71 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 77.89 s
+Global performance: [OI=0.45, 3694.48 GFlops/s, 55.15 GPts/s]
+Global performance <w/o setup>: [75.50 s, 56.90 GPts/s]
+Local performance:
+  * section0[rank0] ran in 75.50 s [OI=0.45, 952.94 GFlops/s, 14.23 GPts/s]
+  * section0[rank1] ran in 75.48 s [OI=0.45, 953.16 GFlops/s, 14.23 GPts/s]
+  * section0[rank2] ran in 75.48 s [OI=0.45, 953.15 GFlops/s, 14.23 GPts/s]
+  * section0[rank3] ran in 75.50 s [OI=0.45, 952.94 GFlops/s, 14.23 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+platform: nvidiaX
+language: cuda
+mpi: diag2
+language: cuda
+mpi: diag2
+topology: None
+mpi: diag2
+compiler: CudaCompiler
+topology: None
+first-touch: False
+topology: None
+language: cuda
+first-touch: False
+ignore-unknowns: False
+first-touch: False
+mpi: diag2
+ignore-unknowns: False
+log-level: DEBUG
+ignore-unknowns: False
+topology: None
+log-level: DEBUG
+jit-backdoor: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+first-touch: False
+jit-backdoor: False
+safe-math: False
+ignore-unknowns: False
+autopadding: <class 'numpy.float32'>
+safe-math: False
+autopadding: <class 'numpy.float32'>
+log-level: DEBUG
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+jit-backdoor: False
+autotuning: (False, 'preemptive')
+deviceid: -1
+safe-math: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+autopadding: <class 'numpy.float32'>
+opt: advanced
+develop-mode: False
+opt-options: {}
+deviceid: -1
+opt-options: {}
+opt: advanced
+profiling: basic
+autotuning: (False, 'preemptive')
+profiling: basic
+opt-options: {}
+develop-mode: False
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+profiling: basic
+opt: advanced
+opt-options: {}
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-device-mem-perc: 0.7
+beta: 0
+lazy-host-mem-perc: 0.7
+decoupler: False
+lazy-disk-mem-perc: 0.7
+decoupler: False
+bypass-version-check: False
+lazy-device-mem-perc: 0.7
+beta: 0
+bypass-version-check: False
+lazy-disk-mem-perc: 0.7
+decoupler: False
+beta: 0
+bypass-version-check: False
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.27 s
+  * lowering.IET: 1.90 s (84.0 %)
+     * specializing.IET: 1.56 s (69.0 %)
+        * make_halo_exchanges: 0.49 s (21.7 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (84.2 %)
+     * specializing.IET: 1.56 s (68.8 %)
+        * make_halo_exchanges: 0.50 s (22.1 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.31 s
+  * lowering.IET: 1.94 s (84.3 %)
+     * specializing.IET: 1.59 s (69.1 %)
+        * make_halo_exchanges: 0.51 s (22.2 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` generated in 2.31 s
+  * lowering.IET: 1.94 s (84.2 %)
+     * specializing.IET: 1.59 s (69.0 %)
+        * make_halo_exchanges: 0.51 s (22.2 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.17 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.71 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 77.88 s
+Global performance: [OI=0.45, 3694.96 GFlops/s, 55.15 GPts/s]
+Global performance <w/o setup>: [75.49 s, 56.90 GPts/s]
+Local performance:
+  * section0[rank0] ran in 75.49 s [OI=0.45, 953.06 GFlops/s, 14.23 GPts/s]
+  * section0[rank1] ran in 75.48 s [OI=0.45, 953.12 GFlops/s, 14.23 GPts/s]
+  * section0[rank2] ran in 75.49 s [OI=0.45, 953.03 GFlops/s, 14.23 GPts/s]
+  * section0[rank3] ran in 75.48 s [OI=0.45, 953.16 GFlops/s, 14.23 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+compiler: CudaCompiler
+platform: nvidiaX
+language: cuda
+mpi: diag2
+language: cuda
+mpi: diag2
+topology: None
+mpi: diag2
+topology: None
+first-touch: False
+compiler: CudaCompiler
+topology: None
+ignore-unknowns: False
+first-touch: False
+language: cuda
+log-level: DEBUG
+ignore-unknowns: False
+mpi: diag2
+first-touch: False
+jit-backdoor: False
+log-level: DEBUG
+topology: None
+ignore-unknowns: False
+safe-math: False
+jit-backdoor: False
+log-level: DEBUG
+first-touch: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+ignore-unknowns: False
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+safe-math: False
+log-level: DEBUG
+deviceid: -1
+autotuning: (False, 'preemptive')
+jit-backdoor: False
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+safe-math: False
+autotuning: (False, 'preemptive')
+deviceid: -1
+opt: advanced
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+opt-options: {}
+autotuning: (False, 'preemptive')
+deviceid: -1
+opt: advanced
+profiling: basic
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt-options: {}
+lazy-host-mem-perc: 0.7
+develop-mode: False
+opt: advanced
+profiling: basic
+lazy-device-mem-perc: 0.7
+opt: advanced
+opt-options: {}
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+opt-options: {}
+profiling: basic
+beta: 0
+lazy-device-mem-perc: 0.7
+profiling: basic
+decoupler: False
+lazy-host-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+bypass-version-check: False
+beta: 0
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+decoupler: False
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+beta: 0
+beta: 0
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 4
+mpi: diag2
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+The NVidia driver (vc_int(12060)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Configuration not found.
+nt: 4001
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Running operator with devitopro, and opt: None
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.26 s
+  * lowering.IET: 1.90 s (84.1 %)
+     * specializing.IET: 1.55 s (68.7 %)
+        * make_halo_exchanges: 0.49 s (21.7 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.28 s
+  * lowering.IET: 1.91 s (84.0 %)
+     * specializing.IET: 1.56 s (68.6 %)
+        * make_halo_exchanges: 0.50 s (22.0 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Operator `Simple` generated in 2.30 s
+  * lowering.IET: 1.93 s (84.2 %)
+     * specializing.IET: 1.58 s (68.9 %)
+        * make_halo_exchanges: 0.51 s (22.3 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.31 s
+  * lowering.IET: 1.93 s (84.0 %)
+     * specializing.IET: 1.58 s (68.7 %)
+        * make_halo_exchanges: 0.50 s (21.8 %)
+Flops reduction after symbolic optimization: [67 --> 66]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid9707/482323b9c5aabd9f2f88120f696ecc4e307a7ded.cu` in 0.16 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 3.73 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 77.86 s
+Global performance: [OI=0.45, 3695.91 GFlops/s, 55.17 GPts/s]
+Global performance <w/o setup>: [75.49 s, 56.90 GPts/s]
+Local performance:
+  * section0[rank0] ran in 75.49 s [OI=0.45, 953.05 GFlops/s, 14.23 GPts/s]
+  * section0[rank1] ran in 75.49 s [OI=0.45, 953.08 GFlops/s, 14.23 GPts/s]
+  * section0[rank2] ran in 75.48 s [OI=0.45, 953.13 GFlops/s, 14.23 GPts/s]
+  * section0[rank3] ran in 75.48 s [OI=0.45, 953.14 GFlops/s, 14.23 GPts/s]
+Performance[mode=noop] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: CudaCompiler
+compiler: CudaCompiler
+language: cuda
+language: cuda
+compiler: CudaCompiler
+mpi: diag2
+mpi: diag2
+platform: nvidiaX
+language: cuda
+topology: None
+topology: None
+mpi: diag2
+first-touch: False
+first-touch: False
+topology: None
+ignore-unknowns: False
+compiler: CudaCompiler
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+language: cuda
+first-touch: False
+jit-backdoor: False
+jit-backdoor: False
+mpi: diag2
+ignore-unknowns: False
+safe-math: False
+safe-math: False
+topology: None
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+jit-backdoor: False
+first-touch: False
+deviceid: -1
+deviceid: -1
+safe-math: False
+ignore-unknowns: False
+autotuning: (False, 'preemptive')
+log-level: DEBUG
+autotuning: (False, 'preemptive')
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+jit-backdoor: False
+develop-mode: False
+deviceid: -1
+opt: advanced
+safe-math: False
+opt: advanced
+autotuning: (False, 'preemptive')
+opt-options: {}
+opt-options: {}
+autopadding: <class 'numpy.float32'>
+develop-mode: False
+profiling: basic
+deviceid: -1
+profiling: basic
+opt: advanced
+lazy-host-mem-perc: 0.7
+autotuning: (False, 'preemptive')
+opt-options: {}
+lazy-host-mem-perc: 0.7
+develop-mode: False
+lazy-device-mem-perc: 0.7
+profiling: basic
+lazy-device-mem-perc: 0.7
+opt: advanced
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+opt-options: {}
+beta: 0
+beta: 0
+lazy-device-mem-perc: 0.7
+profiling: basic
+decoupler: False
+decoupler: False
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+bypass-version-check: False
+lazy-host-mem-perc: 0.7
+beta: 0
+lazy-device-mem-perc: 0.7
+decoupler: False
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+All runs completed.

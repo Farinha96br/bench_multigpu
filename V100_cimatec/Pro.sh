@@ -19,7 +19,7 @@ if [ -z "$GPUCOUNT" ] || [ "$GPUCOUNT" -eq 0 ]; then
     exit 1
 fi
 
-export IMAGE_PATH=/home/cimatec/andre.farinha/devitopro_update_23022026.sif
+export IMAGE_PATH=/home/cimatec/andre.farinha/devitopro_update20260605.sif
 export APPTAINER_TMPDIR=/home/cimatec/andre.farinha/apptainertmpdir
 export APPTAINER_CACHEDIR=/home/cimatec/andre.farinha/apptainercachedir
 mkdir -p $APPTAINER_TMPDIR $APPTAINER_CACHEDIR
@@ -31,7 +31,7 @@ devito_arch=cuda
 devito_platform=nvidiaX
 
 
-domain_sizes=(256 512)
+domain_sizes=(1024)
 space_orders=(2 4 8 2 4 8)
 final_times=(400 400 400 4000 4000 4000) 
 repeats=5
