@@ -430,5 +430,98 @@
                 ]
             }
         ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 2,
+        "domain_side": 1024,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": true,
+                "gpu-glb-mem": "async-pipe",
+                "index-mode": "int64",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "par-tile": [
+                    [
+                        128,
+                        4,
+                        48
+                    ]
+                ],
+                "gpu-prefetch": [
+                    2
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 4,
+        "domain_side": 1024,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "gpu-glb-mem": false,
+                "index-mode": "int64",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        8,
+                        48
+                    ]
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "gpu-hoist": [
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 8,
+        "domain_side": 1024,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "gpu-glb-mem": "async-pipe",
+                "index-mode": "int64",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        8,
+                        24
+                    ]
+                ],
+                "gpu-prefetch": [
+                    true
+                ]
+            }
+        ]
     }
 ]
