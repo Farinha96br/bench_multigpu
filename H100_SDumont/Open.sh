@@ -70,7 +70,6 @@ for space_order_idx in "${!space_orders[@]}"
             export DEVITO_PLATFORM=nvidiaX && \
             export DEVITO_ARCH=$devito_arch && \
             source /venv/bin/activate && \
-            export PYTHONPATH=/app/devito/ && \
             export DEVITO_LOGGING=DEBUG && \
             export DEVITO_MPI=$DEVITO_MPI && \
             $EXEC_STRING $BENCHMARK_SCRIPT \
