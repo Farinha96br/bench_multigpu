@@ -26,3 +26,6 @@ slurm-*.out
 # OS
 .DS_Store
 Thumbs.db
+
+# Images
+*.sif
