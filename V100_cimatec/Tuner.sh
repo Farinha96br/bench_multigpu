@@ -2,10 +2,9 @@
 #SBATCH --begin=now
 #SBATCH --time=0-12:00:00
 #SBATCH --partition=gpulongc
-#SBATCH --job-name=tunerV200
+#SBATCH --job-name=tunerV100
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=50G
-
 
 if [ -n "$SLURM_GPUS_ON_NODE" ]; then
     GPUCOUNT=$SLURM_GPUS_ON_NODE
@@ -18,7 +17,7 @@ if [ -z "$GPUCOUNT" ] || [ "$GPUCOUNT" -eq 0 ]; then
     exit 1
 fi
 
-export IMAGE_PATH=/home/cimatec/andre.farinha/devito_nvidia-nvc12-dev-amd64.sif
+export IMAGE_PATH=/home/cimatec/andre.farinha/devitopro_update20260605.sif
 export APPTAINER_TMPDIR=/home/cimatec/andre.farinha/apptainertmpdir
 export APPTAINER_CACHEDIR=/home/cimatec/andre.farinha/apptainercachedir
 mkdir -p $APPTAINER_TMPDIR $APPTAINER_CACHEDIR
@@ -29,9 +28,11 @@ devito_lang=cuda
 devito_arch=cuda
 devito_platform=nvidiaX
 
-domain_sizes=(256 512 1024)
+domain_sizes=(1024)
 space_orders=(2 4 8)
 final_times=(500) 
+
+FIXED_OPT="('fixed', {'index-mode': 'int64'})"
 
 for space_order_idx in "${!space_orders[@]}"
     do
@@ -39,11 +40,13 @@ for space_order_idx in "${!space_orders[@]}"
     for domain_size in "${domain_sizes[@]}"
     do
         DOMAIN_SIZE=$domain_size
-        if [ $SLURM_GPUS_ON_NODE -eq 1 ]
+        if [ "$GPUCOUNT" -eq 1 ]
         then
             DEVITO_MPI=0
+            EXEC_CMD="python3 -m devitotuner "
         else
             DEVITO_MPI="diag2"
+            EXEC_CMD="mpirun -np $GPUCOUNT python3 -m devitotuner "
         fi
     # now the repetitions
         echo "= START ="
@@ -60,10 +63,12 @@ for space_order_idx in "${!space_orders[@]}"
         export DEVITO_PLATFORM=nvidiaX && \
         export DEVITO_ARCH=$devito_arch && \
         export DEVITO_MPI=$DEVITO_MPI && \
-        mpirun -np $SLURM_GPUS_ON_NODE python3 -m devitotuner Simple V100_cimatec /v100_so_"$SPACE_ORDER"_d_"$DOMAIN_SIZE"_gpu_"$SLURM_GPUS_ON_NODE".json $BENCHMARK_SCRIPT run \
+        export DEVITO_TUNER_VERBOSE=0 && \
+        $EXEC_CMD Simple V100_cimatec/V100_so_${SPACE_ORDER}_d_${DOMAIN_SIZE}_gpu_${GPUCOUNT}.json \"$FIXED_OPT\" $BENCHMARK_SCRIPT \
         -d $DOMAIN_SIZE $DOMAIN_SIZE $DOMAIN_SIZE \
         -so $SPACE_ORDER \
-        -tn $FINAL_TIME"
+        -tn 100 \
+        -ngpus $GPUCOUNT"
         echo "= END ="
     done
 done

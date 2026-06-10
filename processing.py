@@ -1,4 +1,3 @@
-import sys
 import argparse
 import pandas as pd
 from utils.parser import parse_file
@@ -28,6 +27,9 @@ def print_tables(df_avg):
     display_cols = ['space-order', 'domain-size', 'time-steps', 'runtime_mean_s']
     col_headers = {'space-order': 'so', 'domain-size': 'domain_size',
                    'time-steps': 'iterations', 'runtime_mean_s': 'avg_runtime_s'}
+
+    def format_decimal(value):
+        return '{:.4f}'.format(value).replace('.', ',')
 
     all_runtimes = []
 

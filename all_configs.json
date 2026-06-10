@@ -1,0 +1,527 @@
+[
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 2,
+        "domain_side": 256,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "gpu-opt": false,
+                "linearize": "advanced",
+                "deriv-schedule": "smart"
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 2,
+        "domain_side": 256,
+        "gp_count": 2,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        128,
+                        4,
+                        24
+                    ]
+                ],
+                "linearize": "advanced",
+                "gpu-max-ilp": [
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 2,
+        "domain_side": 256,
+        "gp_count": 4,
+        "best_opt": [
+            "advanced",
+            {
+                "gpu-opt": false
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 2,
+        "domain_side": 512,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        128,
+                        4,
+                        24
+                    ]
+                ],
+                "linearize": "advanced",
+                "gpu-hoist": [
+                    1
+                ],
+                "gpu-max-ilp": [
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 2,
+        "domain_side": 512,
+        "gp_count": 2,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        7,
+                        48
+                    ]
+                ],
+                "deriv-schedule": "smart",
+                "fact-schedule": "basic",
+                "gpu-hoist": [
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 2,
+        "domain_side": 512,
+        "gp_count": 4,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        8,
+                        48
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 4,
+        "domain_side": 256,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "gpu-opt": false,
+                "deriv-schedule": "smart"
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 4,
+        "domain_side": 256,
+        "gp_count": 2,
+        "best_opt": [
+            "advanced",
+            {
+                "gpu-opt": false
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 4,
+        "domain_side": 256,
+        "gp_count": 4,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        4,
+                        24
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 4,
+        "domain_side": 512,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        8,
+                        48
+                    ]
+                ],
+                "linearize": "advanced",
+                "deriv-unroll": "inner",
+                "gpu-max-ilp": [
+                    1
+                ],
+                "gpu-launch-bounds": [
+                    true
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 4,
+        "domain_side": 512,
+        "gp_count": 2,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        7,
+                        64
+                    ]
+                ],
+                "linearize": "advanced",
+                "fact-schedule": "basic"
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 4,
+        "domain_side": 512,
+        "gp_count": 4,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        8,
+                        32
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 8,
+        "domain_side": 256,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "gpu-opt": false
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 8,
+        "domain_side": 256,
+        "gp_count": 2,
+        "best_opt": [
+            "advanced",
+            {
+                "gpu-opt": false
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 8,
+        "domain_side": 256,
+        "gp_count": 4,
+        "best_opt": [
+            "advanced",
+            {
+                "gpu-opt": false
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 8,
+        "domain_side": 512,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        7
+                    ]
+                ],
+                "linearize": "advanced",
+                "deriv-unroll": "inner",
+                "fact-schedule": "basic"
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 8,
+        "domain_side": 512,
+        "gp_count": 2,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        7
+                    ]
+                ],
+                "fact-schedule": "basic",
+                "gpu-hoist": [
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 8,
+        "domain_side": 512,
+        "gp_count": 4,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "par-tile": [
+                    [
+                        128,
+                        4
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 2,
+        "domain_side": 1024,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": true,
+                "gpu-glb-mem": "async-pipe",
+                "index-mode": "int64",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "par-tile": [
+                    [
+                        128,
+                        4,
+                        48
+                    ]
+                ],
+                "gpu-prefetch": [
+                    2
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 4,
+        "domain_side": 1024,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "gpu-glb-mem": false,
+                "index-mode": "int64",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        8,
+                        48
+                    ]
+                ],
+                "gpu-prefetch": [
+                    false
+                ],
+                "gpu-hoist": [
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "machine": "V100_cimatec",
+        "gpu_model": "V100",
+        "space_order": 8,
+        "domain_side": 1024,
+        "gp_count": 1,
+        "best_opt": [
+            "advanced",
+            {
+                "errctl": "basic",
+                "gpu-opt": true,
+                "gpu-vect": "minimal",
+                "gpu-glb-mem": "async-pipe",
+                "index-mode": "int64",
+                "cire-mode": [
+                    "automatic"
+                ],
+                "par-tile": [
+                    [
+                        64,
+                        8,
+                        24
+                    ]
+                ],
+                "gpu-prefetch": [
+                    true
+                ]
+            }
+        ]
+    }
+]

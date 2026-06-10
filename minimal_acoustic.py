@@ -14,18 +14,42 @@ import ast
 from devito import (Grid, TimeFunction, Function, Eq, Operator,
                     SparseTimeFunction, solve, print_state)
 
+from devitopro import *
+
+
+CONFIGS_PATH="/home/cimatec/andre.farinha/paper_multigpu/bench_multigpu/all_configs.json"
+
 parser = argparse.ArgumentParser()
+
 parser.add_argument("-d",   "--dimension",  nargs=3, type=int, default=[128, 128, 128], metavar=("NX", "NY", "NZ"))
 parser.add_argument("-so",  "--spaceorder", type=int, default=8)
 parser.add_argument("-tn",  "--timesteps",  type=int, default=500)
-parser.add_argument("-opt", "--options",    type=str, default="('advanced')")
+parser.add_argument("-pro", type=bool, default=False)
+parser.add_argument("-gpumodel", type=str, default="DummyGPU")
+parser.add_argument("-machine", type=str, default="DummyMachine")
+parser.add_argument("-ngpus", type=int, default=1)
 args = parser.parse_args()
 
+gpucount = args.ngpus
+
+if args.pro:
+    
+    if args.gpumodel == "DummyGPU":
+        # error
+        print("Error: Please specify a valid GPU model using the -gpumodel argument.")
+        exit(1)
+    if args.machine == "DummyMachine":
+        # error
+        print("Error: Please specify a valid machine using the -machine argument.")
+        exit(1)
+
+    from tuner_organizer import get_config
 
 
-opt_val = ast.literal_eval(args.options)
 
-
+    opt_opts = get_config(CONFIGS_PATH, args.machine, args.gpumodel, int(args.spaceorder), int(args.dimension[0]), gpucount)
+    #print("Arguments:", opt_opts)
+    
 # --- Model parameters ---
 origin = (0.0, 0.0, 0.0)
 shape = tuple(args.dimension)
@@ -35,6 +59,7 @@ spacing = (extent[0] / (shape[0] - 1), extent[1] / (shape[1] - 1), extent[2] / (
 t0, tn = 0.0, float(args.timesteps)
 dt = 1.0
 nt = int((tn - t0) / dt) + 1
+print("nt:", nt)
 so = args.spaceorder
 
 
@@ -44,12 +69,6 @@ grid = Grid(
     extent=extent,
 )
 
-import mpi4py.MPI as MPI
-comm = MPI.COMM_WORLD
-rank = comm.Get_rank()
-
-if rank == 0:
-    print(print_state())
 
 # Velocity model
 vp = Function(name='Vp', grid=grid, space_order=so)
@@ -58,43 +77,21 @@ vp.data[:] = 1.5
 # Create Pressure
 u = TimeFunction(name='u', grid=grid, space_order=so, time_order=2)
 
-# Create Ricker Source
-## src = SparseTimeFunction(name='RickerSrc', grid=grid, npoint=1, nt=nt)
-## src.coordinates.data[0, :] = np.array(
-##     [spacing[0] * shape[0] // 2,           
-##      spacing[1] * shape[1] // 2,  
-##      spacing[2] * shape[2] // 2]            
-## )
-## 
-## f0 = 0.025  # dominant frequency in kHz (~25 Hz)
-## t = np.linspace(t0, tn, nt)
-## tau = t - 1.0 / f0
-## src.data[:, 0] = (
-##     (1.0 - 2.0 * (np.pi * f0 * tau) ** 2)
-##     * np.exp(-(np.pi * f0 * tau) ** 2)
-## )
-## 
-## # Single receiver
-## rec = SparseTimeFunction(name='rec', grid=grid, npoint=1, nt=nt)
-## rec.coordinates.data[0, :] = np.array([
-##     spacing[0] * shape[0] // 2,           
-##     spacing[1] * shape[1] // 8, 
-##     spacing[2] * shape[2] // 2]            
-## )
-
 # Acoustic wave 
 #   u_tt = vp^2 * laplacian(u)
 pde = Eq(u.dt2, vp**2 * u.laplace)
 #print("PDE:", pde)
 stencil = Eq(u.forward, solve(pde, u.forward))
 #print("Stencil:", stencil)
-## src_term = src.inject(field=u.forward, expr=src * dt**2 * vp**2)
-## rec_term = rec.interpolate(expr=u)
 
-if rank == 0:
-    print("arguments:", opt_val)
-op = Operator([stencil], name="Simple", opt=opt_val)
+if args.pro:
+    print("Running operator with devitopro, and opt:", opt_opts)
+    op = Operator([stencil], name="Simple", opt=opt_opts)
+else:
+    print("Running operator with devito")
+    op = Operator([stencil], name="Simple")
 
 # Exec:
 op.apply(time=nt - 1, dt=dt)
 
+print_state()
