@@ -1,0 +1,89 @@
+#!/bin/bash
+#SBATCH --begin=now
+#SBATCH --time=6:00:00
+#SBATCH --partition=a100
+#SBATCH --job-name=open
+#SBATCH --mem=50G
+#SBATCH -A usp-2024.1
+
+
+
+
+GPUCOUNT=$SLURM_NTASKS
+
+
+if [ -z "$GPUCOUNT" ] || [ "$GPUCOUNT" -eq 0 ]; then
+    echo "Error: GPUCOUNT is not set or is 0" >&2
+    exit 1
+fi
+
+module load apptainer/1.4.1
+
+## essa image é com driver versao 12?
+export IMAGE_PATH=/home/andre.farinha/devito_nvidia-nvc12-dev-amd64.sif
+export APPTAINER_TMPDIR=/home/andre.farinha/apptainertmpdir
+export APPTAINER_CACHEDIR=/home/andre.farinha/apptainercachedir
+mkdir -p $APPTAINER_TMPDIR $APPTAINER_CACHEDIR
+
+export BENCHMARK_SCRIPT=minimal_acoustic.py
+
+devito_lang=openacc
+devito_arch=nvc
+devito_platform=nvidiaX
+
+
+domain_sizes=(256 512 1024)
+space_orders=(2 4 8 2 4 8)
+final_times=(400 400 400 4000 4000 4000) 
+repeats=5
+
+
+
+for space_order_idx in "${!space_orders[@]}"
+    do
+        SPACE_ORDER=${space_orders[$space_order_idx]}
+        FINAL_TIME=${final_times[$space_order_idx]}
+    for domain_size in "${domain_sizes[@]}"
+    do
+        DOMAIN_SIZE=$domain_size
+        if [ $GPUCOUNT -eq 1 ]
+        then
+            DEVITO_MPI=0
+            EXEC_CMD="python3 "
+        else
+            DEVITO_MPI=basic
+            EXEC_CMD="mpirun -np $GPUCOUNT python3 "
+        fi
+        # now the repetitions
+        for j in $(seq 1 $repeats)
+        do
+            echo "= START ="
+            echo "run-number: $j"
+            echo "domain-size: $DOMAIN_SIZE"
+            echo "space-order: $SPACE_ORDER"
+            echo "time-steps: $FINAL_TIME" 
+            echo "devito-version: open"
+            echo "gpu-num: $GPUCOUNT"
+            echo "mpi: $DEVITO_MPI"
+
+            apptainer exec --nv ${IMAGE_PATH} bash -c \
+            "export DEVITO_LANGUAGE=$devito_lang && \
+            export DEVITO_PLATFORM=nvidiaX && \
+            export DEVITO_ARCH=$devito_arch && \
+            source /venv/bin/activate && \
+            export PYTHONPATH=devito/ && \
+            export DEVITO_LOGGING=DEBUG && \
+            export DEVITO_MPI=$DEVITO_MPI && \
+            export UCX_CUDA_COPY_SYNC_MEMOPS=no && \
+            $EXEC_CMD $BENCHMARK_SCRIPT \
+            -d $DOMAIN_SIZE $DOMAIN_SIZE $DOMAIN_SIZE \
+            -so $SPACE_ORDER \
+            -tn $FINAL_TIME"
+
+            echo "= END ="
+                
+        done
+    done
+done
+
+echo "All runs completed."
