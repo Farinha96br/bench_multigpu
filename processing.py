@@ -1,4 +1,3 @@
-import sys
 import argparse
 import pandas as pd
 from utils.parser import parse_file
@@ -29,6 +28,9 @@ def print_tables(df_avg):
     col_headers = {'space-order': 'so', 'domain-size': 'domain_size',
                    'time-steps': 'iterations', 'runtime_mean_s': 'avg_runtime_s'}
 
+    def format_decimal(value):
+        return '{:.4f}'.format(value).replace('.', ',')
+
     all_runtimes = []
 
     for gpu, group in df_avg.groupby('gpu-num', sort=True):
@@ -39,7 +41,7 @@ def print_tables(df_avg):
             .sort_values(['so', 'domain_size', 'iterations'])
             .reset_index(drop=True)
         )
-        table['avg_runtime_s'] = table['avg_runtime_s'].map('{:.4f}'.format)
+        table['avg_runtime_s'] = table['avg_runtime_s'].map(format_decimal)
         print(table.to_string(index=False))
         all_runtimes.extend(table['avg_runtime_s'].tolist())
 
