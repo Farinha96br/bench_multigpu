@@ -15258,3 +15258,138 @@ Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
 Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
 Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
 Operator `Simple` arguments preprocess: 1.52 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 36.99 s
+Global performance: [OI=6.25, 8940.60 GFlops/s, 116.12 GPts/s]
+Global performance <w/o setup>: [35.51 s, 120.97 GPts/s]
+Local performance:
+  * section0[rank0] ran in 35.51 s [OI=6.25, 2328.57 GFlops/s, 30.25 GPts/s]
+  * section0[rank1] ran in 35.28 s [OI=6.25, 2344.04 GFlops/s, 30.45 GPts/s]
+  * section0[rank2] ran in 35.31 s [OI=6.25, 2342.05 GFlops/s, 30.42 GPts/s]
+  * section0[rank3] ran in 35.30 s [OI=6.25, 2342.64 GFlops/s, 30.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+compiler: NvidiaCompiler
+compiler: NvidiaCompiler
+platform: nvidiaX
+language: openacc
+platform: nvidiaX
+language: openacc
+mpi: basic
+mpi: basic
+topology: None
+compiler: NvidiaCompiler
+topology: None
+first-touch: False
+language: openacc
+first-touch: False
+ignore-unknowns: False
+compiler: NvidiaCompiler
+mpi: basic
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+jit-backdoor: False
+language: openacc
+topology: None
+first-touch: False
+jit-backdoor: False
+safe-math: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+mpi: basic
+topology: None
+ignore-unknowns: False
+deviceid: -1
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+first-touch: False
+jit-backdoor: False
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+develop-mode: False
+opt: advanced
+safe-math: False
+ignore-unknowns: False
+opt: advanced
+log-level: DEBUG
+autopadding: <class 'numpy.float32'>
+opt-options: {}
+deviceid: -1
+profiling: basic
+jit-backdoor: False
+opt-options: {}
+lazy-host-mem-perc: 0.7
+autotuning: (False, 'preemptive')
+profiling: basic
+lazy-host-mem-perc: 0.7
+safe-math: False
+lazy-device-mem-perc: 0.7
+develop-mode: False
+lazy-disk-mem-perc: 0.7
+opt: advanced
+opt-options: {}
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+autopadding: <class 'numpy.float32'>
+beta: 0
+decoupler: False
+deviceid: -1
+profiling: basic
+beta: 0
+decoupler: False
+bypass-version-check: False
+lazy-host-mem-perc: 0.7
+autotuning: (False, 'preemptive')
+lazy-device-mem-perc: 0.7
+bypass-version-check: False
+develop-mode: False
+lazy-disk-mem-perc: 0.7
+opt: advanced
+beta: 0
+decoupler: False
+opt-options: {}
+bypass-version-check: False
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 4
+mpi: basic
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+nt: 4001
+nt: 4001
+nt: 4001
+nt: 4001
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devito
+Running operator with devito
+Running operator with devito
+Running operator with devito
