@@ -1,0 +1,4698 @@
+= START =
+run-number: 1
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.37 s
+  * lowering.IET: 0.20 s (54.7 %)
+     * specializing.IET: 0.09 s (24.6 %)
+  * lowering.Clusters: 0.13 s (35.6 %)
+     * specializing.Clusters: 0.08 s (21.9 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 3.79 s with `NvidiaCompiler`
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.48 s
+Global performance: [OI=2.38, 405.45 GFlops/s, 13.99 GPts/s]
+Global performance <w/o setup>: [0.16 s, 42.13 GPts/s]
+Local performance:
+  * section0 ran in 0.16 s [OI=2.38, 1221.73 GFlops/s, 42.13 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+nvc++ -g -fPIC -std=c++14 -gpu=mem:separate:pinnedalloc -mp -acc:gpu -fast -shared /tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp -lm -o /tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.so
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.4 %)
+     * specializing.IET: 0.19 s (43.7 %)
+        * place_transfers: 0.11 s (25.3 %)
+  * lowering.Clusters: 0.12 s (27.6 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.44 s
+Global performance: [OI=2.38, 442.31 GFlops/s, 15.26 GPts/s]
+Global performance <w/o setup>: [0.16 s, 43.08 GPts/s]
+Local performance:
+  * section0 ran in 0.16 s [OI=2.38, 1249.21 GFlops/s, 43.08 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.45 s
+  * lowering.IET: 0.29 s (65.3 %)
+     * specializing.IET: 0.20 s (45.1 %)
+        * place_transfers: 0.12 s (27.1 %)
+  * lowering.Clusters: 0.12 s (27.1 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.43 s
+Global performance: [OI=2.38, 452.60 GFlops/s, 15.61 GPts/s]
+Global performance <w/o setup>: [0.16 s, 42.93 GPts/s]
+Local performance:
+  * section0 ran in 0.16 s [OI=2.38, 1244.76 GFlops/s, 42.93 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.0 %)
+     * specializing.IET: 0.20 s (45.7 %)
+        * initialize: 0.11 s (25.2 %)
+  * lowering.Clusters: 0.12 s (27.5 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.44 s
+Global performance: [OI=2.38, 442.31 GFlops/s, 15.26 GPts/s]
+Global performance <w/o setup>: [0.16 s, 42.86 GPts/s]
+Local performance:
+  * section0 ran in 0.16 s [OI=2.38, 1242.91 GFlops/s, 42.86 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.4 %)
+     * specializing.IET: 0.20 s (46.0 %)
+        * place_transfers: 0.11 s (25.3 %)
+  * lowering.Clusters: 0.12 s (27.6 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.43 s
+Global performance: [OI=2.38, 452.60 GFlops/s, 15.61 GPts/s]
+Global performance <w/o setup>: [0.16 s, 44.05 GPts/s]
+Local performance:
+  * section0 ran in 0.16 s [OI=2.38, 1277.26 GFlops/s, 44.05 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.3 %)
+     * specializing.IET: 0.19 s (43.7 %)
+        * lower_ccalls: 0.11 s (25.3 %)
+  * lowering.Clusters: 0.12 s (27.6 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.61 s
+Global performance: [OI=2.39, 967.04 GFlops/s, 33.35 GPts/s]
+Global performance <w/o setup>: [1.03 s, 52.29 GPts/s]
+Local performance:
+  * section0 ran in 1.03 s [OI=2.39, 1516.29 GFlops/s, 52.29 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.42 s
+  * lowering.IET: 0.25 s (60.8 %)
+     * specializing.IET: 0.17 s (41.4 %)
+        * place_transfers: 0.09 s (21.9 %)
+  * lowering.Clusters: 0.12 s (29.2 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.04 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.60 s
+Global performance: [OI=2.39, 973.08 GFlops/s, 33.56 GPts/s]
+Global performance <w/o setup>: [1.03 s, 52.52 GPts/s]
+Local performance:
+  * section0 ran in 1.03 s [OI=2.39, 1522.98 GFlops/s, 52.52 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.43 s
+  * lowering.IET: 0.27 s (63.0 %)
+     * specializing.IET: 0.19 s (44.3 %)
+        * place_transfers: 0.11 s (25.7 %)
+  * lowering.Clusters: 0.12 s (28.0 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.61 s
+Global performance: [OI=2.39, 967.04 GFlops/s, 33.35 GPts/s]
+Global performance <w/o setup>: [1.03 s, 52.23 GPts/s]
+Local performance:
+  * section0 ran in 1.03 s [OI=2.39, 1514.50 GFlops/s, 52.23 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.43 s
+  * lowering.IET: 0.27 s (62.9 %)
+     * specializing.IET: 0.19 s (44.2 %)
+        * place_transfers: 0.10 s (23.3 %)
+  * lowering.Clusters: 0.12 s (28.0 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.29 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.66 s
+Global performance: [OI=2.39, 937.91 GFlops/s, 32.35 GPts/s]
+Global performance <w/o setup>: [1.04 s, 51.65 GPts/s]
+Local performance:
+  * section0 ran in 1.04 s [OI=2.39, 1497.58 GFlops/s, 51.65 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.45 s
+  * lowering.IET: 0.29 s (65.7 %)
+     * specializing.IET: 0.20 s (45.3 %)
+        * place_transfers: 0.12 s (27.2 %)
+  * lowering.Clusters: 0.12 s (27.2 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.63 s
+Global performance: [OI=2.39, 955.17 GFlops/s, 32.94 GPts/s]
+Global performance <w/o setup>: [1.04 s, 51.84 GPts/s]
+Local performance:
+  * section0 ran in 1.04 s [OI=2.39, 1503.22 GFlops/s, 51.84 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (63.9 %)
+     * specializing.IET: 0.20 s (45.7 %)
+        * place_transfers: 0.11 s (25.2 %)
+  * lowering.Clusters: 0.12 s (27.4 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.49 s
+  * lowering.IET: 0.32 s (66.6 %)
+     * specializing.IET: 0.23 s (47.9 %)
+        * place_transfers: 0.14 s (29.1 %)
+  * lowering.Clusters: 0.12 s (25.0 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.5 %)
+     * specializing.IET: 0.19 s (43.8 %)
+        * place_transfers: 0.10 s (23.1 %)
+  * lowering.Clusters: 0.12 s (27.7 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.0 %)
+     * specializing.IET: 0.19 s (43.5 %)
+        * place_transfers: 0.11 s (25.2 %)
+  * lowering.Clusters: 0.12 s (27.5 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.8 %)
+     * specializing.IET: 0.19 s (44.0 %)
+        * place_transfers: 0.11 s (25.5 %)
+  * lowering.Clusters: 0.12 s (27.8 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.5 %)
+     * specializing.Clusters: 0.19 s (36.1 %)
+  * lowering.IET: 0.21 s (39.9 %)
+     * specializing.IET: 0.11 s (20.9 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.82 s with `NvidiaCompiler`
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.45 s
+Global performance: [OI=3.79, 700.92 GFlops/s, 14.92 GPts/s]
+Global performance <w/o setup>: [0.17 s, 40.20 GPts/s]
+Local performance:
+  * section0 ran in 0.17 s [OI=3.79, 1889.15 GFlops/s, 40.20 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+nvc++ -g -fPIC -std=c++14 -gpu=mem:separate:pinnedalloc -mp -acc:gpu -fast -shared /tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp -lm -o /tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.so
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.54 s
+  * lowering.Clusters: 0.25 s (47.1 %)
+     * specializing.Clusters: 0.19 s (35.8 %)
+  * lowering.IET: 0.21 s (39.6 %)
+     * specializing.IET: 0.11 s (20.8 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.45 s
+Global performance: [OI=3.79, 700.92 GFlops/s, 14.92 GPts/s]
+Global performance <w/o setup>: [0.18 s, 38.36 GPts/s]
+Local performance:
+  * section0 ran in 0.18 s [OI=3.79, 1802.85 GFlops/s, 38.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.3 %)
+     * specializing.Clusters: 0.19 s (36.0 %)
+        * cire: 0.14 s (26.5 %)
+  * lowering.IET: 0.21 s (39.7 %)
+     * specializing.IET: 0.11 s (20.8 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.44 s
+Global performance: [OI=3.79, 716.85 GFlops/s, 15.26 GPts/s]
+Global performance <w/o setup>: [0.17 s, 40.33 GPts/s]
+Local performance:
+  * section0 ran in 0.17 s [OI=3.79, 1895.23 GFlops/s, 40.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.54 s
+  * lowering.Clusters: 0.25 s (47.0 %)
+     * specializing.Clusters: 0.19 s (35.8 %)
+  * lowering.IET: 0.21 s (39.5 %)
+     * specializing.IET: 0.11 s (20.7 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.46 s
+Global performance: [OI=3.79, 685.68 GFlops/s, 14.59 GPts/s]
+Global performance <w/o setup>: [0.18 s, 38.35 GPts/s]
+Local performance:
+  * section0 ran in 0.18 s [OI=3.79, 1802.34 GFlops/s, 38.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.54 s
+  * lowering.Clusters: 0.25 s (46.9 %)
+     * specializing.Clusters: 0.19 s (35.7 %)
+        * cire: 0.15 s (28.2 %)
+  * lowering.IET: 0.21 s (39.4 %)
+     * specializing.IET: 0.11 s (20.7 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.45 s
+Global performance: [OI=3.79, 700.92 GFlops/s, 14.92 GPts/s]
+Global performance <w/o setup>: [0.18 s, 38.33 GPts/s]
+Local performance:
+  * section0 ran in 0.18 s [OI=3.79, 1801.20 GFlops/s, 38.33 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.54 s
+  * lowering.Clusters: 0.25 s (47.0 %)
+     * specializing.Clusters: 0.19 s (35.7 %)
+        * cire: 0.15 s (28.2 %)
+  * lowering.IET: 0.21 s (39.5 %)
+     * specializing.IET: 0.11 s (20.7 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.70 s
+Global performance: [OI=3.85, 1484.30 GFlops/s, 31.59 GPts/s]
+Global performance <w/o setup>: [1.13 s, 47.59 GPts/s]
+Local performance:
+  * section0 ran in 1.13 s [OI=3.85, 2236.28 GFlops/s, 47.59 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.5 %)
+     * specializing.Clusters: 0.19 s (36.1 %)
+  * lowering.IET: 0.21 s (39.9 %)
+     * specializing.IET: 0.11 s (20.9 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.71 s
+Global performance: [OI=3.85, 1475.62 GFlops/s, 31.40 GPts/s]
+Global performance <w/o setup>: [1.14 s, 47.24 GPts/s]
+Local performance:
+  * section0 ran in 1.14 s [OI=3.85, 2219.92 GFlops/s, 47.24 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.24 s (46.1 %)
+     * specializing.Clusters: 0.18 s (34.6 %)
+  * lowering.IET: 0.21 s (40.3 %)
+     * specializing.IET: 0.11 s (21.1 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.72 s
+Global performance: [OI=3.85, 1467.04 GFlops/s, 31.22 GPts/s]
+Global performance <w/o setup>: [1.14 s, 47.14 GPts/s]
+Local performance:
+  * section0 ran in 1.14 s [OI=3.85, 2215.51 GFlops/s, 47.14 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.6 %)
+     * specializing.Clusters: 0.19 s (36.2 %)
+        * cire: 0.14 s (26.7 %)
+  * lowering.IET: 0.21 s (40.0 %)
+     * specializing.IET: 0.11 s (21.0 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.72 s
+Global performance: [OI=3.85, 1467.04 GFlops/s, 31.22 GPts/s]
+Global performance <w/o setup>: [1.15 s, 47.06 GPts/s]
+Local performance:
+  * section0 ran in 1.15 s [OI=3.85, 2211.81 GFlops/s, 47.06 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.5 %)
+     * specializing.Clusters: 0.19 s (36.1 %)
+        * cire: 0.14 s (26.6 %)
+  * lowering.IET: 0.21 s (39.9 %)
+     * specializing.IET: 0.11 s (20.9 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.71 s
+Global performance: [OI=3.85, 1475.62 GFlops/s, 31.40 GPts/s]
+Global performance <w/o setup>: [1.14 s, 47.35 GPts/s]
+Local performance:
+  * section0 ran in 1.14 s [OI=3.85, 2225.10 GFlops/s, 47.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.54 s
+  * lowering.Clusters: 0.25 s (46.8 %)
+     * specializing.Clusters: 0.19 s (35.6 %)
+  * lowering.IET: 0.21 s (39.3 %)
+     * specializing.IET: 0.11 s (20.6 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.52 s
+  * lowering.Clusters: 0.24 s (46.4 %)
+     * specializing.Clusters: 0.18 s (34.8 %)
+        * cire: 0.13 s (25.1 %)
+  * lowering.IET: 0.21 s (40.6 %)
+     * specializing.IET: 0.11 s (21.3 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.59 s
+  * lowering.Clusters: 0.30 s (51.8 %)
+     * specializing.Clusters: 0.24 s (41.4 %)
+  * lowering.IET: 0.21 s (36.3 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.06 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.58 s
+  * lowering.Clusters: 0.29 s (50.3 %)
+     * specializing.Clusters: 0.23 s (39.9 %)
+  * lowering.IET: 0.21 s (36.4 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.06 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.6 %)
+     * specializing.Clusters: 0.19 s (36.2 %)
+        * cire: 0.14 s (26.7 %)
+  * lowering.IET: 0.21 s (40.0 %)
+     * specializing.IET: 0.11 s (21.0 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.74 s
+  * lowering.Clusters: 0.31 s (42.3 %)
+     * schedule: 0.15 s (20.5 %)
+  * lowering.IET: 0.27 s (36.9 %)
+  * lowering.Expressions: 0.15 s (20.5 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.88 s with `NvidiaCompiler`
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.49 s
+Global performance: [OI=6.01, 1054.57 GFlops/s, 13.70 GPts/s]
+Global performance <w/o setup>: [0.22 s, 31.85 GPts/s]
+Local performance:
+  * section0 ran in 0.22 s [OI=6.01, 2452.20 GFlops/s, 31.85 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+nvc++ -g -fPIC -std=c++14 -gpu=mem:separate:pinnedalloc -mp -acc:gpu -fast -shared /tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp -lm -o /tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.so
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.6 %)
+     * schedule: 0.15 s (20.6 %)
+  * lowering.IET: 0.27 s (37.1 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.11 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.49 s
+Global performance: [OI=6.01, 1054.57 GFlops/s, 13.70 GPts/s]
+Global performance <w/o setup>: [0.22 s, 31.88 GPts/s]
+Local performance:
+  * section0 ran in 0.22 s [OI=6.01, 2454.63 GFlops/s, 31.88 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.74 s
+  * lowering.Clusters: 0.32 s (43.8 %)
+     * schedule: 0.15 s (20.6 %)
+  * lowering.IET: 0.27 s (37.0 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.49 s
+Global performance: [OI=6.01, 1054.57 GFlops/s, 13.70 GPts/s]
+Global performance <w/o setup>: [0.21 s, 32.05 GPts/s]
+Local performance:
+  * section0 ran in 0.21 s [OI=6.01, 2467.18 GFlops/s, 32.05 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.72 s
+  * lowering.Clusters: 0.30 s (41.8 %)
+  * lowering.IET: 0.27 s (37.6 %)
+  * lowering.Expressions: 0.15 s (20.9 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.49 s
+Global performance: [OI=6.01, 1054.57 GFlops/s, 13.70 GPts/s]
+Global performance <w/o setup>: [0.22 s, 31.87 GPts/s]
+Local performance:
+  * section0 ran in 0.22 s [OI=6.01, 2453.30 GFlops/s, 31.87 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.74 s
+  * lowering.Clusters: 0.31 s (42.3 %)
+     * schedule: 0.15 s (20.5 %)
+  * lowering.IET: 0.27 s (36.9 %)
+  * lowering.Expressions: 0.15 s (20.5 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.48 s
+Global performance: [OI=6.01, 1076.54 GFlops/s, 13.99 GPts/s]
+Global performance <w/o setup>: [0.20 s, 33.79 GPts/s]
+Local performance:
+  * section0 ran in 0.20 s [OI=6.01, 2601.67 GFlops/s, 33.79 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.6 %)
+     * schedule: 0.15 s (20.6 %)
+  * lowering.IET: 0.27 s (37.1 %)
+  * lowering.Expressions: 0.15 s (20.6 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.10 s
+Global performance: [OI=6.20, 1968.53 GFlops/s, 25.57 GPts/s]
+Global performance <w/o setup>: [1.51 s, 35.66 GPts/s]
+Local performance:
+  * section0 ran in 1.51 s [OI=6.20, 2745.70 GFlops/s, 35.66 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.74 s
+  * lowering.Clusters: 0.31 s (42.3 %)
+     * schedule: 0.15 s (20.5 %)
+  * lowering.IET: 0.27 s (36.9 %)
+  * lowering.Expressions: 0.15 s (20.5 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.10 s
+Global performance: [OI=6.20, 1968.53 GFlops/s, 25.57 GPts/s]
+Global performance <w/o setup>: [1.51 s, 35.66 GPts/s]
+Local performance:
+  * section0 ran in 1.51 s [OI=6.20, 2745.71 GFlops/s, 35.66 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.74 s
+  * lowering.Clusters: 0.31 s (42.5 %)
+     * schedule: 0.15 s (20.6 %)
+  * lowering.IET: 0.27 s (37.0 %)
+  * lowering.Expressions: 0.15 s (20.6 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.28 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.16 s
+Global performance: [OI=6.20, 1913.85 GFlops/s, 24.86 GPts/s]
+Global performance <w/o setup>: [1.50 s, 35.86 GPts/s]
+Local performance:
+  * section0 ran in 1.50 s [OI=6.20, 2760.85 GFlops/s, 35.86 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.6 %)
+     * schedule: 0.15 s (20.6 %)
+  * lowering.IET: 0.27 s (37.1 %)
+  * lowering.Expressions: 0.15 s (20.6 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.11 s
+Global performance: [OI=6.20, 1959.20 GFlops/s, 25.45 GPts/s]
+Global performance <w/o setup>: [1.52 s, 35.53 GPts/s]
+Local performance:
+  * section0 ran in 1.52 s [OI=6.20, 2735.65 GFlops/s, 35.53 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.74 s
+  * lowering.Clusters: 0.31 s (42.4 %)
+  * lowering.IET: 0.28 s (38.3 %)
+  * lowering.Expressions: 0.15 s (20.6 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.14 s
+Global performance: [OI=6.20, 1931.74 GFlops/s, 25.09 GPts/s]
+Global performance <w/o setup>: [1.51 s, 35.80 GPts/s]
+Local performance:
+  * section0 ran in 1.51 s [OI=6.20, 2755.91 GFlops/s, 35.80 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.78 s
+  * lowering.Clusters: 0.36 s (46.6 %)
+     * schedule: 0.19 s (24.6 %)
+  * lowering.IET: 0.27 s (35.0 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.74 s
+  * lowering.Clusters: 0.32 s (43.6 %)
+     * schedule: 0.15 s (20.4 %)
+  * lowering.IET: 0.27 s (36.8 %)
+  * lowering.Expressions: 0.15 s (20.4 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.74 s
+  * lowering.Clusters: 0.32 s (43.4 %)
+     * schedule: 0.16 s (21.7 %)
+  * lowering.IET: 0.27 s (36.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (43.0 %)
+  * lowering.IET: 0.27 s (37.5 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.8 %)
+     * schedule: 0.15 s (20.7 %)
+  * lowering.IET: 0.27 s (37.3 %)
+  * lowering.Expressions: 0.15 s (20.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 401
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.8 %)
+     * specializing.IET: 0.19 s (44.0 %)
+        * place_transfers: 0.11 s (25.5 %)
+  * lowering.Clusters: 0.12 s (27.8 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.04 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.68 s
+Global performance: [OI=2.38, 1158.43 GFlops/s, 39.95 GPts/s]
+Global performance <w/o setup>: [1.41 s, 47.93 GPts/s]
+Local performance:
+  * section0 ran in 1.41 s [OI=2.38, 1389.89 GFlops/s, 47.93 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.42 s
+  * lowering.IET: 0.26 s (62.1 %)
+     * specializing.IET: 0.18 s (43.0 %)
+        * place_transfers: 0.10 s (23.9 %)
+  * lowering.Clusters: 0.12 s (28.7 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.04 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.68 s
+Global performance: [OI=2.38, 1158.43 GFlops/s, 39.95 GPts/s]
+Global performance <w/o setup>: [1.40 s, 47.96 GPts/s]
+Local performance:
+  * section0 ran in 1.40 s [OI=2.38, 1390.74 GFlops/s, 47.96 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.43 s
+  * lowering.IET: 0.27 s (63.2 %)
+     * specializing.IET: 0.19 s (44.5 %)
+        * place_transfers: 0.10 s (23.4 %)
+  * lowering.Clusters: 0.12 s (28.1 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.04 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.65 s
+Global performance: [OI=2.38, 1179.49 GFlops/s, 40.68 GPts/s]
+Global performance <w/o setup>: [1.39 s, 48.48 GPts/s]
+Local performance:
+  * section0 ran in 1.39 s [OI=2.38, 1405.92 GFlops/s, 48.48 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.49 s
+  * lowering.IET: 0.33 s (67.5 %)
+     * specializing.IET: 0.25 s (51.1 %)
+        * place_transfers: 0.16 s (32.8 %)
+  * lowering.Clusters: 0.12 s (24.6 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.67 s
+Global performance: [OI=2.38, 1165.37 GFlops/s, 40.19 GPts/s]
+Global performance <w/o setup>: [1.39 s, 48.37 GPts/s]
+Local performance:
+  * section0 ran in 1.39 s [OI=2.38, 1402.73 GFlops/s, 48.37 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.8 %)
+     * specializing.IET: 0.19 s (44.0 %)
+        * place_transfers: 0.11 s (25.5 %)
+  * lowering.Clusters: 0.12 s (27.8 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.77 s
+Global performance: [OI=2.38, 1099.53 GFlops/s, 37.92 GPts/s]
+Global performance <w/o setup>: [1.39 s, 48.58 GPts/s]
+Local performance:
+  * section0 ran in 1.39 s [OI=2.38, 1408.69 GFlops/s, 48.58 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (65.1 %)
+     * specializing.IET: 0.19 s (44.2 %)
+        * initialize: 0.10 s (23.3 %)
+  * lowering.Clusters: 0.12 s (27.9 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 10.78 s
+Global performance: [OI=2.40, 1444.28 GFlops/s, 49.81 GPts/s]
+Global performance <w/o setup>: [10.20 s, 52.68 GPts/s]
+Local performance:
+  * section0 ran in 10.20 s [OI=2.40, 1527.52 GFlops/s, 52.68 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.48 s
+  * lowering.IET: 0.32 s (66.9 %)
+     * specializing.IET: 0.23 s (48.1 %)
+        * place_transfers: 0.15 s (31.4 %)
+  * lowering.Clusters: 0.12 s (25.1 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 10.79 s
+Global performance: [OI=2.40, 1442.94 GFlops/s, 49.76 GPts/s]
+Global performance <w/o setup>: [10.19 s, 52.74 GPts/s]
+Local performance:
+  * section0 ran in 10.19 s [OI=2.40, 1529.31 GFlops/s, 52.74 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.3 %)
+     * specializing.IET: 0.19 s (43.7 %)
+        * place_transfers: 0.11 s (25.3 %)
+  * lowering.Clusters: 0.12 s (27.6 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 10.77 s
+Global performance: [OI=2.40, 1445.62 GFlops/s, 49.85 GPts/s]
+Global performance <w/o setup>: [10.20 s, 52.68 GPts/s]
+Local performance:
+  * section0 ran in 10.20 s [OI=2.40, 1527.47 GFlops/s, 52.68 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.9 %)
+     * specializing.IET: 0.19 s (44.0 %)
+        * place_transfers: 0.11 s (25.5 %)
+  * lowering.Clusters: 0.12 s (27.8 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.04 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 10.82 s
+Global performance: [OI=2.40, 1438.94 GFlops/s, 49.62 GPts/s]
+Global performance <w/o setup>: [10.20 s, 52.65 GPts/s]
+Local performance:
+  * section0 ran in 10.20 s [OI=2.40, 1526.70 GFlops/s, 52.65 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.45 s
+  * lowering.IET: 0.28 s (63.1 %)
+     * specializing.IET: 0.20 s (45.1 %)
+        * place_transfers: 0.11 s (24.8 %)
+  * lowering.Clusters: 0.12 s (27.1 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.29 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 10.87 s
+Global performance: [OI=2.40, 1432.32 GFlops/s, 49.40 GPts/s]
+Global performance <w/o setup>: [10.20 s, 52.69 GPts/s]
+Local performance:
+  * section0 ran in 10.20 s [OI=2.40, 1527.76 GFlops/s, 52.69 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.49 s
+  * lowering.IET: 0.32 s (66.2 %)
+     * specializing.IET: 0.24 s (49.7 %)
+        * place_transfers: 0.15 s (31.1 %)
+  * lowering.Clusters: 0.12 s (24.9 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.45 s
+  * lowering.IET: 0.29 s (65.7 %)
+     * specializing.IET: 0.20 s (45.3 %)
+        * place_transfers: 0.12 s (27.2 %)
+  * lowering.Clusters: 0.12 s (27.2 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.45 s
+  * lowering.IET: 0.28 s (63.6 %)
+     * specializing.IET: 0.19 s (43.2 %)
+        * place_transfers: 0.11 s (25.0 %)
+  * lowering.Clusters: 0.12 s (27.3 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.0 %)
+     * specializing.IET: 0.20 s (45.7 %)
+        * place_transfers: 0.11 s (25.2 %)
+  * lowering.Clusters: 0.12 s (27.5 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.44 s
+  * lowering.IET: 0.28 s (64.9 %)
+     * specializing.IET: 0.19 s (44.0 %)
+        * initialize: 0.10 s (23.2 %)
+  * lowering.Clusters: 0.12 s (27.8 %)
+Flops reduction after symbolic optimization: [40 --> 33]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/0ac20849ffb8c165bc87e986f6ec9d45e322910c.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3347891712 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.59 s
+  * lowering.Clusters: 0.31 s (52.8 %)
+     * specializing.Clusters: 0.25 s (42.6 %)
+  * lowering.IET: 0.21 s (35.8 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.06 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.78 s
+Global performance: [OI=3.80, 1771.98 GFlops/s, 37.71 GPts/s]
+Global performance <w/o setup>: [1.50 s, 44.94 GPts/s]
+Local performance:
+  * section0 ran in 1.50 s [OI=3.80, 2111.73 GFlops/s, 44.94 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.4 %)
+     * specializing.Clusters: 0.19 s (36.0 %)
+  * lowering.IET: 0.21 s (39.8 %)
+     * specializing.IET: 0.11 s (20.9 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.79 s
+Global performance: [OI=3.80, 1762.08 GFlops/s, 37.50 GPts/s]
+Global performance <w/o setup>: [1.52 s, 44.41 GPts/s]
+Local performance:
+  * section0 ran in 1.52 s [OI=3.80, 2086.89 GFlops/s, 44.41 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.3 %)
+     * specializing.Clusters: 0.19 s (35.9 %)
+  * lowering.IET: 0.21 s (39.7 %)
+     * specializing.IET: 0.11 s (20.8 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.78 s
+Global performance: [OI=3.80, 1771.98 GFlops/s, 37.71 GPts/s]
+Global performance <w/o setup>: [1.51 s, 44.65 GPts/s]
+Local performance:
+  * section0 ran in 1.51 s [OI=3.80, 2098.47 GFlops/s, 44.65 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.24 s (46.0 %)
+     * specializing.Clusters: 0.18 s (34.5 %)
+        * cire: 0.14 s (26.8 %)
+  * lowering.IET: 0.21 s (40.2 %)
+     * specializing.IET: 0.11 s (21.1 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.09 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.78 s
+Global performance: [OI=3.80, 1771.98 GFlops/s, 37.71 GPts/s]
+Global performance <w/o setup>: [1.50 s, 44.97 GPts/s]
+Local performance:
+  * section0 ran in 1.50 s [OI=3.80, 2113.34 GFlops/s, 44.97 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.54 s
+  * lowering.Clusters: 0.25 s (47.2 %)
+     * specializing.Clusters: 0.19 s (35.9 %)
+  * lowering.IET: 0.21 s (39.6 %)
+     * specializing.IET: 0.11 s (20.8 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.79 s
+Global performance: [OI=3.80, 1762.08 GFlops/s, 37.50 GPts/s]
+Global performance <w/o setup>: [1.52 s, 44.38 GPts/s]
+Local performance:
+  * section0 ran in 1.52 s [OI=3.80, 2085.53 GFlops/s, 44.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.56 s
+  * lowering.Clusters: 0.28 s (50.3 %)
+     * specializing.Clusters: 0.22 s (39.5 %)
+        * lift: 0.14 s (25.2 %)
+  * lowering.IET: 0.21 s (37.7 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.06 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 11.79 s
+Global performance: [OI=3.86, 2140.20 GFlops/s, 45.54 GPts/s]
+Global performance <w/o setup>: [11.20 s, 47.98 GPts/s]
+Local performance:
+  * section0 ran in 11.20 s [OI=3.86, 2254.83 GFlops/s, 47.98 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.6 %)
+     * specializing.Clusters: 0.19 s (36.2 %)
+  * lowering.IET: 0.21 s (40.0 %)
+     * specializing.IET: 0.11 s (21.0 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 11.76 s
+Global performance: [OI=3.86, 2145.66 GFlops/s, 45.66 GPts/s]
+Global performance <w/o setup>: [11.19 s, 47.99 GPts/s]
+Local performance:
+  * section0 ran in 11.19 s [OI=3.86, 2255.36 GFlops/s, 47.99 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.52 s
+  * lowering.Clusters: 0.24 s (46.2 %)
+     * specializing.Clusters: 0.18 s (34.7 %)
+        * cire: 0.13 s (25.1 %)
+  * lowering.IET: 0.21 s (40.5 %)
+     * specializing.IET: 0.11 s (21.2 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 11.76 s
+Global performance: [OI=3.86, 2145.66 GFlops/s, 45.66 GPts/s]
+Global performance <w/o setup>: [11.19 s, 48.00 GPts/s]
+Local performance:
+  * section0 ran in 11.19 s [OI=3.86, 2255.64 GFlops/s, 48.00 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.54 s
+  * lowering.Clusters: 0.25 s (47.2 %)
+     * specializing.Clusters: 0.19 s (35.9 %)
+  * lowering.IET: 0.21 s (39.7 %)
+     * specializing.IET: 0.11 s (20.8 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 11.78 s
+Global performance: [OI=3.86, 2142.02 GFlops/s, 45.58 GPts/s]
+Global performance <w/o setup>: [11.20 s, 47.95 GPts/s]
+Local performance:
+  * section0 ran in 11.20 s [OI=3.86, 2253.25 GFlops/s, 47.95 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.52 s
+  * lowering.Clusters: 0.24 s (46.4 %)
+     * specializing.Clusters: 0.18 s (34.8 %)
+        * cire: 0.13 s (25.2 %)
+  * lowering.IET: 0.21 s (40.6 %)
+     * specializing.IET: 0.11 s (21.3 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 11.78 s
+Global performance: [OI=3.86, 2142.02 GFlops/s, 45.58 GPts/s]
+Global performance <w/o setup>: [11.21 s, 47.93 GPts/s]
+Local performance:
+  * section0 ran in 11.21 s [OI=3.86, 2252.37 GFlops/s, 47.93 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.54 s
+  * lowering.Clusters: 0.25 s (47.0 %)
+     * specializing.Clusters: 0.19 s (35.8 %)
+  * lowering.IET: 0.21 s (39.5 %)
+     * specializing.IET: 0.11 s (20.7 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.24 s (46.1 %)
+     * specializing.Clusters: 0.18 s (34.6 %)
+  * lowering.IET: 0.21 s (40.3 %)
+     * specializing.IET: 0.11 s (21.1 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.58 s
+  * lowering.Clusters: 0.29 s (50.7 %)
+     * specializing.Clusters: 0.23 s (40.2 %)
+  * lowering.IET: 0.21 s (36.7 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.06 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.55 s
+  * lowering.Clusters: 0.26 s (48.0 %)
+     * specializing.Clusters: 0.20 s (36.9 %)
+        * cire: 0.15 s (27.7 %)
+  * lowering.IET: 0.21 s (38.8 %)
+     * specializing.IET: 0.11 s (20.3 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 0.53 s
+  * lowering.Clusters: 0.25 s (47.6 %)
+     * specializing.Clusters: 0.19 s (36.2 %)
+  * lowering.IET: 0.21 s (40.0 %)
+     * specializing.IET: 0.11 s (21.0 %)
+Flops reduction after symbolic optimization: [70 --> 51]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/d3631a3deccf25fc2a86db59f64514c133f012f2.cpp` in 0.06 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3373996032 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.78 s
+  * lowering.Clusters: 0.36 s (46.3 %)
+     * schedule: 0.19 s (24.5 %)
+  * lowering.IET: 0.27 s (34.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.06 s
+Global performance: [OI=6.03, 2508.44 GFlops/s, 32.58 GPts/s]
+Global performance <w/o setup>: [1.79 s, 37.70 GPts/s]
+Local performance:
+  * section0 ran in 1.79 s [OI=6.03, 2902.86 GFlops/s, 37.70 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.74 s
+  * lowering.Clusters: 0.32 s (43.4 %)
+     * schedule: 0.16 s (21.7 %)
+  * lowering.IET: 0.27 s (36.6 %)
+  * lowering.Expressions: 0.15 s (20.4 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.04 s
+Global performance: [OI=6.03, 2533.04 GFlops/s, 32.90 GPts/s]
+Global performance <w/o setup>: [1.77 s, 38.10 GPts/s]
+Local performance:
+  * section0 ran in 1.77 s [OI=6.03, 2932.97 GFlops/s, 38.10 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.72 s
+  * lowering.Clusters: 0.30 s (41.8 %)
+  * lowering.IET: 0.27 s (37.6 %)
+  * lowering.Expressions: 0.15 s (20.9 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.04 s
+Global performance: [OI=6.03, 2533.04 GFlops/s, 32.90 GPts/s]
+Global performance <w/o setup>: [1.76 s, 38.24 GPts/s]
+Local performance:
+  * section0 ran in 1.76 s [OI=6.03, 2944.03 GFlops/s, 38.24 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.7 %)
+  * lowering.IET: 0.27 s (37.2 %)
+  * lowering.Expressions: 0.15 s (20.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.06 s
+Global performance: [OI=6.03, 2508.44 GFlops/s, 32.58 GPts/s]
+Global performance <w/o setup>: [1.79 s, 37.70 GPts/s]
+Local performance:
+  * section0 ran in 1.79 s [OI=6.03, 2902.58 GFlops/s, 37.70 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (43.0 %)
+     * schedule: 0.15 s (20.8 %)
+  * lowering.IET: 0.27 s (37.4 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.10 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 2.05 s
+Global performance: [OI=6.03, 2520.68 GFlops/s, 32.74 GPts/s]
+Global performance <w/o setup>: [1.77 s, 38.12 GPts/s]
+Local performance:
+  * section0 ran in 1.77 s [OI=6.03, 2934.62 GFlops/s, 38.12 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.72 s
+  * lowering.Clusters: 0.31 s (43.2 %)
+  * lowering.IET: 0.27 s (37.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 15.48 s
+Global performance: [OI=6.22, 2670.49 GFlops/s, 34.69 GPts/s]
+Global performance <w/o setup>: [14.89 s, 36.07 GPts/s]
+Local performance:
+  * section0 ran in 14.89 s [OI=6.22, 2777.02 GFlops/s, 36.07 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.9 %)
+  * lowering.IET: 0.27 s (37.4 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 15.49 s
+Global performance: [OI=6.22, 2668.76 GFlops/s, 34.66 GPts/s]
+Global performance <w/o setup>: [14.90 s, 36.05 GPts/s]
+Local performance:
+  * section0 ran in 14.90 s [OI=6.22, 2775.54 GFlops/s, 36.05 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.6 %)
+     * schedule: 0.15 s (20.6 %)
+  * lowering.IET: 0.27 s (37.1 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 15.50 s
+Global performance: [OI=6.22, 2667.04 GFlops/s, 34.64 GPts/s]
+Global performance <w/o setup>: [14.91 s, 36.03 GPts/s]
+Local performance:
+  * section0 ran in 14.91 s [OI=6.22, 2774.10 GFlops/s, 36.03 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.8 %)
+     * schedule: 0.15 s (20.7 %)
+  * lowering.IET: 0.27 s (37.2 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 15.50 s
+Global performance: [OI=6.22, 2667.04 GFlops/s, 34.64 GPts/s]
+Global performance <w/o setup>: [14.90 s, 36.04 GPts/s]
+Local performance:
+  * section0 ran in 14.90 s [OI=6.22, 2774.59 GFlops/s, 36.04 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.7 %)
+     * schedule: 0.15 s (20.7 %)
+  * lowering.IET: 0.27 s (37.2 %)
+  * lowering.Expressions: 0.15 s (20.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 15.49 s
+Global performance: [OI=6.22, 2668.76 GFlops/s, 34.66 GPts/s]
+Global performance <w/o setup>: [14.90 s, 36.04 GPts/s]
+Local performance:
+  * section0 ran in 14.90 s [OI=6.22, 2774.65 GFlops/s, 36.04 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: NvidiaCompiler
+language: openacc
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devito
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.72 s
+  * lowering.Clusters: 0.30 s (41.8 %)
+  * lowering.IET: 0.27 s (37.6 %)
+  * lowering.Expressions: 0.15 s (20.9 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.6 %)
+     * schedule: 0.15 s (20.6 %)
+  * lowering.IET: 0.27 s (37.1 %)
+  * lowering.Expressions: 0.15 s (20.6 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.78 s
+  * lowering.Clusters: 0.36 s (46.2 %)
+  * lowering.IET: 0.27 s (34.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.78 s
+  * lowering.Clusters: 0.36 s (46.4 %)
+     * schedule: 0.19 s (24.5 %)
+  * lowering.IET: 0.27 s (34.8 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 1
+mpi: 0
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 0.73 s
+  * lowering.Clusters: 0.31 s (42.9 %)
+  * lowering.IET: 0.27 s (37.3 %)
+  * lowering.Expressions: 0.15 s (20.8 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/cb2d92cf81c436fa64c1755e455bf640822649d6.cpp` in 0.07 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+nt: 4001
+Running operator with devito
+Traceback (most recent call last):
+  File "<frozen devitopro.types.dense>", line 130, in _arg_check
+KeyError: 'gpu-vect'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andre.farinha/paper_multigpu/bench_multigpu/minimal_acoustic.py", line 95, in <module>
+    op.apply(time=nt - 1, dt=dt)
+  File "<frozen devitopro.operators.operator>", line 378, in apply
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 1020, in apply
+    args = self.arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.gpu>", line 340, in arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 794, in arguments
+    args = self._prepare_arguments(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen devitopro.operators.operator>", line 295, in _prepare_arguments
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/operator/operator.py", line 702, in _prepare_arguments
+    p._arg_check(args, self._dspace[p], am=self._access_modes.get(p),
+  File "<frozen devitopro.types.dense>", line 133, in _arg_check
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 1594, in _arg_check
+    super()._arg_check(args, intervals, **kwargs)
+  File "/home/andre.farinha/.conda/envs/devitopro311/lib/python3.11/site-packages/devito/types/dense.py", line 944, in _arg_check
+    raise InvalidArgument(f"`{self.name}`, with its {data.size} elements, is too "
+devito.exceptions.InvalidArgument: `u`, with its 3426508800 elements, is too big for int32 pointer arithmetic. Consider using the 'index-mode=int64' option, the save=Buffer(..) API (TimeFunction only), or domain decomposition via MPI
+= END =
+All runs completed.

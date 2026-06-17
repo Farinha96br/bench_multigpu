@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash --login
 #SBATCH --begin=now
 #SBATCH --time=6:00:00
 #SBATCH --partition=a100
@@ -17,9 +17,7 @@ if [ -z "$GPUCOUNT" ] || [ "$GPUCOUNT" -eq 0 ]; then
     exit 1
 fi
 
-module load apptainer/1.4.1
 
-## essa image é com driver versao 12?
 export IMAGE_PATH=/home/andre.farinha/devito_nvidia-nvc12-dev-amd64.sif
 export APPTAINER_TMPDIR=/home/andre.farinha/apptainertmpdir
 export APPTAINER_CACHEDIR=/home/andre.farinha/apptainercachedir
@@ -37,6 +35,11 @@ space_orders=(2 4 8 2 4 8)
 final_times=(400 400 400 4000 4000 4000) 
 repeats=5
 
+
+conda activate devitopro311
+module load nvhpc-hpcx-2.20-cuda12/26.3
+
+export PYTHONPATH=/home/andre.farinha/paper_multigpu/bench_multigpu/devitopro-trial-avenir
 
 
 for space_order_idx in "${!space_orders[@]}"
@@ -66,19 +69,17 @@ for space_order_idx in "${!space_orders[@]}"
             echo "gpu-num: $GPUCOUNT"
             echo "mpi: $DEVITO_MPI"
 
-            apptainer exec --nv ${IMAGE_PATH} bash -c \
-            "export DEVITO_LANGUAGE=$devito_lang && \
-            export DEVITO_PLATFORM=nvidiaX && \
-            export DEVITO_ARCH=$devito_arch && \
-            source /venv/bin/activate && \
-            export PYTHONPATH=devito/ && \
-            export DEVITO_LOGGING=DEBUG && \
-            export DEVITO_MPI=$DEVITO_MPI && \
-            export UCX_CUDA_COPY_SYNC_MEMOPS=no && \
+            
+            export DEVITO_LANGUAGE=$devito_lang  
+            export DEVITO_PLATFORM=nvidiaX  
+            export DEVITO_ARCH=$devito_arch  
+            export DEVITO_LOGGING=DEBUG  
+            export DEVITO_MPI=$DEVITO_MPI  
+
             $EXEC_CMD $BENCHMARK_SCRIPT \
             -d $DOMAIN_SIZE $DOMAIN_SIZE $DOMAIN_SIZE \
             -so $SPACE_ORDER \
-            -tn $FINAL_TIME"
+            -tn $FINAL_TIME
 
             echo "= END ="
                 
