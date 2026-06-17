@@ -15393,3 +15393,692 @@ Running operator with devito
 Running operator with devito
 Running operator with devito
 Running operator with devito
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.22 s
+  * lowering.IET: 0.78 s (64.3 %)
+     * specializing.IET: 0.55 s (45.4 %)
+        * make_halo_exchanges: 0.28 s (23.1 %)
+  * lowering.Clusters: 0.29 s (23.9 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.23 s
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+  * lowering.IET: 0.79 s (64.5 %)
+     * specializing.IET: 0.56 s (45.7 %)
+        * make_halo_exchanges: 0.28 s (22.9 %)
+  * lowering.Clusters: 0.29 s (23.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.22 s
+  * lowering.IET: 0.78 s (64.1 %)
+     * specializing.IET: 0.55 s (45.2 %)
+        * make_halo_exchanges: 0.28 s (23.0 %)
+  * lowering.Clusters: 0.29 s (23.9 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` generated in 1.22 s
+  * lowering.IET: 0.78 s (64.0 %)
+     * specializing.IET: 0.55 s (45.2 %)
+        * make_halo_exchanges: 0.28 s (23.0 %)
+  * lowering.Clusters: 0.29 s (23.8 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 1.54 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 36.97 s
+Global performance: [OI=6.25, 8945.43 GFlops/s, 116.18 GPts/s]
+Global performance <w/o setup>: [35.50 s, 121.00 GPts/s]
+Local performance:
+  * section0[rank0] ran in 35.50 s [OI=6.25, 2329.16 GFlops/s, 30.25 GPts/s]
+  * section0[rank1] ran in 35.27 s [OI=6.25, 2344.62 GFlops/s, 30.45 GPts/s]
+  * section0[rank2] ran in 35.30 s [OI=6.25, 2342.51 GFlops/s, 30.43 GPts/s]
+  * section0[rank3] ran in 35.28 s [OI=6.25, 2344.15 GFlops/s, 30.45 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: NvidiaCompiler
+compiler: NvidiaCompiler
+platform: nvidiaX
+language: openacc
+language: openacc
+compiler: NvidiaCompiler
+language: openacc
+mpi: basic
+topology: None
+mpi: basic
+topology: None
+mpi: basic
+first-touch: False
+compiler: NvidiaCompiler
+first-touch: False
+topology: None
+ignore-unknowns: False
+ignore-unknowns: False
+first-touch: False
+ignore-unknowns: False
+language: openacc
+mpi: basic
+log-level: DEBUG
+jit-backdoor: False
+log-level: DEBUG
+jit-backdoor: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+safe-math: False
+topology: None
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+first-touch: False
+deviceid: -1
+autopadding: <class 'numpy.float32'>
+ignore-unknowns: False
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+autotuning: (False, 'preemptive')
+log-level: DEBUG
+opt: advanced
+opt: advanced
+opt-options: {}
+develop-mode: False
+opt: advanced
+jit-backdoor: False
+opt-options: {}
+opt-options: {}
+safe-math: False
+profiling: basic
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-host-mem-perc: 0.7
+profiling: basic
+lazy-host-mem-perc: 0.7
+autopadding: <class 'numpy.float32'>
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+deviceid: -1
+lazy-disk-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+beta: 0
+autotuning: (False, 'preemptive')
+develop-mode: False
+beta: 0
+decoupler: False
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+bypass-version-check: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 4
+mpi: basic
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+nt: 4001
+nt: 4001
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+nt: 4001
+nt: 4001
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devito
+Running operator with devito
+Running operator with devito
+Running operator with devito
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.22 s
+  * lowering.IET: 0.78 s (64.0 %)
+     * specializing.IET: 0.55 s (45.2 %)
+        * make_halo_exchanges: 0.28 s (23.0 %)
+  * lowering.Clusters: 0.29 s (23.8 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.24 s
+  * lowering.IET: 0.79 s (63.9 %)
+     * specializing.IET: 0.56 s (45.3 %)
+        * make_halo_exchanges: 0.28 s (22.7 %)
+  * lowering.Clusters: 0.29 s (23.5 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` generated in 1.23 s
+  * lowering.IET: 0.78 s (63.9 %)
+     * specializing.IET: 0.55 s (45.1 %)
+        * make_halo_exchanges: 0.28 s (23.0 %)
+  * lowering.Clusters: 0.29 s (23.8 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` generated in 1.23 s
+  * lowering.IET: 0.78 s (63.8 %)
+     * specializing.IET: 0.55 s (45.0 %)
+        * make_halo_exchanges: 0.28 s (22.9 %)
+  * lowering.Clusters: 0.29 s (23.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 1.53 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 36.98 s
+Global performance: [OI=6.25, 8943.01 GFlops/s, 116.15 GPts/s]
+Global performance <w/o setup>: [35.51 s, 120.96 GPts/s]
+Local performance:
+  * section0[rank0] ran in 35.51 s [OI=6.25, 2328.45 GFlops/s, 30.24 GPts/s]
+  * section0[rank1] ran in 35.26 s [OI=6.25, 2344.86 GFlops/s, 30.46 GPts/s]
+  * section0[rank2] ran in 35.30 s [OI=6.25, 2342.50 GFlops/s, 30.43 GPts/s]
+  * section0[rank3] ran in 35.28 s [OI=6.25, 2344.07 GFlops/s, 30.45 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+compiler: NvidiaCompiler
+compiler: NvidiaCompiler
+language: openacc
+platform: nvidiaX
+language: openacc
+mpi: basic
+platform: nvidiaX
+mpi: basic
+topology: None
+topology: None
+first-touch: False
+compiler: NvidiaCompiler
+compiler: NvidiaCompiler
+ignore-unknowns: False
+log-level: DEBUG
+first-touch: False
+ignore-unknowns: False
+language: openacc
+mpi: basic
+language: openacc
+jit-backdoor: False
+log-level: DEBUG
+mpi: basic
+safe-math: False
+autopadding: <class 'numpy.float32'>
+topology: None
+first-touch: False
+jit-backdoor: False
+safe-math: False
+topology: None
+deviceid: -1
+ignore-unknowns: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+autotuning: (False, 'preemptive')
+opt: advanced
+safe-math: False
+log-level: DEBUG
+develop-mode: False
+opt: advanced
+opt-options: {}
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+jit-backdoor: False
+profiling: basic
+lazy-host-mem-perc: 0.7
+opt-options: {}
+safe-math: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+profiling: basic
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+autopadding: <class 'numpy.float32'>
+lazy-host-mem-perc: 0.7
+opt: advanced
+opt-options: {}
+beta: 0
+deviceid: -1
+lazy-device-mem-perc: 0.7
+decoupler: False
+bypass-version-check: False
+lazy-disk-mem-perc: 0.7
+profiling: basic
+autotuning: (False, 'preemptive')
+beta: 0
+lazy-host-mem-perc: 0.7
+develop-mode: False
+decoupler: False
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+bypass-version-check: False
+opt: advanced
+beta: 0
+opt-options: {}
+decoupler: False
+bypass-version-check: False
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 4
+mpi: basic
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+nt: 4001
+nt: 4001
+nt: 4001
+nt: 4001
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devito
+Running operator with devito
+Running operator with devito
+Running operator with devito
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.22 s
+  * lowering.IET: 0.78 s (64.2 %)
+     * specializing.IET: 0.55 s (45.3 %)
+        * make_halo_exchanges: 0.28 s (23.1 %)
+  * lowering.Clusters: 0.29 s (23.9 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.23 s
+  * lowering.IET: 0.78 s (63.5 %)
+     * specializing.IET: 0.55 s (44.8 %)
+        * make_halo_exchanges: 0.28 s (22.8 %)
+  * lowering.Clusters: 0.30 s (24.4 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` generated in 1.22 s
+  * lowering.IET: 0.78 s (64.0 %)
+     * specializing.IET: 0.55 s (45.2 %)
+        * make_halo_exchanges: 0.28 s (23.0 %)
+  * lowering.Clusters: 0.29 s (23.8 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` generated in 1.23 s
+  * lowering.IET: 0.78 s (63.8 %)
+     * specializing.IET: 0.55 s (45.0 %)
+        * make_halo_exchanges: 0.28 s (22.9 %)
+  * lowering.Clusters: 0.29 s (23.8 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 1.56 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 37.09 s
+Global performance: [OI=6.25, 8916.49 GFlops/s, 115.80 GPts/s]
+Global performance <w/o setup>: [35.62 s, 120.59 GPts/s]
+Local performance:
+  * section0[rank0] ran in 35.62 s [OI=6.25, 2321.26 GFlops/s, 30.15 GPts/s]
+  * section0[rank1] ran in 35.25 s [OI=6.25, 2345.57 GFlops/s, 30.47 GPts/s]
+  * section0[rank2] ran in 35.30 s [OI=6.25, 2342.64 GFlops/s, 30.43 GPts/s]
+  * section0[rank3] ran in 35.27 s [OI=6.25, 2344.23 GFlops/s, 30.45 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: NvidiaCompiler
+compiler: NvidiaCompiler
+compiler: NvidiaCompiler
+language: openacc
+language: openacc
+language: openacc
+mpi: basic
+topology: None
+mpi: basic
+topology: None
+mpi: basic
+topology: None
+first-touch: False
+platform: nvidiaX
+first-touch: False
+first-touch: False
+ignore-unknowns: False
+ignore-unknowns: False
+ignore-unknowns: False
+log-level: DEBUG
+log-level: DEBUG
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+jit-backdoor: False
+safe-math: False
+jit-backdoor: False
+safe-math: False
+compiler: NvidiaCompiler
+autopadding: <class 'numpy.float32'>
+language: openacc
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+deviceid: -1
+mpi: basic
+autotuning: (False, 'preemptive')
+develop-mode: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+topology: None
+opt: advanced
+opt-options: {}
+opt: advanced
+opt-options: {}
+first-touch: False
+ignore-unknowns: False
+opt: advanced
+opt-options: {}
+profiling: basic
+profiling: basic
+log-level: DEBUG
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+jit-backdoor: False
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+safe-math: False
+lazy-disk-mem-perc: 0.7
+beta: 0
+lazy-disk-mem-perc: 0.7
+beta: 0
+beta: 0
+decoupler: False
+autopadding: <class 'numpy.float32'>
+decoupler: False
+bypass-version-check: False
+deviceid: -1
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: open
+gpu-num: 4
+mpi: basic
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+nt: 4001
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+nt: 4001
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+nt: 4001
+DEVITO_MPI should be set to 'diag2' (single-node) or 'overlap2' (multi-node) for best performance with DevitoPRO
+nt: 4001
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+[LOG_CAT_SBGP] libnuma.so: cannot open shared object file: No such file or directory
+[LOG_CAT_SBGP] Failed to dlopen libnuma.so. Fallback to GROUP_BY_SOCKET manual.
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Allocating host memory for Vp(528, 528, 1056) [1.1 GB]
+Running operator with devito
+Running operator with devito
+Running operator with devito
+Running operator with devito
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.23 s
+  * lowering.IET: 0.79 s (64.5 %)
+     * specializing.IET: 0.55 s (44.9 %)
+        * make_halo_exchanges: 0.28 s (22.9 %)
+  * lowering.Clusters: 0.29 s (23.7 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` generated in 1.24 s
+  * lowering.IET: 0.79 s (64.2 %)
+     * specializing.IET: 0.56 s (45.6 %)
+        * make_halo_exchanges: 0.28 s (22.8 %)
+  * lowering.Clusters: 0.29 s (23.6 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.23 s
+  * lowering.IET: 0.78 s (63.9 %)
+     * specializing.IET: 0.55 s (45.1 %)
+        * make_halo_exchanges: 0.28 s (23.0 %)
+  * lowering.Clusters: 0.29 s (23.8 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` generated in 1.23 s
+  * lowering.IET: 0.78 s (63.9 %)
+     * specializing.IET: 0.55 s (45.1 %)
+        * make_halo_exchanges: 0.28 s (23.0 %)
+  * lowering.Clusters: 0.29 s (23.8 %)
+Flops reduction after symbolic optimization: [118 --> 81]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/343f392081a2e63a5f34f79c53aff23dae60b95d.cpp` in 0.13 s from jit-cache
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Allocating host memory for u(3, 528, 528, 1056) [3.3 GB]
+Operator `Simple` arguments preprocess: 1.52 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 36.97 s
+Global performance: [OI=6.25, 8945.43 GFlops/s, 116.18 GPts/s]
+Global performance <w/o setup>: [35.43 s, 121.24 GPts/s]
+Local performance:
+  * section0[rank0] ran in 35.43 s [OI=6.25, 2333.74 GFlops/s, 30.31 GPts/s]
+  * section0[rank1] ran in 35.26 s [OI=6.25, 2344.87 GFlops/s, 30.46 GPts/s]
+  * section0[rank2] ran in 35.30 s [OI=6.25, 2342.82 GFlops/s, 30.43 GPts/s]
+  * section0[rank3] ran in 35.28 s [OI=6.25, 2343.72 GFlops/s, 30.44 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+platform: nvidiaX
+compiler: NvidiaCompiler
+compiler: NvidiaCompiler
+language: openacc
+language: openacc
+compiler: NvidiaCompiler
+mpi: basic
+mpi: basic
+topology: None
+language: openacc
+topology: None
+compiler: NvidiaCompiler
+mpi: basic
+topology: None
+first-touch: False
+ignore-unknowns: False
+first-touch: False
+ignore-unknowns: False
+language: openacc
+mpi: basic
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+log-level: DEBUG
+jit-backdoor: False
+topology: None
+first-touch: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+safe-math: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+autopadding: <class 'numpy.float32'>
+ignore-unknowns: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+deviceid: -1
+autotuning: (False, 'preemptive')
+log-level: DEBUG
+deviceid: -1
+autotuning: (False, 'preemptive')
+autotuning: (False, 'preemptive')
+develop-mode: False
+jit-backdoor: False
+safe-math: False
+develop-mode: False
+opt: advanced
+develop-mode: False
+opt: advanced
+opt: advanced
+opt-options: {}
+opt-options: {}
+opt-options: {}
+autopadding: <class 'numpy.float32'>
+profiling: basic
+profiling: basic
+lazy-host-mem-perc: 0.7
+profiling: basic
+deviceid: -1
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+autotuning: (False, 'preemptive')
+lazy-disk-mem-perc: 0.7
+beta: 0
+develop-mode: False
+beta: 0
+decoupler: False
+lazy-disk-mem-perc: 0.7
+beta: 0
+opt: advanced
+bypass-version-check: False
+decoupler: False
+decoupler: False
+bypass-version-check: False
+bypass-version-check: False
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+= END =
+All runs completed.
