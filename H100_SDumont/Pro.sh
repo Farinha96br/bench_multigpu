@@ -2,32 +2,29 @@
 #SBATCH --begin=now
 #SBATCH --time=0-12:00:00
 #SBATCH --partition=lncc-h100
-#SBATCH --job-name=open
+#SBATCH --job-name=Pro
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=50G
 
 
 
-if [ -n "$SLURM_GPUS_ON_NODE" ]; then
-    GPUCOUNT=$SLURM_GPUS_ON_NODE
-else
-    GPUCOUNT=$SLURM_NTASKS
-fi
+GPUCOUNT=$SLURM_NTASKS
+
 
 if [ -z "$GPUCOUNT" ] || [ "$GPUCOUNT" -eq 0 ]; then
     echo "Error: GPUCOUNT is not set or is 0" >&2
     exit 1
 fi
 
-export IMAGE_PATH=/scratch/cadase/andre.bosio/devito.sif
-export APPTAINER_TMPDIR=/scratch/cadase/andre.bosio/andre.bosio/apptainertmpdir
-export APPTAINER_CACHEDIR=/scratch/cadase/andre.bosio/andre.bosio/apptainercachedir
+export IMAGE_PATH=/prj/cadase/andre.bosio/devitopro_update20260605.sif
+export APPTAINER_TMPDIR=/prj/cadase/andre.bosio/apptainertmpdir
+export APPTAINER_CACHEDIR=/prj/cadase/andre.bosio/apptainercachedir
 mkdir -p $APPTAINER_TMPDIR $APPTAINER_CACHEDIR
 
 export BENCHMARK_SCRIPT=minimal_acoustic.py
 
-devito_lang=openacc
-devito_arch=nvc
+devito_lang=cuda
+devito_arch=cuda
 devito_platform=nvidiaX
 
 
@@ -47,13 +44,14 @@ for space_order_idx in "${!space_orders[@]}"
         DOMAIN_SIZE=$domain_size
         if [ $GPUCOUNT -eq 1 ]
         then
-            EXEC_STRING="python3 "
             DEVITO_MPI=0
+            EXEC_CMD="python3 "
         else
-            DEVITO_MPI=basic
-            EXEC_STRING="mpirun -np $GPUCOUNT python3 "
+            DEVITO_MPI=diag2
+            EXEC_CMD="mpirun -np $GPUCOUNT python3 "
         fi
         # now the repetitions
+
         for j in $(seq 1 $repeats)
         do
             echo "= START ="
@@ -61,7 +59,7 @@ for space_order_idx in "${!space_orders[@]}"
             echo "domain-size: $DOMAIN_SIZE"
             echo "space-order: $SPACE_ORDER"
             echo "time-steps: $FINAL_TIME" 
-            echo "devito-version: open"
+            echo "devito-version: Pro"
             echo "gpu-num: $GPUCOUNT"
             echo "mpi: $DEVITO_MPI"
 
@@ -69,13 +67,16 @@ for space_order_idx in "${!space_orders[@]}"
             "export DEVITO_LANGUAGE=$devito_lang && \
             export DEVITO_PLATFORM=nvidiaX && \
             export DEVITO_ARCH=$devito_arch && \
-            source /venv/bin/activate && \
             export DEVITO_LOGGING=DEBUG && \
             export DEVITO_MPI=$DEVITO_MPI && \
-            $EXEC_STRING $BENCHMARK_SCRIPT \
+            $EXEC_CMD $BENCHMARK_SCRIPT \
             -d $DOMAIN_SIZE $DOMAIN_SIZE $DOMAIN_SIZE \
             -so $SPACE_ORDER \
-            -tn $FINAL_TIME"
+            -tn $FINAL_TIME \
+            -pro True \
+            -machine H100_SDumont \
+            -gpumodel H100 \
+            -ngpus $GPUCOUNT"
 
             echo "= END ="
                 

@@ -45,6 +45,13 @@ def parse_runtime(block):
         return float(match.group(1))
     return None
 
+def parse_runtime_wo(block):
+    """Return the total runtime in seconds from a run block, or None."""
+    match = re.search(r"Global performance <w/o setup>:\s+\[([\d.]+)\s+s", block)
+    if match:
+        return float(match.group(1))
+    return None
+
 
 def parser_runtime_wo(block):
     """Return the global performance time in seconds from a run block, or None.
@@ -61,7 +68,7 @@ def parser_runtime_wo(block):
 def parse_run(block):
     """Return a dict with config fields and runtime for a single run block."""
     result = parse_config(block)
-    result['runtime_s'] = parser_runtime_wo(block)
+    result['runtime_s'] = parse_runtime_wo(block)
     return result
 
 
