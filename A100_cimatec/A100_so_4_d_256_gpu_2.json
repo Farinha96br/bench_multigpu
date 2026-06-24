@@ -1,0 +1,749 @@
+{
+    "target": "DeviceCudaTarget",
+    "generated": {
+        "0": "401439f1d419323c8cf43ffb220ad0c21164d0cd",
+        "1": "467685fd1f716221b5d9b2fde152f70fcecfc036",
+        "2": "101c554fe79047739f89bb4e2f2abe1d400c331f",
+        "3": "f98b14b9a107696bd153845ce3663ac5d264a2b4",
+        "4": "4556ea170da8ca611da2c4304fef4b375b6530a1",
+        "5": "fcf726fc1d45617a32e5f1c853e83aec616e666e",
+        "6": "2ecc784a6ea00ecfc9aa97cb1f0f20c77f21a9a2",
+        "7": "42cc31422f35f378c07561250879fc7a08996c70",
+        "8": "dcf382cd20662b5c3660f97888f90fb195746225",
+        "9": "a66fd125ad3084e94970fe4a5f7bc9d7811a398b",
+        "10": "5c16565eea14d76fdad175cdbb9a95f3be881890",
+        "11": "cf4e9622b0bed156b9e2f1ba7533df6fa4749f1d",
+        "12": "7fb3eecd4dc3ba511d4eeab3c402607da029c3de",
+        "13": "99048effea5179858dbaf54780a0618845badedb",
+        "14": "eea985f4419cef2b4647002c4620392ab8bb3175",
+        "15": "32fa607fd5402536ba4e6ea18c7d7f18b0db34c5",
+        "16": "f9a4488fe241e911acb96464b8516a3f66be1345",
+        "17": "84de01773cb10e224c4bb10b746230bbdfcf1945",
+        "18": "e41fe8ab4126a33b0862b3dfabb456bc6cf2377b",
+        "19": "4e9232b6c44c319f32dd6aa6533a6f63ea7982d3",
+        "20": "069c335bc78711ceb98c773006a302ff29508145",
+        "21": "d8a2c408e6f3b57da93fb03576f2782b35e5cba8",
+        "22": "0e00b050c32c4c46a26498201a2d37d5f096c27e",
+        "23": "acb5e0edbdc406adb7f20f9eeadd4a8ad3dd7035",
+        "24": "6a7cad3959b9c480d9097213eea06b2d62bded9e",
+        "25": "b21b5daf4c064959714d9f790ff2b3db72c4d20c",
+        "26": "48ec1258e994fd0fba1131a799f8ce30e382a01e",
+        "27": "b7bc4558e44f62514ca1d7699c4060bc51286e52",
+        "28": "72f4bb24cc896c78b6602efca4ff950038653edc",
+        "29": "3fa3900e7fdabcf1013275d336f276565b3b27d8",
+        "30": "a0cd0cb963a860b276c668697d6c0759e9bdbc9b",
+        "31": "dc31415eaa133abee82a0dfd50943a3319445a79",
+        "32": "e5fbb8b82111b148fbc4879269c9f9ac5b23ca45",
+        "33": "f7576154e894d20cb16d46e09a573d4042bbf765",
+        "34": "357c9086293e1d25f9f37ae63a22a0b41c7c1a74",
+        "35": "7b2cebfc67acff6658352647072a7e02f154e04d",
+        "36": "0b1670431b97c10ea7d7a25a049d6645aa57d446",
+        "37": "7b6071334713402f83bbc1a3cb4389e1d7d16c06",
+        "38": "5dbfc60d13243a8e0816280231df39187fed1537",
+        "39": "e3e05110f7aa50d6f4421d946e5fe3afe2cea408",
+        "40": "db66686afa4764ec7b771f44a4eb1ce4c3c9fc4b",
+        "41": "431d5e476e67fd1adb084b22e301fc836b80da74",
+        "42": "c02b25829461071bee3f1d85ef4d68aa291dcb1b",
+        "43": "6998d5fba34e3ac0ffb8c04e31f2bb1ac9945d92",
+        "44": "1866531425a0d76dfcf807328f092f4d419188aa",
+        "45": "636d45ecf63c21afbb99036e21c6050bdf201174",
+        "46": "4709b9bf3baf74ed19b93f890572c4de894e5109",
+        "47": "6de46aca6c66161fa7a23b0c7d663f847d2e008f",
+        "48": "b354ba76bef15fa93e2c1f35b353024e78254b03",
+        "49": "2243886e07a2122d37a207afa50f3a1197a9a4ca",
+        "50": "062be099713c0d15d4091a397a7e72f79d6f9992",
+        "51": "90e2a33b39ac436df0d5c151a774b057aa2cfa1a",
+        "52": "8ee8d018ae325f6c40b6e01ec3404a06d930793c",
+        "53": "93df536e3585d53a787384f7ff1e34a1ba964226",
+        "54": "2ee9befe6293fcff3161c76b51ac8127fa839108",
+        "55": "62247eb17531d858b54433280d07f2940d5b9991",
+        "56": "b8f57d645a6a31193178250422a2618058123a03",
+        "57": "208df40ca69b839ea32ee68efcc84851dc0f1098",
+        "58": "287fef87f78cc063f0bc7e01cd9a0e96f7494fb8",
+        "59": "a9cf63a9855f04fd46241a08c629304a51e23ffd",
+        "60": "0233c23d431ce6e47b38fe7650a0ebe9f92e6ace",
+        "61": "88399301b702ec575cdf483919d478ba75de9d5b"
+    },
+    "('advanced', {'gpu-opt': False, 'index-mode': 'int64'})": {
+        "probe": {
+            "Runtime": 0.006220999999999999,
+            "GFlops/s": 2319.306503777528,
+            "GPts/s": 53.93736055296577,
+            "Breakdown": [
+                0.006220999999999999,
+                0.006148999999999999
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.008886000000000002,
+            "GFlops/s": 1624.60838172406,
+            "GPts/s": 37.7610083277065,
+            "Breakdown": [
+                0.008813999999999999,
+                0.008886000000000002
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 8),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.010190999999999999,
+            "GFlops/s": 1416.570511235404,
+            "GPts/s": 32.92555392012561,
+            "Breakdown": [
+                0.010187,
+                0.010190999999999999
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 16),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.010052,
+            "GFlops/s": 1436.1589812972543,
+            "GPts/s": 33.380851571826504,
+            "Breakdown": [
+                0.010027000000000001,
+                0.010052
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 4),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.009392000000000001,
+            "GFlops/s": 1537.0815672913116,
+            "GPts/s": 35.72660988074957,
+            "Breakdown": [
+                0.009328999999999999,
+                0.009392000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 7),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.010091999999999999,
+            "GFlops/s": 1430.4667142290925,
+            "GPts/s": 33.248545382481176,
+            "Breakdown": [
+                0.010020999999999999,
+                0.010091999999999999
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 8),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.010242000000000001,
+            "GFlops/s": 1409.516703768795,
+            "GPts/s": 32.761601249755905,
+            "Breakdown": [
+                0.010242000000000001,
+                0.010241999999999998
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((128, 4),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.009966000000000001,
+            "GFlops/s": 1448.5520850893035,
+            "GPts/s": 33.66890628135661,
+            "Breakdown": [
+                0.009954,
+                0.009966000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 16),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.006688999999999999,
+            "GFlops/s": 2166.440472417402,
+            "GPts/s": 50.16359994020034,
+            "Breakdown": [
+                0.006688999999999999,
+                0.006687999999999999
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 24),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.006790999999999998,
+            "GFlops/s": 2130.812663819762,
+            "GPts/s": 49.41014872625535,
+            "Breakdown": [
+                0.006723999999999999,
+                0.006790999999999998
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 32),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.006949,
+            "GFlops/s": 2080.8552367247084,
+            "GPts/s": 48.28670600086343,
+            "Breakdown": [
+                0.006942,
+                0.006949
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 48),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.0071020000000000015,
+            "GFlops/s": 2034.5504477611937,
+            "GPts/s": 47.24645451985355,
+            "Breakdown": [
+                0.0071020000000000015,
+                0.007044000000000002
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 64),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.007607000000000002,
+            "GFlops/s": 1898.795109767319,
+            "GPts/s": 44.1099408439595,
+            "Breakdown": [
+                0.007607000000000002,
+                0.007596000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 96),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.007670000000000001,
+            "GFlops/s": 1882.5151916558018,
+            "GPts/s": 43.74762972620599,
+            "Breakdown": [
+                0.007670000000000001,
+                0.007608000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 128),), 'gpu-prefetch': (True,)})": {
+        "probe": {
+            "Runtime": 0.0075309999999999995,
+            "GFlops/s": 1916.9127712123225,
+            "GPts/s": 44.55508166246183,
+            "Breakdown": [
+                0.0075309999999999995,
+                0.007452999999999999
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.006969000000000001,
+            "GFlops/s": 2071.4980743291717,
+            "GPts/s": 48.14813029128999,
+            "Breakdown": [
+                0.006969000000000001,
+                0.00696
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 8),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.007438999999999998,
+            "GFlops/s": 1940.619717703993,
+            "GPts/s": 45.10610565936283,
+            "Breakdown": [
+                0.007438999999999998,
+                0.007305999999999998
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 16),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.008069,
+            "GFlops/s": 1789.102748791672,
+            "GPts/s": 41.5843747676292,
+            "Breakdown": [
+                0.008069,
+                0.008048999999999997
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 4),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.007239,
+            "GFlops/s": 1994.2354026799283,
+            "GPts/s": 46.352302804254734,
+            "Breakdown": [
+                0.0071779999999999995,
+                0.007239
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 7),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.008218,
+            "GFlops/s": 1756.6646483329278,
+            "GPts/s": 40.83041129228523,
+            "Breakdown": [
+                0.008218,
+                0.008200999999999998
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 8),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.008196999999999998,
+            "GFlops/s": 1761.1650701476156,
+            "GPts/s": 40.93501524948153,
+            "Breakdown": [
+                0.008196999999999998,
+                0.008141999999999996
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((128, 4),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.008238000000000002,
+            "GFlops/s": 1752.3998640446705,
+            "GPts/s": 40.73128429230395,
+            "Breakdown": [
+                0.008238000000000002,
+                0.008187000000000002
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 16),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.006484,
+            "GFlops/s": 2234.9352745219,
+            "GPts/s": 51.74958667489204,
+            "Breakdown": [
+                0.006484,
+                0.006470000000000002
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 24),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.006577000000000002,
+            "GFlops/s": 2200.1442603010482,
+            "GPts/s": 51.01783792002431,
+            "Breakdown": [
+                0.006547000000000002,
+                0.006577000000000002
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 32),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.006569999999999999,
+            "GFlops/s": 2200.8923957382044,
+            "GPts/s": 51.07219482496196,
+            "Breakdown": [
+                0.006569999999999999,
+                0.006484
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 48),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.006555000000000001,
+            "GFlops/s": 2204.329104500381,
+            "GPts/s": 51.18906483600305,
+            "Breakdown": [
+                0.006555000000000001,
+                0.006543
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 64),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.0071750000000000026,
+            "GFlops/s": 2013.1197770034835,
+            "GPts/s": 46.765758885017405,
+            "Breakdown": [
+                0.007145000000000002,
+                0.0071750000000000026
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 96),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.0071189999999999995,
+            "GFlops/s": 2028.2190644753477,
+            "GPts/s": 47.13363112796742,
+            "Breakdown": [
+                0.0071070000000000005,
+                0.0071189999999999995
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 128),), 'gpu-prefetch': (2,)})": {
+        "probe": {
+            "Runtime": 0.007019000000000003,
+            "GFlops/s": 2056.7417124946564,
+            "GPts/s": 47.8051460321983,
+            "Breakdown": [
+                0.007019000000000003,
+                0.0069330000000000025
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.007891,
+            "GFlops/s": 1829.792360917501,
+            "GPts/s": 42.52240780636168,
+            "Breakdown": [
+                0.007891,
+                0.007730000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 8),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.008178,
+            "GFlops/s": 1765.5773440939106,
+            "GPts/s": 41.03011983370018,
+            "Breakdown": [
+                0.008178,
+                0.00814
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 16),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.009199999999999996,
+            "GFlops/s": 1569.4447304347832,
+            "GPts/s": 36.47220869565219,
+            "Breakdown": [
+                0.009199999999999996,
+                0.009064999999999997
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 4),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.008095000000000001,
+            "GFlops/s": 1783.6802371834463,
+            "GPts/s": 41.45081161210623,
+            "Breakdown": [
+                0.008095000000000001,
+                0.008032000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 7),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.008758,
+            "GFlops/s": 1648.6516921671614,
+            "GPts/s": 38.31289335464718,
+            "Breakdown": [
+                0.008758,
+                0.008563
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 8),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.009287999999999998,
+            "GFlops/s": 1554.5748837209308,
+            "GPts/s": 36.126649440137825,
+            "Breakdown": [
+                0.009287999999999998,
+                0.00911
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((128, 4),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.009167000000000047,
+            "GFlops/s": 1575.0945260172277,
+            "GPts/s": 36.603503872586266,
+            "Breakdown": [
+                0.009167000000000047,
+                0.009088999999999986
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 16),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.006874,
+            "GFlops/s": 2111.185894675589,
+            "GPts/s": 48.81354669770148,
+            "Breakdown": [
+                0.006874,
+                0.006778999999999999
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 24),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.006792999999999986,
+            "GFlops/s": 2132.2434582658666,
+            "GPts/s": 49.39560135433545,
+            "Breakdown": [
+                0.006792999999999986,
+                0.006565999999999999
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 32),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.0068379999999999995,
+            "GFlops/s": 2116.1668324071366,
+            "GPts/s": 49.070535244223464,
+            "Breakdown": [
+                0.0068379999999999995,
+                0.006671
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 48),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.006734000000000001,
+            "GFlops/s": 2146.7727629937626,
+            "GPts/s": 49.82838134838134,
+            "Breakdown": [
+                0.006734000000000001,
+                0.006652000000000002
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 64),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.006912,
+            "GFlops/s": 2090.477037037037,
+            "GPts/s": 48.54518518518519,
+            "Breakdown": [
+                0.006912,
+                0.006811999999999999
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 96),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.007322000000000002,
+            "GFlops/s": 1972.4647325867245,
+            "GPts/s": 45.82686697623599,
+            "Breakdown": [
+                0.007322000000000002,
+                0.007114000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 128),), 'gpu-prefetch': (3,)})": {
+        "probe": {
+            "Runtime": 0.007679000000000001,
+            "GFlops/s": 1880.3088318791508,
+            "GPts/s": 43.69635629639276,
+            "Breakdown": [
+                0.007679000000000001,
+                0.007415999999999998
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.006731000000000001,
+            "GFlops/s": 2145.133192690536,
+            "GPts/s": 49.850589808349426,
+            "Breakdown": [
+                0.006731000000000001,
+                0.006510000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 8),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.007032000000000002,
+            "GFlops/s": 2053.3122184300337,
+            "GPts/s": 47.716769055745154,
+            "Breakdown": [
+                0.007032000000000002,
+                0.0068730000000000015
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 16),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.008108,
+            "GFlops/s": 1780.8203650715343,
+            "GPts/s": 41.38435125801677,
+            "Breakdown": [
+                0.008108,
+                0.007836000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 4),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.00704,
+            "GFlops/s": 2050.978909090909,
+            "GPts/s": 47.66254545454545,
+            "Breakdown": [
+                0.00704,
+                0.006928999999999999
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 7),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.007791000000000002,
+            "GFlops/s": 1853.2783365421635,
+            "GPts/s": 43.06819663714541,
+            "Breakdown": [
+                0.007791000000000002,
+                0.007563
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((64, 8),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.007944,
+            "GFlops/s": 1817.5845317220544,
+            "GPts/s": 42.238710976837865,
+            "Breakdown": [
+                0.007944,
+                0.007854999999999997
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((128, 4),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.007953999999999998,
+            "GFlops/s": 1815.2994116167972,
+            "GPts/s": 42.18560724163944,
+            "Breakdown": [
+                0.007953999999999998,
+                0.007707999999999998
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 16),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.006374000000000002,
+            "GFlops/s": 2276.79508001255,
+            "GPts/s": 52.64266080953873,
+            "Breakdown": [
+                0.006374000000000002,
+                0.006161000000000001
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 24),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.006340999999999997,
+            "GFlops/s": 2284.2343182463346,
+            "GPts/s": 52.916625137990884,
+            "Breakdown": [
+                0.006340999999999997,
+                0.0060909999999999975
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 32),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.006578000000000001,
+            "GFlops/s": 2199.8097902097898,
+            "GPts/s": 51.01008209182121,
+            "Breakdown": [
+                0.006578000000000001,
+                0.006511000000000003
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 48),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.006594999999999998,
+            "GFlops/s": 2192.019376194087,
+            "GPts/s": 50.878592873388946,
+            "Breakdown": [
+                0.006594999999999998,
+                0.006296999999999998
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 64),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.006932,
+            "GFlops/s": 2084.445654933641,
+            "GPts/s": 48.40512406231968,
+            "Breakdown": [
+                0.006932,
+                0.0066939999999999986
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 96),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.006815999999999998,
+            "GFlops/s": 2118.8947728873245,
+            "GPts/s": 49.22892018779344,
+            "Breakdown": [
+                0.006815999999999998,
+                0.006543999999999998
+            ]
+        }
+    },
+    "('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ('automatic',), 'par-tile': ((32, 4, 128),), 'gpu-prefetch': (4,)})": {
+        "probe": {
+            "Runtime": 0.007035000000000002,
+            "GFlops/s": 2052.4366055437094,
+            "GPts/s": 47.69642075337596,
+            "Breakdown": [
+                0.007035000000000002,
+                0.006887000000000002
+            ]
+        }
+    },
+    "('advanced', {'gpu-opt': False, 'index-mode': 'int64', 'linearize': 'advanced'})": {
+        "probe": {
+            "Runtime": 0.0065619999999999975,
+            "GFlops/s": 2198.781737275222,
+            "GPts/s": 51.134459006400505,
+            "Breakdown": [
+                0.0065619999999999975,
+                0.006447999999999999
+            ]
+        }
+    },
+    "('advanced', {'gpu-opt': False, 'index-mode': 'int64', 'deriv-schedule': 'smart'})": {
+        "probe": {
+            "Runtime": 0.0065010000000000024,
+            "GFlops/s": 1754.8849223196423,
+            "GPts/s": 51.614262421165954,
+            "Breakdown": [
+                0.0065010000000000024,
+                0.0061740000000000015
+            ]
+        }
+    },
+    "('advanced', {'gpu-opt': False, 'index-mode': 'int64', 'deriv-unroll': 'inner'})": {
+        "probe": {
+            "Runtime": 0.006707000000000002,
+            "GFlops/s": 2001.1589086029514,
+            "GPts/s": 50.02897271507379,
+            "Breakdown": [
+                0.006707000000000002,
+                0.006434000000000001
+            ]
+        }
+    },
+    "('advanced', {'gpu-opt': False, 'index-mode': 'int64', 'fact-schedule': 'basic'})": {
+        "probe": {
+            "Runtime": 0.006528000000000003,
+            "GFlops/s": 2158.8329411764694,
+            "GPts/s": 51.40078431372547,
+            "Breakdown": [
+                0.006528000000000003,
+                0.006297000000000003
+            ]
+        }
+    },
+    "('advanced', {'gpu-opt': False, 'index-mode': 'int64', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})": {
+        "probe": {
+            "Runtime": 0.006835,
+            "GFlops/s": 1669.1304871982443,
+            "GPts/s": 49.09207315288954,
+            "Breakdown": [
+                0.006835,
+                0.006614999999999999
+            ]
+        }
+    }
+}

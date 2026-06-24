@@ -1,0 +1,5075 @@
+Loading nvhpc-hpcx-2.20-cuda12/26.3
+  Loading requirement: hpcx
+= START =
+run-number: 1
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.63 s
+  * lowering.IET: 0.36 s (57.9 %)
+     * specializing.IET: 0.26 s (41.8 %)
+  * lowering.Clusters: 0.21 s (33.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.93 s with `CudaCompiler`
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.11 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.33 s
+Global performance: [OI=0.56, 630.42 GFlops/s, 20.34 GPts/s]
+Global performance <w/o setup>: [0.09 s, 76.93 GPts/s]
+Local performance:
+  * section0 ran in 0.09 s [OI=0.56, 2384.58 GFlops/s, 76.93 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -arch=sm_80 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared /tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu -lm -o /tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.so
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.67 s
+  * lowering.IET: 0.37 s (55.7 %)
+     * specializing.IET: 0.27 s (40.7 %)
+  * lowering.Clusters: 0.24 s (36.2 %)
+     * lower_index_derivatives: 0.15 s (22.6 %)
+        * fuse: 0.14 s (21.1 %)
+           * fuse: 0.14 s (21.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.33 s
+Global performance: [OI=0.56, 630.42 GFlops/s, 20.34 GPts/s]
+Global performance <w/o setup>: [0.09 s, 76.92 GPts/s]
+Local performance:
+  * section0 ran in 0.09 s [OI=0.56, 2384.44 GFlops/s, 76.92 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.35 s (57.0 %)
+     * specializing.IET: 0.26 s (42.3 %)
+  * lowering.Clusters: 0.21 s (34.2 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.33 s
+Global performance: [OI=0.56, 630.42 GFlops/s, 20.34 GPts/s]
+Global performance <w/o setup>: [0.09 s, 76.92 GPts/s]
+Local performance:
+  * section0 ran in 0.09 s [OI=0.56, 2384.36 GFlops/s, 76.92 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.35 s (56.8 %)
+     * specializing.IET: 0.25 s (40.6 %)
+  * lowering.Clusters: 0.21 s (34.1 %)
+     * lower_index_derivatives: 0.13 s (21.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.11 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.33 s
+Global performance: [OI=0.56, 630.42 GFlops/s, 20.34 GPts/s]
+Global performance <w/o setup>: [0.09 s, 76.93 GPts/s]
+Local performance:
+  * section0 ran in 0.09 s [OI=0.56, 2384.61 GFlops/s, 76.93 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.36 s (58.2 %)
+     * specializing.IET: 0.26 s (42.1 %)
+  * lowering.Clusters: 0.21 s (34.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.11 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.32 s
+Global performance: [OI=0.56, 650.12 GFlops/s, 20.98 GPts/s]
+Global performance <w/o setup>: [0.09 s, 76.91 GPts/s]
+Local performance:
+  * section0 ran in 0.09 s [OI=0.56, 2384.01 GFlops/s, 76.91 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.59 s
+  * lowering.IET: 0.36 s (62.1 %)
+     * specializing.IET: 0.26 s (44.8 %)
+  * lowering.Clusters: 0.18 s (31.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.91 s with `CudaCompiler`
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.12 s
+Global performance: [OI=1.04, 1198.38 GFlops/s, 47.94 GPts/s]
+Global performance <w/o setup>: [0.67 s, 80.73 GPts/s]
+Local performance:
+  * section0 ran in 0.67 s [OI=1.04, 2018.10 GFlops/s, 80.73 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -arch=sm_80 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared /tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu -lm -o /tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.so
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.59 s
+  * lowering.IET: 0.36 s (61.6 %)
+     * specializing.IET: 0.26 s (44.5 %)
+  * lowering.Clusters: 0.18 s (30.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.21 s
+Global performance: [OI=1.04, 1109.24 GFlops/s, 44.37 GPts/s]
+Global performance <w/o setup>: [0.67 s, 80.80 GPts/s]
+Local performance:
+  * section0 ran in 0.67 s [OI=1.04, 2019.95 GFlops/s, 80.80 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.58 s
+  * lowering.IET: 0.36 s (62.7 %)
+     * specializing.IET: 0.26 s (45.3 %)
+  * lowering.Clusters: 0.17 s (29.7 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.11 s
+Global performance: [OI=1.04, 1209.17 GFlops/s, 48.37 GPts/s]
+Global performance <w/o setup>: [0.67 s, 80.63 GPts/s]
+Local performance:
+  * section0 ran in 0.67 s [OI=1.04, 2015.71 GFlops/s, 80.63 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.59 s
+  * lowering.IET: 0.36 s (62.1 %)
+     * specializing.IET: 0.26 s (44.9 %)
+  * lowering.Clusters: 0.18 s (31.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.06 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.29 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.12 s
+Global performance: [OI=1.04, 1198.38 GFlops/s, 47.94 GPts/s]
+Global performance <w/o setup>: [0.67 s, 80.81 GPts/s]
+Local performance:
+  * section0 ran in 0.67 s [OI=1.04, 2020.22 GFlops/s, 80.81 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.58 s
+  * lowering.IET: 0.36 s (62.5 %)
+     * specializing.IET: 0.26 s (45.1 %)
+  * lowering.Clusters: 0.17 s (29.5 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.06 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.14 s
+Global performance: [OI=1.04, 1177.35 GFlops/s, 47.10 GPts/s]
+Global performance <w/o setup>: [0.67 s, 80.61 GPts/s]
+Local performance:
+  * section0 ran in 0.67 s [OI=1.04, 2015.18 GFlops/s, 80.61 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.35 s (57.2 %)
+     * specializing.IET: 0.25 s (40.9 %)
+  * lowering.Clusters: 0.21 s (34.4 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.96 s with `CudaCompiler`
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.32 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.90 s
+Global performance: [OI=0.56, 1685.37 GFlops/s, 54.37 GPts/s]
+Global performance <w/o setup>: [5.78 s, 74.35 GPts/s]
+Local performance:
+  * section0 ran in 5.78 s [OI=0.56, 2304.81 GFlops/s, 74.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -arch=sm_80 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared /tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu -lm -o /tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.so
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.35 s (57.2 %)
+     * specializing.IET: 0.26 s (42.5 %)
+  * lowering.Clusters: 0.21 s (34.4 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.06 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 9.11 s
+Global performance: [OI=0.56, 1461.52 GFlops/s, 47.15 GPts/s]
+Global performance <w/o setup>: [5.78 s, 74.35 GPts/s]
+Local performance:
+  * section0 ran in 5.78 s [OI=0.56, 2304.85 GFlops/s, 74.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.35 s (56.7 %)
+     * specializing.IET: 0.25 s (40.5 %)
+  * lowering.Clusters: 0.21 s (34.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.89 s
+Global performance: [OI=0.56, 1687.51 GFlops/s, 54.44 GPts/s]
+Global performance <w/o setup>: [5.78 s, 74.36 GPts/s]
+Local performance:
+  * section0 ran in 5.78 s [OI=0.56, 2304.92 GFlops/s, 74.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.61 s
+  * lowering.IET: 0.35 s (57.5 %)
+     * specializing.IET: 0.25 s (41.1 %)
+  * lowering.Clusters: 0.21 s (34.5 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 8.14 s
+Global performance: [OI=0.56, 1635.68 GFlops/s, 52.77 GPts/s]
+Global performance <w/o setup>: [5.78 s, 74.35 GPts/s]
+Local performance:
+  * section0 ran in 5.78 s [OI=0.56, 2304.82 GFlops/s, 74.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 2
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.63 s
+  * lowering.IET: 0.35 s (56.3 %)
+     * specializing.IET: 0.26 s (41.9 %)
+  * lowering.Clusters: 0.21 s (33.8 %)
+     * lower_index_derivatives: 0.13 s (21.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.89 s
+Global performance: [OI=0.56, 1687.51 GFlops/s, 54.44 GPts/s]
+Global performance <w/o setup>: [5.78 s, 74.36 GPts/s]
+Local performance:
+  * section0 ran in 5.78 s [OI=0.56, 2304.88 GFlops/s, 74.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.76 s
+  * lowering.Clusters: 0.83 s (47.2 %)
+     * specializing.Clusters: 0.52 s (29.6 %)
+        * optimize_kernels: 0.46 s (26.2 %)
+  * lowering.IET: 0.77 s (43.8 %)
+     * specializing.IET: 0.62 s (35.3 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 1.24 s with `CudaCompiler`
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.11 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.34 s
+Global performance: [OI=0.12, 674.38 GFlops/s, 19.74 GPts/s]
+Global performance <w/o setup>: [0.11 s, 67.02 GPts/s]
+Local performance:
+  * section0 ran in 0.11 s [OI=0.12, 2289.57 GFlops/s, 67.02 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -arch=sm_80 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared /tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu -lm -o /tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.so
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.95 s
+  * lowering.Clusters: 0.92 s (47.3 %)
+     * specializing.Clusters: 0.60 s (30.8 %)
+        * optimize_kernels: 0.55 s (28.3 %)
+  * lowering.IET: 0.88 s (45.2 %)
+     * specializing.IET: 0.72 s (37.0 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.33 s
+Global performance: [OI=0.12, 694.82 GFlops/s, 20.34 GPts/s]
+Global performance <w/o setup>: [0.11 s, 67.06 GPts/s]
+Local performance:
+  * section0 ran in 0.11 s [OI=0.12, 2291.10 GFlops/s, 67.06 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.76 s
+  * lowering.Clusters: 0.83 s (47.3 %)
+     * specializing.Clusters: 0.51 s (29.1 %)
+        * optimize_kernels: 0.46 s (26.3 %)
+  * lowering.IET: 0.77 s (43.9 %)
+     * specializing.IET: 0.62 s (35.4 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.34 s
+Global performance: [OI=0.12, 674.38 GFlops/s, 19.74 GPts/s]
+Global performance <w/o setup>: [0.11 s, 66.63 GPts/s]
+Local performance:
+  * section0 ran in 0.11 s [OI=0.12, 2276.21 GFlops/s, 66.63 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.75 s
+  * lowering.Clusters: 0.82 s (47.0 %)
+     * specializing.Clusters: 0.51 s (29.3 %)
+        * optimize_kernels: 0.45 s (25.8 %)
+  * lowering.IET: 0.77 s (44.2 %)
+     * specializing.IET: 0.62 s (35.6 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.36 s
+Global performance: [OI=0.12, 636.92 GFlops/s, 18.65 GPts/s]
+Global performance <w/o setup>: [0.11 s, 66.96 GPts/s]
+Local performance:
+  * section0 ran in 0.11 s [OI=0.12, 2287.56 GFlops/s, 66.96 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.76 s
+  * lowering.Clusters: 0.83 s (47.2 %)
+     * specializing.Clusters: 0.51 s (29.0 %)
+        * optimize_kernels: 0.46 s (26.2 %)
+  * lowering.IET: 0.78 s (44.4 %)
+     * specializing.IET: 0.62 s (35.3 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.34 s
+Global performance: [OI=0.12, 674.38 GFlops/s, 19.74 GPts/s]
+Global performance <w/o setup>: [0.11 s, 66.92 GPts/s]
+Local performance:
+  * section0 ran in 0.11 s [OI=0.12, 2286.28 GFlops/s, 66.92 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 2.04 s
+  * lowering.Clusters: 1.07 s (52.6 %)
+     * specializing.Clusters: 0.51 s (25.1 %)
+        * optimize_kernels: 0.45 s (22.2 %)
+     * lower_index_derivatives: 0.49 s (24.1 %)
+        * fuse: 0.45 s (22.2 %)
+           * fuse: 0.45 s (22.2 %)
+  * lowering.IET: 0.73 s (35.9 %)
+     * specializing.IET: 0.58 s (28.6 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 1.05 s with `CudaCompiler`
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.14 s
+Global performance: [OI=0.15, 1603.16 GFlops/s, 47.10 GPts/s]
+Global performance <w/o setup>: [0.70 s, 77.09 GPts/s]
+Local performance:
+  * section0 ran in 0.70 s [OI=0.15, 2624.20 GFlops/s, 77.09 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -arch=sm_80 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared /tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu -lm -o /tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.so
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 2.05 s
+  * lowering.Clusters: 1.09 s (53.4 %)
+     * specializing.Clusters: 0.52 s (25.5 %)
+        * optimize_kernels: 0.46 s (22.6 %)
+     * lower_index_derivatives: 0.50 s (24.5 %)
+        * fuse: 0.46 s (22.6 %)
+           * fuse: 0.46 s (22.6 %)
+  * lowering.IET: 0.73 s (35.8 %)
+     * specializing.IET: 0.57 s (27.9 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.30 s
+Global performance: [OI=0.15, 1405.85 GFlops/s, 41.30 GPts/s]
+Global performance <w/o setup>: [0.70 s, 77.18 GPts/s]
+Local performance:
+  * section0 ran in 0.70 s [OI=0.15, 2627.08 GFlops/s, 77.18 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 2.04 s
+  * lowering.Clusters: 1.08 s (53.1 %)
+     * specializing.Clusters: 0.51 s (25.1 %)
+        * optimize_kernels: 0.45 s (22.2 %)
+     * lower_index_derivatives: 0.49 s (24.1 %)
+        * fuse: 0.46 s (22.7 %)
+           * fuse: 0.46 s (22.7 %)
+  * lowering.IET: 0.73 s (35.9 %)
+     * specializing.IET: 0.57 s (28.1 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.14 s
+Global performance: [OI=0.15, 1603.16 GFlops/s, 47.10 GPts/s]
+Global performance <w/o setup>: [0.70 s, 77.35 GPts/s]
+Local performance:
+  * section0 ran in 0.70 s [OI=0.15, 2633.12 GFlops/s, 77.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 2.04 s
+  * lowering.Clusters: 1.09 s (53.5 %)
+     * specializing.Clusters: 0.51 s (25.1 %)
+        * optimize_kernels: 0.46 s (22.6 %)
+     * lower_index_derivatives: 0.50 s (24.6 %)
+        * fuse: 0.46 s (22.6 %)
+           * fuse: 0.46 s (22.6 %)
+  * lowering.IET: 0.73 s (35.9 %)
+     * specializing.IET: 0.57 s (28.0 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.15 s
+Global performance: [OI=0.15, 1589.22 GFlops/s, 46.69 GPts/s]
+Global performance <w/o setup>: [0.70 s, 77.22 GPts/s]
+Local performance:
+  * section0 ran in 0.70 s [OI=0.15, 2628.51 GFlops/s, 77.22 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.98 s
+  * lowering.Clusters: 1.08 s (54.8 %)
+     * specializing.Clusters: 0.51 s (25.9 %)
+        * optimize_kernels: 0.45 s (22.8 %)
+     * lower_index_derivatives: 0.49 s (24.9 %)
+        * fuse: 0.45 s (22.8 %)
+           * fuse: 0.45 s (22.8 %)
+  * lowering.IET: 0.73 s (37.0 %)
+     * specializing.IET: 0.58 s (29.4 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.16 s
+Global performance: [OI=0.15, 1575.52 GFlops/s, 46.29 GPts/s]
+Global performance <w/o setup>: [0.70 s, 77.25 GPts/s]
+Local performance:
+  * section0 ran in 0.70 s [OI=0.15, 2629.53 GFlops/s, 77.25 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 2.18 s
+  * lowering.Clusters: 1.28 s (58.8 %)
+     * lower_index_derivatives: 0.60 s (27.6 %)
+        * fuse: 0.57 s (26.2 %)
+           * fuse: 0.57 s (26.2 %)
+     * specializing.Clusters: 0.60 s (27.6 %)
+        * optimize_kernels: 0.54 s (24.9 %)
+  * lowering.IET: 0.72 s (33.1 %)
+     * specializing.IET: 0.56 s (25.8 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 1.06 s with `CudaCompiler`
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 8.76 s
+Global performance: [OI=0.11, 2110.31 GFlops/s, 49.03 GPts/s]
+Global performance <w/o setup>: [5.56 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 5.56 s [OI=0.11, 3329.39 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -arch=sm_80 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared /tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu -lm -o /tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.so
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.91 s
+  * lowering.Clusters: 1.04 s (54.6 %)
+     * specializing.Clusters: 0.50 s (26.3 %)
+        * optimize_kernels: 0.45 s (23.7 %)
+     * lower_index_derivatives: 0.46 s (24.2 %)
+        * fuse: 0.43 s (22.6 %)
+           * fuse: 0.43 s (22.6 %)
+  * lowering.IET: 0.70 s (36.8 %)
+     * specializing.IET: 0.55 s (28.9 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.68 s
+Global performance: [OI=0.11, 2407.07 GFlops/s, 55.93 GPts/s]
+Global performance <w/o setup>: [5.56 s, 77.37 GPts/s]
+Local performance:
+  * section0 ran in 5.56 s [OI=0.11, 3329.78 GFlops/s, 77.37 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.97 s
+  * lowering.Clusters: 1.08 s (55.1 %)
+     * specializing.Clusters: 0.52 s (26.5 %)
+        * optimize_kernels: 0.47 s (24.0 %)
+     * lower_index_derivatives: 0.48 s (24.5 %)
+        * fuse: 0.45 s (23.0 %)
+           * fuse: 0.45 s (23.0 %)
+  * lowering.IET: 0.72 s (36.7 %)
+     * specializing.IET: 0.56 s (28.6 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.60 s
+Global performance: [OI=0.11, 2432.41 GFlops/s, 56.52 GPts/s]
+Global performance <w/o setup>: [5.56 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 5.56 s [OI=0.11, 3329.52 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.96 s
+  * lowering.Clusters: 1.07 s (54.9 %)
+     * specializing.Clusters: 0.52 s (26.7 %)
+        * optimize_kernels: 0.46 s (23.6 %)
+     * lower_index_derivatives: 0.48 s (24.7 %)
+        * fuse: 0.44 s (22.6 %)
+           * fuse: 0.44 s (22.6 %)
+  * lowering.IET: 0.72 s (37.0 %)
+     * specializing.IET: 0.56 s (28.8 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.27 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.69 s
+Global performance: [OI=0.11, 2403.94 GFlops/s, 55.86 GPts/s]
+Global performance <w/o setup>: [5.56 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 5.56 s [OI=0.11, 3329.60 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 4
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.94 s
+  * lowering.Clusters: 1.06 s (54.7 %)
+     * specializing.Clusters: 0.51 s (26.3 %)
+        * optimize_kernels: 0.46 s (23.8 %)
+     * lower_index_derivatives: 0.47 s (24.3 %)
+        * fuse: 0.44 s (22.7 %)
+           * fuse: 0.44 s (22.7 %)
+  * lowering.IET: 0.71 s (36.7 %)
+     * specializing.IET: 0.56 s (28.9 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.68 s
+Global performance: [OI=0.11, 2407.07 GFlops/s, 55.93 GPts/s]
+Global performance <w/o setup>: [5.56 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 5.56 s [OI=0.11, 3329.65 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.95 s
+  * lowering.IET: 0.86 s (44.2 %)
+     * specializing.IET: 0.71 s (36.5 %)
+  * lowering.Clusters: 0.83 s (42.7 %)
+     * specializing.Clusters: 0.47 s (24.2 %)
+        * optimize_kernels: 0.41 s (21.1 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 1.19 s with `CudaCompiler`
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.35 s
+Global performance: [OI=0.06, 982.67 GFlops/s, 19.18 GPts/s]
+Global performance <w/o setup>: [0.11 s, 61.14 GPts/s]
+Local performance:
+  * section0 ran in 0.11 s [OI=0.06, 3132.93 GFlops/s, 61.14 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -arch=sm_80 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared /tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu -lm -o /tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.so
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.94 s
+  * lowering.IET: 0.86 s (44.4 %)
+     * specializing.IET: 0.70 s (36.2 %)
+  * lowering.Clusters: 0.83 s (42.9 %)
+     * specializing.Clusters: 0.47 s (24.3 %)
+        * optimize_kernels: 0.41 s (21.2 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.35 s
+Global performance: [OI=0.06, 982.67 GFlops/s, 19.18 GPts/s]
+Global performance <w/o setup>: [0.12 s, 60.19 GPts/s]
+Local performance:
+  * section0 ran in 0.12 s [OI=0.06, 3084.30 GFlops/s, 60.19 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.94 s
+  * lowering.IET: 0.85 s (44.1 %)
+     * specializing.IET: 0.70 s (36.3 %)
+  * lowering.Clusters: 0.83 s (43.0 %)
+     * specializing.Clusters: 0.47 s (24.4 %)
+        * optimize_kernels: 0.41 s (21.3 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.36 s
+Global performance: [OI=0.06, 955.37 GFlops/s, 18.65 GPts/s]
+Global performance <w/o setup>: [0.12 s, 60.19 GPts/s]
+Local performance:
+  * section0 ran in 0.12 s [OI=0.06, 3084.27 GFlops/s, 60.19 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.93 s
+  * lowering.IET: 0.85 s (44.2 %)
+     * specializing.IET: 0.69 s (35.9 %)
+  * lowering.Clusters: 0.83 s (43.1 %)
+     * specializing.Clusters: 0.47 s (24.4 %)
+        * optimize_kernels: 0.41 s (21.3 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.35 s
+Global performance: [OI=0.06, 982.67 GFlops/s, 19.18 GPts/s]
+Global performance <w/o setup>: [0.12 s, 60.15 GPts/s]
+Local performance:
+  * section0 ran in 0.12 s [OI=0.06, 3082.50 GFlops/s, 60.15 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.21 s
+  * lowering.Clusters: 0.95 s (43.0 %)
+     * specializing.Clusters: 0.47 s (21.3 %)
+  * lowering.IET: 0.92 s (41.7 %)
+     * specializing.IET: 0.76 s (34.4 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 0.37 s
+Global performance: [OI=0.06, 929.55 GFlops/s, 18.14 GPts/s]
+Global performance <w/o setup>: [0.12 s, 60.24 GPts/s]
+Local performance:
+  * section0 ran in 0.12 s [OI=0.06, 3087.12 GFlops/s, 60.24 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.19 s
+  * lowering.Clusters: 1.15 s (52.7 %)
+     * lower_index_derivatives: 0.55 s (25.2 %)
+        * fuse: 0.51 s (23.4 %)
+           * fuse: 0.51 s (23.4 %)
+     * specializing.Clusters: 0.48 s (22.0 %)
+  * lowering.IET: 0.83 s (38.0 %)
+     * specializing.IET: 0.67 s (30.7 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 1.05 s with `CudaCompiler`
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.19 s
+Global performance: [OI=0.08, 2347.88 GFlops/s, 45.12 GPts/s]
+Global performance <w/o setup>: [0.74 s, 73.54 GPts/s]
+Local performance:
+  * section0 ran in 0.74 s [OI=0.08, 3826.75 GFlops/s, 73.54 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -arch=sm_80 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared /tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu -lm -o /tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.so
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.19 s
+  * lowering.Clusters: 1.15 s (52.6 %)
+     * lower_index_derivatives: 0.55 s (25.2 %)
+        * fuse: 0.51 s (23.4 %)
+           * fuse: 0.51 s (23.4 %)
+     * specializing.Clusters: 0.48 s (22.0 %)
+  * lowering.IET: 0.83 s (38.0 %)
+     * specializing.IET: 0.67 s (30.7 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.19 s
+Global performance: [OI=0.08, 2347.88 GFlops/s, 45.12 GPts/s]
+Global performance <w/o setup>: [0.74 s, 72.88 GPts/s]
+Local performance:
+  * section0 ran in 0.74 s [OI=0.08, 3792.41 GFlops/s, 72.88 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.17 s
+  * lowering.Clusters: 1.13 s (52.3 %)
+     * lower_index_derivatives: 0.54 s (25.0 %)
+        * fuse: 0.50 s (23.2 %)
+           * fuse: 0.50 s (23.2 %)
+     * specializing.Clusters: 0.47 s (21.8 %)
+  * lowering.IET: 0.82 s (38.0 %)
+     * specializing.IET: 0.67 s (31.0 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.18 s
+Global performance: [OI=0.08, 2367.77 GFlops/s, 45.50 GPts/s]
+Global performance <w/o setup>: [0.73 s, 73.83 GPts/s]
+Local performance:
+  * section0 ran in 0.73 s [OI=0.08, 3841.94 GFlops/s, 73.83 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.19 s
+  * lowering.Clusters: 1.15 s (52.7 %)
+     * lower_index_derivatives: 0.55 s (25.2 %)
+        * fuse: 0.51 s (23.4 %)
+           * fuse: 0.51 s (23.4 %)
+     * specializing.Clusters: 0.48 s (22.0 %)
+  * lowering.IET: 0.83 s (38.0 %)
+     * specializing.IET: 0.67 s (30.7 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.27 s
+Global performance: [OI=0.08, 2199.98 GFlops/s, 42.28 GPts/s]
+Global performance <w/o setup>: [0.73 s, 73.56 GPts/s]
+Local performance:
+  * section0 ran in 0.73 s [OI=0.08, 3828.02 GFlops/s, 73.56 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.19 s
+  * lowering.Clusters: 1.14 s (52.3 %)
+     * lower_index_derivatives: 0.55 s (25.2 %)
+        * fuse: 0.51 s (23.4 %)
+           * fuse: 0.51 s (23.4 %)
+     * specializing.Clusters: 0.48 s (22.0 %)
+  * lowering.IET: 0.83 s (38.1 %)
+     * specializing.IET: 0.67 s (30.7 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.18 s
+Global performance: [OI=0.08, 2367.77 GFlops/s, 45.50 GPts/s]
+Global performance <w/o setup>: [0.74 s, 73.38 GPts/s]
+Local performance:
+  * section0 ran in 0.74 s [OI=0.08, 3818.61 GFlops/s, 73.38 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.52 s
+  * lowering.IET: 0.72 s (47.7 %)
+     * specializing.IET: 0.57 s (37.8 %)
+  * lowering.Clusters: 0.62 s (41.1 %)
+     * specializing.Clusters: 0.35 s (23.2 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` jit-compiled `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 1.05 s with `CudaCompiler`
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.27 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 8.05 s
+Global performance: [OI=0.01, 3574.85 GFlops/s, 53.36 GPts/s]
+Global performance <w/o setup>: [5.85 s, 73.46 GPts/s]
+Local performance:
+  * section0 ran in 5.85 s [OI=0.01, 4921.71 GFlops/s, 73.46 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+nvcc -O3 -g -std=c++14 -Xcompiler -fPIC -arch=sm_80 -Xcudafe --display_error_number --diag-suppress 1650 -Xcompiler -Wno-unused-result --use_fast_math -shared /tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu -lm -o /tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.so
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.50 s
+  * lowering.IET: 0.72 s (48.2 %)
+     * specializing.IET: 0.57 s (38.2 %)
+  * lowering.Clusters: 0.61 s (40.8 %)
+     * specializing.Clusters: 0.34 s (22.8 %)
+        * optimize_kernels: 0.30 s (20.1 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.95 s
+Global performance: [OI=0.01, 3619.82 GFlops/s, 54.03 GPts/s]
+Global performance <w/o setup>: [5.85 s, 73.43 GPts/s]
+Local performance:
+  * section0 ran in 5.85 s [OI=0.01, 4919.93 GFlops/s, 73.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.50 s
+  * lowering.IET: 0.72 s (48.1 %)
+     * specializing.IET: 0.57 s (38.1 %)
+  * lowering.Clusters: 0.61 s (40.7 %)
+     * specializing.Clusters: 0.35 s (23.4 %)
+        * optimize_kernels: 0.30 s (20.1 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.27 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 8.18 s
+Global performance: [OI=0.01, 3518.04 GFlops/s, 52.51 GPts/s]
+Global performance <w/o setup>: [5.86 s, 73.42 GPts/s]
+Local performance:
+  * section0 ran in 5.86 s [OI=0.01, 4919.02 GFlops/s, 73.42 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.49 s
+  * lowering.IET: 0.71 s (47.9 %)
+     * specializing.IET: 0.56 s (37.8 %)
+  * lowering.Clusters: 0.61 s (41.1 %)
+     * specializing.Clusters: 0.34 s (23.0 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.34 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.98 s
+Global performance: [OI=0.01, 3606.21 GFlops/s, 53.83 GPts/s]
+Global performance <w/o setup>: [5.85 s, 73.43 GPts/s]
+Local performance:
+  * section0 ran in 5.85 s [OI=0.01, 4919.59 GFlops/s, 73.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 8
+time-steps: 400
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.50 s
+  * lowering.IET: 0.72 s (48.1 %)
+     * specializing.IET: 0.57 s (38.1 %)
+  * lowering.Clusters: 0.61 s (40.7 %)
+     * specializing.Clusters: 0.35 s (23.4 %)
+        * optimize_kernels: 0.30 s (20.1 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 0.08 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.35 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.92 s
+Global performance: [OI=0.01, 3633.53 GFlops/s, 54.23 GPts/s]
+Global performance <w/o setup>: [5.85 s, 73.47 GPts/s]
+Local performance:
+  * section0 ran in 5.85 s [OI=0.01, 4922.18 GFlops/s, 73.47 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 401
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.36 s (58.3 %)
+     * specializing.IET: 0.26 s (42.1 %)
+  * lowering.Clusters: 0.21 s (34.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.15 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.13 s
+Global performance: [OI=0.56, 1841.04 GFlops/s, 59.39 GPts/s]
+Global performance <w/o setup>: [0.88 s, 76.32 GPts/s]
+Local performance:
+  * section0 ran in 0.88 s [OI=0.56, 2365.85 GFlops/s, 76.32 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.66 s
+  * lowering.IET: 0.36 s (55.0 %)
+     * specializing.IET: 0.26 s (39.7 %)
+  * lowering.Clusters: 0.25 s (38.2 %)
+     * lower_index_derivatives: 0.16 s (24.5 %)
+        * fuse: 0.15 s (22.9 %)
+           * fuse: 0.15 s (22.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.06 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.11 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.10 s
+Global performance: [OI=0.56, 1891.25 GFlops/s, 61.01 GPts/s]
+Global performance <w/o setup>: [0.88 s, 76.60 GPts/s]
+Local performance:
+  * section0 ran in 0.88 s [OI=0.56, 2374.38 GFlops/s, 76.60 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.63 s
+  * lowering.IET: 0.35 s (56.3 %)
+     * specializing.IET: 0.25 s (40.3 %)
+  * lowering.Clusters: 0.22 s (35.4 %)
+     * lower_index_derivatives: 0.13 s (21.0 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.11 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.12 s
+Global performance: [OI=0.56, 1857.48 GFlops/s, 59.92 GPts/s]
+Global performance <w/o setup>: [0.89 s, 76.22 GPts/s]
+Local performance:
+  * section0 ran in 0.89 s [OI=0.56, 2362.58 GFlops/s, 76.22 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.35 s (57.3 %)
+     * specializing.IET: 0.25 s (40.9 %)
+  * lowering.Clusters: 0.21 s (34.4 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.11 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.12 s
+Global performance: [OI=0.56, 1857.48 GFlops/s, 59.92 GPts/s]
+Global performance <w/o setup>: [0.88 s, 76.30 GPts/s]
+Local performance:
+  * section0 ran in 0.88 s [OI=0.56, 2365.09 GFlops/s, 76.30 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(260, 260, 288) [74 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.63 s
+  * lowering.IET: 0.36 s (57.4 %)
+     * specializing.IET: 0.26 s (41.4 %)
+  * lowering.Clusters: 0.21 s (33.5 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ddc3dc0204681d7faabe34e2bff261a60afc6db7.cu` in 0.06 s from jit-cache
+Allocating host memory for u(3, 260, 260, 288) [223 MB]
+Operator `Simple` arguments preprocess: 0.11 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.12 s
+Global performance: [OI=0.56, 1857.48 GFlops/s, 59.92 GPts/s]
+Global performance <w/o setup>: [0.88 s, 76.31 GPts/s]
+Local performance:
+  * section0 ran in 0.88 s [OI=0.56, 2365.48 GFlops/s, 76.31 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.58 s
+  * lowering.IET: 0.36 s (62.3 %)
+     * specializing.IET: 0.26 s (45.0 %)
+  * lowering.Clusters: 0.17 s (29.4 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.10 s
+Global performance: [OI=1.05, 1890.40 GFlops/s, 75.62 GPts/s]
+Global performance <w/o setup>: [6.66 s, 80.71 GPts/s]
+Local performance:
+  * section0 ran in 6.66 s [OI=1.05, 2017.51 GFlops/s, 80.71 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.58 s
+  * lowering.IET: 0.36 s (62.7 %)
+     * specializing.IET: 0.26 s (45.3 %)
+  * lowering.Clusters: 0.17 s (29.6 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.24 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.10 s
+Global performance: [OI=1.05, 1890.40 GFlops/s, 75.62 GPts/s]
+Global performance <w/o setup>: [6.66 s, 80.70 GPts/s]
+Local performance:
+  * section0 ran in 6.66 s [OI=1.05, 2017.35 GFlops/s, 80.70 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.59 s
+  * lowering.IET: 0.36 s (62.1 %)
+     * specializing.IET: 0.26 s (44.9 %)
+  * lowering.Clusters: 0.18 s (31.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.10 s
+Global performance: [OI=1.05, 1890.40 GFlops/s, 75.62 GPts/s]
+Global performance <w/o setup>: [6.66 s, 80.71 GPts/s]
+Local performance:
+  * section0 ran in 6.66 s [OI=1.05, 2017.51 GFlops/s, 80.71 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.58 s
+  * lowering.IET: 0.36 s (62.6 %)
+     * specializing.IET: 0.26 s (45.3 %)
+  * lowering.Clusters: 0.17 s (29.6 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.10 s
+Global performance: [OI=1.05, 1890.40 GFlops/s, 75.62 GPts/s]
+Global performance <w/o setup>: [6.66 s, 80.69 GPts/s]
+Local performance:
+  * section0 ran in 6.66 s [OI=1.05, 2017.15 GFlops/s, 80.69 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(516, 516, 544) [553 MB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.58 s
+  * lowering.IET: 0.36 s (63.0 %)
+     * specializing.IET: 0.26 s (45.5 %)
+  * lowering.Clusters: 0.17 s (29.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/f53da0346524cb8f4eec19f5a0e80e5fe2a19f99.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 516, 516, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.10 s
+Global performance: [OI=1.05, 1890.40 GFlops/s, 75.62 GPts/s]
+Global performance <w/o setup>: [6.66 s, 80.68 GPts/s]
+Local performance:
+  * section0 ran in 6.66 s [OI=1.05, 2016.95 GFlops/s, 80.68 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.63 s
+  * lowering.IET: 0.36 s (58.0 %)
+     * specializing.IET: 0.26 s (41.9 %)
+  * lowering.Clusters: 0.21 s (33.9 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.06 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 59.89 s
+Global performance: [OI=0.56, 2223.15 GFlops/s, 71.72 GPts/s]
+Global performance <w/o setup>: [57.77 s, 74.35 GPts/s]
+Local performance:
+  * section0 ran in 57.77 s [OI=0.56, 2304.84 GFlops/s, 74.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.35 s (57.2 %)
+     * specializing.IET: 0.25 s (40.9 %)
+  * lowering.Clusters: 0.21 s (34.4 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 59.87 s
+Global performance: [OI=0.56, 2223.89 GFlops/s, 71.74 GPts/s]
+Global performance <w/o setup>: [57.77 s, 74.35 GPts/s]
+Local performance:
+  * section0 ran in 57.77 s [OI=0.56, 2304.78 GFlops/s, 74.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.63 s
+  * lowering.IET: 0.36 s (57.8 %)
+     * specializing.IET: 0.26 s (41.8 %)
+  * lowering.Clusters: 0.21 s (33.8 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.06 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 59.82 s
+Global performance: [OI=0.56, 2225.75 GFlops/s, 71.80 GPts/s]
+Global performance <w/o setup>: [57.77 s, 74.35 GPts/s]
+Local performance:
+  * section0 ran in 57.77 s [OI=0.56, 2304.85 GFlops/s, 74.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.71 s
+  * lowering.IET: 0.36 s (51.2 %)
+     * specializing.IET: 0.26 s (37.0 %)
+  * lowering.Clusters: 0.29 s (41.3 %)
+     * lower_index_derivatives: 0.20 s (28.5 %)
+        * fuse: 0.19 s (27.1 %)
+           * fuse: 0.19 s (27.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.05 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.27 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 60.62 s
+Global performance: [OI=0.56, 2196.38 GFlops/s, 70.86 GPts/s]
+Global performance <w/o setup>: [57.78 s, 74.35 GPts/s]
+Local performance:
+  * section0 ran in 57.78 s [OI=0.56, 2304.72 GFlops/s, 74.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 2
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1028, 1028, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(1, 1)`
+Hint: avoid unused halo along `y`. Use `(1, 1)`
+Hint: avoid unused halo along `z`. Use `(1, 1)`
+Operator `Simple` generated in 0.62 s
+  * lowering.IET: 0.36 s (58.4 %)
+     * specializing.IET: 0.26 s (42.2 %)
+  * lowering.Clusters: 0.21 s (34.1 %)
+Flops reduction after symbolic optimization: [31 --> 30]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/63b621d01714695fdf99402ad496a9d0af8e327b.cu` in 0.06 s from jit-cache
+Allocating host memory for u(3, 1028, 1028, 1056) [12.5 GB]
+Operator `Simple` arguments preprocess: 1.34 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 59.94 s
+Global performance: [OI=0.56, 2221.29 GFlops/s, 71.66 GPts/s]
+Global performance <w/o setup>: [57.77 s, 74.35 GPts/s]
+Local performance:
+  * section0 ran in 57.77 s [OI=0.56, 2304.79 GFlops/s, 74.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'gpu-opt': False, 'index-mode': 'int64'})
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.76 s
+  * lowering.Clusters: 0.83 s (47.4 %)
+     * specializing.Clusters: 0.51 s (29.2 %)
+        * optimize_kernels: 0.46 s (26.3 %)
+  * lowering.IET: 0.77 s (44.0 %)
+     * specializing.IET: 0.62 s (35.4 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.20 s
+Global performance: [OI=0.12, 1910.74 GFlops/s, 55.93 GPts/s]
+Global performance <w/o setup>: [0.95 s, 71.19 GPts/s]
+Local performance:
+  * section0 ran in 0.95 s [OI=0.12, 2432.33 GFlops/s, 71.19 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.75 s
+  * lowering.Clusters: 0.82 s (46.9 %)
+     * specializing.Clusters: 0.51 s (29.2 %)
+        * optimize_kernels: 0.46 s (26.4 %)
+  * lowering.IET: 0.77 s (44.1 %)
+     * specializing.IET: 0.62 s (35.5 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.19 s
+Global performance: [OI=0.12, 1926.80 GFlops/s, 56.40 GPts/s]
+Global performance <w/o setup>: [0.95 s, 71.11 GPts/s]
+Local performance:
+  * section0 ran in 0.95 s [OI=0.12, 2429.46 GFlops/s, 71.11 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.76 s
+  * lowering.Clusters: 0.83 s (47.4 %)
+     * specializing.Clusters: 0.52 s (29.7 %)
+        * optimize_kernels: 0.46 s (26.3 %)
+  * lowering.IET: 0.78 s (44.5 %)
+     * specializing.IET: 0.62 s (35.4 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.18 s
+Global performance: [OI=0.12, 1943.13 GFlops/s, 56.88 GPts/s]
+Global performance <w/o setup>: [0.95 s, 71.31 GPts/s]
+Local performance:
+  * section0 ran in 0.95 s [OI=0.12, 2436.42 GFlops/s, 71.31 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.76 s
+  * lowering.Clusters: 0.82 s (46.8 %)
+     * specializing.Clusters: 0.51 s (29.1 %)
+        * optimize_kernels: 0.45 s (25.7 %)
+  * lowering.IET: 0.78 s (44.5 %)
+     * specializing.IET: 0.62 s (35.4 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.18 s
+Global performance: [OI=0.12, 1943.13 GFlops/s, 56.88 GPts/s]
+Global performance <w/o setup>: [0.94 s, 71.51 GPts/s]
+Local performance:
+  * section0 ran in 0.94 s [OI=0.12, 2443.23 GFlops/s, 71.51 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(264, 264, 288) [77 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.95 s
+  * lowering.Clusters: 0.93 s (48.0 %)
+     * specializing.Clusters: 0.61 s (31.5 %)
+        * optimize_kernels: 0.55 s (28.4 %)
+  * lowering.IET: 0.86 s (44.4 %)
+     * specializing.IET: 0.70 s (36.1 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/8e66f41c7dae54d210afa1f0a6000e24a426c476.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 264, 264, 288) [230 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.16 s
+Global performance: [OI=0.12, 1976.63 GFlops/s, 57.86 GPts/s]
+Global performance <w/o setup>: [0.94 s, 71.85 GPts/s]
+Local performance:
+  * section0 ran in 0.94 s [OI=0.12, 2454.74 GFlops/s, 71.85 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 24]], 'gpu-prefetch': [4], 'deriv-schedule': 'smart', 'deriv-unroll': 'inner'})
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 2.05 s
+  * lowering.Clusters: 1.08 s (52.9 %)
+     * specializing.Clusters: 0.51 s (25.0 %)
+        * optimize_kernels: 0.46 s (22.5 %)
+     * lower_index_derivatives: 0.49 s (24.0 %)
+        * fuse: 0.46 s (22.5 %)
+           * fuse: 0.46 s (22.5 %)
+  * lowering.IET: 0.73 s (35.7 %)
+     * specializing.IET: 0.58 s (28.4 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.40 s
+Global performance: [OI=0.15, 2469.73 GFlops/s, 72.56 GPts/s]
+Global performance <w/o setup>: [6.94 s, 77.37 GPts/s]
+Local performance:
+  * section0 ran in 6.94 s [OI=0.15, 2633.76 GFlops/s, 77.37 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 2.05 s
+  * lowering.Clusters: 1.09 s (53.5 %)
+     * specializing.Clusters: 0.51 s (25.0 %)
+        * optimize_kernels: 0.46 s (22.6 %)
+     * lower_index_derivatives: 0.50 s (24.6 %)
+        * fuse: 0.47 s (23.1 %)
+           * fuse: 0.47 s (23.1 %)
+  * lowering.IET: 0.72 s (35.3 %)
+     * specializing.IET: 0.57 s (28.0 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.39 s
+Global performance: [OI=0.15, 2473.07 GFlops/s, 72.65 GPts/s]
+Global performance <w/o setup>: [6.94 s, 77.39 GPts/s]
+Local performance:
+  * section0 ran in 6.94 s [OI=0.15, 2634.25 GFlops/s, 77.39 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.97 s
+  * lowering.Clusters: 1.07 s (54.5 %)
+     * specializing.Clusters: 0.51 s (26.0 %)
+        * optimize_kernels: 0.45 s (23.0 %)
+     * lower_index_derivatives: 0.49 s (25.0 %)
+        * fuse: 0.45 s (23.0 %)
+           * fuse: 0.45 s (23.0 %)
+  * lowering.IET: 0.72 s (36.7 %)
+     * specializing.IET: 0.57 s (29.1 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.38 s
+Global performance: [OI=0.15, 2476.43 GFlops/s, 72.75 GPts/s]
+Global performance <w/o setup>: [6.94 s, 77.39 GPts/s]
+Local performance:
+  * section0 ran in 6.94 s [OI=0.15, 2634.19 GFlops/s, 77.39 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.97 s
+  * lowering.Clusters: 1.07 s (54.5 %)
+     * specializing.Clusters: 0.50 s (25.5 %)
+        * optimize_kernels: 0.45 s (23.0 %)
+     * lower_index_derivatives: 0.49 s (25.0 %)
+        * fuse: 0.45 s (23.0 %)
+           * fuse: 0.45 s (23.0 %)
+  * lowering.IET: 0.73 s (37.2 %)
+     * specializing.IET: 0.57 s (29.1 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.49 s
+Global performance: [OI=0.15, 2440.06 GFlops/s, 71.68 GPts/s]
+Global performance <w/o setup>: [6.94 s, 77.39 GPts/s]
+Local performance:
+  * section0 ran in 6.94 s [OI=0.15, 2634.19 GFlops/s, 77.39 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(520, 520, 544) [561 MB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 2.04 s
+  * lowering.Clusters: 1.08 s (53.0 %)
+     * specializing.Clusters: 0.51 s (25.1 %)
+        * optimize_kernels: 0.45 s (22.1 %)
+     * lower_index_derivatives: 0.49 s (24.1 %)
+        * fuse: 0.45 s (22.1 %)
+           * fuse: 0.45 s (22.1 %)
+  * lowering.IET: 0.73 s (35.9 %)
+     * specializing.IET: 0.57 s (28.0 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/3c1c53dd3e6ef2ed9b462c5ffcb4924b16030574.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 520, 520, 544) [1.6 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.39 s
+Global performance: [OI=0.15, 2473.07 GFlops/s, 72.65 GPts/s]
+Global performance <w/o setup>: [6.95 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 6.95 s [OI=0.15, 2633.34 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-launch-bounds': [True]})
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.92 s
+  * lowering.Clusters: 1.06 s (55.3 %)
+     * specializing.Clusters: 0.51 s (26.6 %)
+        * optimize_kernels: 0.45 s (23.5 %)
+     * lower_index_derivatives: 0.47 s (24.5 %)
+        * fuse: 0.44 s (23.0 %)
+           * fuse: 0.44 s (23.0 %)
+  * lowering.IET: 0.70 s (36.5 %)
+     * specializing.IET: 0.55 s (28.7 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.30 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 57.66 s
+Global performance: [OI=0.11, 3206.08 GFlops/s, 74.49 GPts/s]
+Global performance <w/o setup>: [55.53 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 55.53 s [OI=0.11, 3329.62 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.94 s
+  * lowering.Clusters: 1.06 s (55.0 %)
+     * specializing.Clusters: 0.51 s (26.5 %)
+        * optimize_kernels: 0.46 s (23.9 %)
+     * lower_index_derivatives: 0.47 s (24.4 %)
+        * fuse: 0.44 s (22.8 %)
+           * fuse: 0.44 s (22.8 %)
+  * lowering.IET: 0.71 s (36.8 %)
+     * specializing.IET: 0.55 s (28.5 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.29 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 57.62 s
+Global performance: [OI=0.11, 3208.31 GFlops/s, 74.54 GPts/s]
+Global performance <w/o setup>: [55.53 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 55.53 s [OI=0.11, 3329.61 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.94 s
+  * lowering.Clusters: 1.07 s (55.2 %)
+     * specializing.Clusters: 0.51 s (26.3 %)
+        * optimize_kernels: 0.46 s (23.8 %)
+     * lower_index_derivatives: 0.48 s (24.8 %)
+        * fuse: 0.44 s (22.7 %)
+           * fuse: 0.44 s (22.7 %)
+  * lowering.IET: 0.71 s (36.7 %)
+     * specializing.IET: 0.56 s (28.9 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 57.61 s
+Global performance: [OI=0.11, 3208.87 GFlops/s, 74.56 GPts/s]
+Global performance <w/o setup>: [55.53 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 55.53 s [OI=0.11, 3329.64 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.93 s
+  * lowering.Clusters: 1.06 s (55.1 %)
+     * specializing.Clusters: 0.52 s (27.0 %)
+        * optimize_kernels: 0.46 s (23.9 %)
+     * lower_index_derivatives: 0.47 s (24.4 %)
+        * fuse: 0.44 s (22.9 %)
+           * fuse: 0.44 s (22.9 %)
+  * lowering.IET: 0.70 s (36.4 %)
+     * specializing.IET: 0.55 s (28.6 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.34 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 57.65 s
+Global performance: [OI=0.11, 3206.64 GFlops/s, 74.51 GPts/s]
+Global performance <w/o setup>: [55.53 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 55.53 s [OI=0.11, 3329.64 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 4
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1032, 1032, 1056) [4.2 GB]
+Hint: avoid unused halo along `x`. Use `(2, 2)`
+Hint: avoid unused halo along `y`. Use `(2, 2)`
+Hint: avoid unused halo along `z`. Use `(2, 2)`
+Operator `Simple` generated in 1.94 s
+  * lowering.Clusters: 1.06 s (54.9 %)
+     * specializing.Clusters: 0.52 s (26.9 %)
+        * optimize_kernels: 0.46 s (23.8 %)
+     * lower_index_derivatives: 0.47 s (24.4 %)
+        * fuse: 0.43 s (22.3 %)
+           * fuse: 0.43 s (22.3 %)
+  * lowering.IET: 0.71 s (36.8 %)
+     * specializing.IET: 0.56 s (29.0 %)
+Flops reduction after symbolic optimization: [43 --> 44]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/9d37a5a48cb57fedb09cdd73cf78b23bdcd4f689.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1032, 1032, 1056) [12.6 GB]
+Operator `Simple` arguments preprocess: 1.32 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 57.61 s
+Global performance: [OI=0.11, 3208.87 GFlops/s, 74.56 GPts/s]
+Global performance <w/o setup>: [55.53 s, 77.36 GPts/s]
+Local performance:
+  * section0 ran in 55.53 s [OI=0.11, 3329.61 GFlops/s, 77.36 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 1
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.16 s
+  * lowering.IET: 0.92 s (42.8 %)
+     * specializing.IET: 0.76 s (35.4 %)
+  * lowering.Clusters: 0.91 s (42.4 %)
+     * specializing.Clusters: 0.47 s (21.9 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.24 s
+Global performance: [OI=0.06, 2773.66 GFlops/s, 54.13 GPts/s]
+Global performance <w/o setup>: [1.01 s, 66.93 GPts/s]
+Local performance:
+  * section0 ran in 1.01 s [OI=0.06, 3430.16 GFlops/s, 66.93 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+= END =
+= START =
+run-number: 2
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.95 s
+  * lowering.IET: 0.85 s (43.8 %)
+     * specializing.IET: 0.70 s (36.1 %)
+  * lowering.Clusters: 0.84 s (43.3 %)
+     * specializing.Clusters: 0.47 s (24.2 %)
+        * optimize_kernels: 0.41 s (21.1 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.24 s
+Global performance: [OI=0.06, 2773.66 GFlops/s, 54.13 GPts/s]
+Global performance <w/o setup>: [1.00 s, 67.35 GPts/s]
+Local performance:
+  * section0 ran in 1.00 s [OI=0.06, 3451.64 GFlops/s, 67.35 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+= END =
+= START =
+run-number: 3
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.95 s
+  * lowering.IET: 0.85 s (43.8 %)
+     * specializing.IET: 0.69 s (35.5 %)
+  * lowering.Clusters: 0.84 s (43.3 %)
+     * specializing.Clusters: 0.47 s (24.2 %)
+        * optimize_kernels: 0.42 s (21.7 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.24 s
+Global performance: [OI=0.06, 2773.66 GFlops/s, 54.13 GPts/s]
+Global performance <w/o setup>: [0.99 s, 67.90 GPts/s]
+Local performance:
+  * section0 ran in 0.99 s [OI=0.06, 3479.75 GFlops/s, 67.90 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+= END =
+= START =
+run-number: 4
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.96 s
+  * lowering.IET: 0.86 s (44.1 %)
+     * specializing.IET: 0.70 s (35.9 %)
+  * lowering.Clusters: 0.84 s (43.1 %)
+     * specializing.Clusters: 0.47 s (24.1 %)
+        * optimize_kernels: 0.41 s (21.1 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.24 s
+Global performance: [OI=0.06, 2773.66 GFlops/s, 54.13 GPts/s]
+Global performance <w/o setup>: [1.00 s, 67.19 GPts/s]
+Local performance:
+  * section0 ran in 1.00 s [OI=0.06, 3443.34 GFlops/s, 67.19 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+= END =
+= START =
+run-number: 5
+domain-size: 256
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(272, 272, 288) [81 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.98 s
+  * lowering.IET: 0.86 s (43.6 %)
+     * specializing.IET: 0.71 s (36.0 %)
+  * lowering.Clusters: 0.85 s (43.1 %)
+     * specializing.Clusters: 0.47 s (23.8 %)
+        * optimize_kernels: 0.42 s (21.3 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/ca72ee1339c9675fa0848a75d90995d328801d81.cu` in 0.10 s from jit-cache
+Allocating host memory for u(3, 272, 272, 288) [244 MB]
+Operator `Simple` arguments preprocess: 0.12 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 1.25 s
+Global performance: [OI=0.06, 2751.47 GFlops/s, 53.69 GPts/s]
+Global performance <w/o setup>: [1.01 s, 66.65 GPts/s]
+Local performance:
+  * section0 ran in 1.01 s [OI=0.06, 3415.79 GFlops/s, 66.65 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[32, 4, 16]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'deriv-unroll': 'inner', 'fact-schedule': 'basic'})
+= END =
+= START =
+run-number: 1
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.24 s
+  * lowering.Clusters: 1.18 s (52.9 %)
+     * lower_index_derivatives: 0.57 s (25.6 %)
+        * fuse: 0.53 s (23.8 %)
+           * fuse: 0.53 s (23.8 %)
+     * specializing.Clusters: 0.48 s (21.6 %)
+  * lowering.IET: 0.84 s (37.7 %)
+     * specializing.IET: 0.68 s (30.5 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.83 s
+Global performance: [OI=0.08, 3568.29 GFlops/s, 68.57 GPts/s]
+Global performance <w/o setup>: [7.27 s, 73.87 GPts/s]
+Local performance:
+  * section0 ran in 7.27 s [OI=0.08, 3844.31 GFlops/s, 73.87 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+= END =
+= START =
+run-number: 2
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.21 s
+  * lowering.Clusters: 1.15 s (52.3 %)
+     * lower_index_derivatives: 0.55 s (25.0 %)
+        * fuse: 0.51 s (23.2 %)
+           * fuse: 0.51 s (23.2 %)
+     * specializing.Clusters: 0.48 s (21.9 %)
+  * lowering.IET: 0.84 s (38.2 %)
+     * specializing.IET: 0.68 s (30.9 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.76 s
+Global performance: [OI=0.08, 3600.48 GFlops/s, 69.19 GPts/s]
+Global performance <w/o setup>: [7.27 s, 73.88 GPts/s]
+Local performance:
+  * section0 ran in 7.27 s [OI=0.08, 3844.78 GFlops/s, 73.88 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+= END =
+= START =
+run-number: 3
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.18 s
+  * lowering.Clusters: 1.14 s (52.4 %)
+     * lower_index_derivatives: 0.54 s (24.9 %)
+        * fuse: 0.51 s (23.5 %)
+           * fuse: 0.51 s (23.5 %)
+     * specializing.Clusters: 0.47 s (21.7 %)
+  * lowering.IET: 0.83 s (38.2 %)
+     * specializing.IET: 0.67 s (30.8 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.26 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.77 s
+Global performance: [OI=0.08, 3595.84 GFlops/s, 69.10 GPts/s]
+Global performance <w/o setup>: [7.27 s, 73.91 GPts/s]
+Local performance:
+  * section0 ran in 7.27 s [OI=0.08, 3845.98 GFlops/s, 73.91 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+= END =
+= START =
+run-number: 4
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.19 s
+  * lowering.Clusters: 1.15 s (52.6 %)
+     * lower_index_derivatives: 0.55 s (25.2 %)
+        * fuse: 0.51 s (23.3 %)
+           * fuse: 0.51 s (23.3 %)
+     * specializing.Clusters: 0.48 s (22.0 %)
+  * lowering.IET: 0.83 s (38.0 %)
+     * specializing.IET: 0.67 s (30.6 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.25 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.73 s
+Global performance: [OI=0.08, 3614.45 GFlops/s, 69.46 GPts/s]
+Global performance <w/o setup>: [7.28 s, 73.81 GPts/s]
+Local performance:
+  * section0 ran in 7.28 s [OI=0.08, 3840.74 GFlops/s, 73.81 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+= END =
+= START =
+run-number: 5
+domain-size: 512
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(528, 528, 544) [579 MB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 2.49 s
+  * lowering.Clusters: 1.28 s (51.6 %)
+     * lower_index_derivatives: 0.66 s (26.6 %)
+        * fuse: 0.62 s (25.0 %)
+           * fuse: 0.62 s (25.0 %)
+  * lowering.IET: 0.99 s (39.9 %)
+     * specializing.IET: 0.83 s (33.5 %)
+Flops reduction after symbolic optimization: [67 --> 14]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/636d13233c382e465d43bd298a2d6ebad34a555c.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 528, 528, 544) [1.7 GB]
+Operator `Simple` arguments preprocess: 0.31 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 7.78 s
+Global performance: [OI=0.08, 3591.22 GFlops/s, 69.01 GPts/s]
+Global performance <w/o setup>: [7.28 s, 73.79 GPts/s]
+Local performance:
+  * section0 ran in 7.28 s [OI=0.08, 3839.96 GFlops/s, 73.79 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4, 96]], 'gpu-prefetch': [4], 'linearize': 'advanced', 'deriv-schedule': 'smart', 'gpu-max-ilp': [1]})
+= END =
+= START =
+run-number: 1
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.67 s
+  * lowering.IET: 0.80 s (48.2 %)
+     * specializing.IET: 0.66 s (39.8 %)
+  * lowering.Clusters: 0.68 s (41.0 %)
+     * specializing.Clusters: 0.35 s (21.1 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.29 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 61.84 s
+Global performance: [OI=0.01, 4653.55 GFlops/s, 69.46 GPts/s]
+Global performance <w/o setup>: [58.50 s, 73.44 GPts/s]
+Local performance:
+  * section0 ran in 58.50 s [OI=0.01, 4920.04 GFlops/s, 73.44 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 2
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.53 s
+  * lowering.IET: 0.73 s (47.9 %)
+     * specializing.IET: 0.58 s (38.0 %)
+  * lowering.Clusters: 0.62 s (40.7 %)
+     * specializing.Clusters: 0.35 s (23.0 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.27 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 60.65 s
+Global performance: [OI=0.01, 4744.86 GFlops/s, 70.82 GPts/s]
+Global performance <w/o setup>: [58.49 s, 73.44 GPts/s]
+Local performance:
+  * section0 ran in 58.49 s [OI=0.01, 4920.09 GFlops/s, 73.44 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 3
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.51 s
+  * lowering.IET: 0.72 s (47.9 %)
+     * specializing.IET: 0.57 s (37.9 %)
+  * lowering.Clusters: 0.61 s (40.6 %)
+     * specializing.Clusters: 0.35 s (23.3 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.36 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 60.68 s
+Global performance: [OI=0.01, 4742.51 GFlops/s, 70.79 GPts/s]
+Global performance <w/o setup>: [58.50 s, 73.43 GPts/s]
+Local performance:
+  * section0 ran in 58.50 s [OI=0.01, 4919.84 GFlops/s, 73.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 4
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.58 s
+  * lowering.IET: 0.75 s (47.5 %)
+     * specializing.IET: 0.60 s (38.0 %)
+  * lowering.Clusters: 0.66 s (41.8 %)
+     * specializing.Clusters: 0.35 s (22.2 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.27 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 60.23 s
+Global performance: [OI=0.01, 4777.95 GFlops/s, 71.31 GPts/s]
+Global performance <w/o setup>: [58.50 s, 73.43 GPts/s]
+Local performance:
+  * section0 ran in 58.50 s [OI=0.01, 4919.72 GFlops/s, 73.43 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+= END =
+= START =
+run-number: 5
+domain-size: 1024
+space-order: 8
+time-steps: 4000
+devito-version: Pro
+gpu-num: 1
+mpi: 0
+The NVidia driver (vc_int(12000)) on this system may not be compatible with the CUDA runtime (vc_int(12090))
+Allocating host memory for Vp(1040, 1040, 1056) [4.3 GB]
+Hint: avoid unused halo along `x`. Use `(4, 4)`
+Hint: avoid unused halo along `y`. Use `(4, 4)`
+Hint: avoid unused halo along `z`. Use `(4, 4)`
+Operator `Simple` generated in 1.50 s
+  * lowering.IET: 0.71 s (47.5 %)
+     * specializing.IET: 0.57 s (38.1 %)
+  * lowering.Clusters: 0.61 s (40.8 %)
+     * specializing.Clusters: 0.34 s (22.8 %)
+        * optimize_kernels: 0.30 s (20.1 %)
+Flops reduction after symbolic optimization: [67 --> 67]
+Operator `Simple` fetched `/tmp/devito-jitcache-uid7261/2adb267fd153a083626d437ca2f0bc0cbf982db1.cu` in 0.09 s from jit-cache
+Allocating host memory for u(3, 1040, 1040, 1056) [12.8 GB]
+Operator `Simple` arguments preprocess: 1.27 s
+Operator `Simple` arguments postprocess: 0.01 s
+Operator `Simple` ran in 60.61 s
+Global performance: [OI=0.01, 4747.99 GFlops/s, 70.87 GPts/s]
+Global performance <w/o setup>: [58.49 s, 73.45 GPts/s]
+Local performance:
+  * section0 ran in 58.49 s [OI=0.01, 4920.74 GFlops/s, 73.45 GPts/s]
+Performance[mode=advanced] arguments: {'deviceid': -1, 'devicerm': 1, 'pthreads': 0}
+platform: nvidiaX
+compiler: CudaCompiler
+language: cuda
+mpi: False
+topology: None
+first-touch: False
+ignore-unknowns: False
+log-level: DEBUG
+jit-backdoor: False
+safe-math: False
+autopadding: <class 'numpy.float32'>
+deviceid: -1
+autotuning: (False, 'preemptive')
+develop-mode: False
+opt: advanced
+opt-options: {}
+profiling: basic
+lazy-host-mem-perc: 0.7
+lazy-device-mem-perc: 0.7
+lazy-disk-mem-perc: 0.7
+beta: 0
+decoupler: False
+bypass-version-check: False
+nt: 4001
+Running operator with devitopro, and opt: ('advanced', {'errctl': 'basic', 'gpu-opt': True, 'gpu-vect': 'stream-minimal', 'gpu-glb-mem': 'async-pipe', 'gpu-hoist': 2, 'index-mode': 'int64', 'cire-mode': ['automatic'], 'par-tile': [[128, 4]], 'gpu-prefetch': [2], 'linearize': 'advanced'})
+= END =
+All runs completed.
