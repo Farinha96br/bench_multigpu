@@ -14,10 +14,9 @@ import ast
 from devito import (Grid, TimeFunction, Function, Eq, Operator,
                     SparseTimeFunction, solve, print_state)
 
-from devitopro import *
 
 
-CONFIGS_PATH="/home/cimatec/andre.farinha/paper_multigpu/bench_multigpu/all_configs.json"
+CONFIGS_PATH="/home/andre.farinha/paper_multigpu/bench_multigpu/all_configs.json"
 
 parser = argparse.ArgumentParser()
 
@@ -29,6 +28,11 @@ parser.add_argument("-gpumodel", type=str, default="DummyGPU")
 parser.add_argument("-machine", type=str, default="DummyMachine")
 parser.add_argument("-ngpus", type=int, default=1)
 args = parser.parse_args()
+
+if args.pro:
+    from devitopro import *
+
+
 
 gpucount = args.ngpus
 
@@ -84,12 +88,22 @@ pde = Eq(u.dt2, vp**2 * u.laplace)
 stencil = Eq(u.forward, solve(pde, u.forward))
 #print("Stencil:", stencil)
 
+gridPoints=(shape[0]+2*args.spaceorder)*(shape[1]+2*args.spaceorder)*(shape[2]+2*args.spaceorder)
+
+
+
+
 if args.pro:
     print("Running operator with devitopro, and opt:", opt_opts)
     op = Operator([stencil], name="Simple", opt=opt_opts)
 else:
-    print("Running operator with devito")
-    op = Operator([stencil], name="Simple")
+    if gridPoints > 2**31:
+        print("Max int32 detected, using int64 indexing")
+        opt_opts = (('advanced', {'index-mode': 'int64'}))
+        op = Operator([stencil], name="Simple", opt=opt_opts)
+    else:
+        print("Running operator with devito")
+        op = Operator([stencil], name="Simple")
 
 # Exec:
 op.apply(time=nt - 1, dt=dt)
